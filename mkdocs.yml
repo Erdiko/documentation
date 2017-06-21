@@ -3,6 +3,6 @@ site_name: Erdiko Docs
 pages:
     - Home: index.md
     - About: about.md
+    - Style Guide: style-guide.md
 
 theme: material
-# theme: flatly
