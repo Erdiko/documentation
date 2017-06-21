@@ -1,5 +1,5 @@
-site_name: Erdiko Docs
-site_description: Erdiko documentation
+site_name: Erdiko Documentation
+site_description: Erdiko Documentation
 site_author: Arroyo Labs
 
 pages:
@@ -22,8 +22,8 @@ markdown_extensions:
 
 extra:
   palette:
-    primary: #0E5806
-    accent: #04BF05
+    primary: grey
+    accent: green
   social:
     - type: github
       link: https://github.com/erdiko

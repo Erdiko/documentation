@@ -8,6 +8,10 @@ Start your containers...
 
 As you edit a document it will compile and reload in the browser
 
+To view your local development version go to
+
+    http://localhost:8000
+
 ## Contributing to the documentation
 
 All of the markdown files are in the docs folder. To update an existing page simply edit the *.md file.  To add a new page create a new .md file and put in it the docs folder.  To get it to show up in the main menu you need to edit the mkdocs.yml file.  That's all you need to get going.

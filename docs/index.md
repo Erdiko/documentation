@@ -1,6 +1,8 @@
 # Erdiko Documentation
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+![Erdiko Shield](/images/ErdikoShield-300.png)
+
+Learn more about [markdown](https://guides.github.com/features/mastering-markdown/)
 
 ## Commands
 

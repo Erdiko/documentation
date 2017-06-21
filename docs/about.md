@@ -33,18 +33,6 @@ nectare veste *habet polumque* ministrat is abstulit calorem sparsit crines.
 - Devorat aliis
 - Egreditur nocuit
 
-## Iactatis generis fallere per patris linguam reseratque
-
-Orbem cineri est. Dubie per ego nymphisque potest inquit sui, adversaque non
-qualem humum exhortatur silvas; arma locutus; et per. Nocte obstantia relinquunt
-India volanti.
-
-1. Suam per pressa hamo telis obstas
-2. Tamen tu
-3. Pascua Solis lusibus penetrale questa recusat et
-4. Gerens famuli subiectis vocabam abiit
-5. Per ut Olenos sic Brotean aures foramina
-
 ## Tamen dubitat intus quam quam
 
 Capit animam talem reginam gramina alveus nec Cinyras utilis vero tulit auctor.
