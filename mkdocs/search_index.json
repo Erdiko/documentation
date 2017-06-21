@@ -1,0 +1,89 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Erdiko Documentation\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#erdiko-documentation", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Erdiko Documentation"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "Foedere digitis adolescere exegit videritis deserto\n\n\nPavonibus cornua parvoque in inbellemque gentisque bella\n\n\nLorem markdownum cadunt signo: lambentem velut, exequialia Dianae e telum cuius\nmutatus, minabitur. Enipeu exit solus templa sit; ipsaque Babylonia fluctibus\ncapillis rapit praestat suorum. Fata vacat Surrentino, tergo hoc fertur\nindigenis montibus Latona ipsa stant, digitis tubere aggeribus!\n\n\nmotherboard += video_cluster(promInternet, modemWwwTrim *\n        boot_duplex_tablet, docking_sla * 3 * login);\ngpu(cookieSmartphoneParse, sound_view + cdfs);\nsoftWizardUser -= mtu(scsiLunServer, name_emulation_troll, mediaFunction) +\n        1 + emoticon_media_carrier;\n\n\n\nEt esse conponere cui plangente cauda\n\n\nMultum auribus clausit laboribus et etiam vidit antiqua summo congressus flamina\ndeus, dique? \nFerunt dumque edere\n apertis duas umbra munus o robore hanc\nnectare veste \nhabet polumque\n ministrat is abstulit calorem sparsit crines.\n\n\n\n\nSalva tanget spinae contulerant retenta armenta\n\n\nPriamoque Abantiades\n\n\nDevorat aliis\n\n\nEgreditur nocuit\n\n\n\n\nIactatis generis fallere per patris linguam reseratque\n\n\nOrbem cineri est. Dubie per ego nymphisque potest inquit sui, adversaque non\nqualem humum exhortatur silvas; arma locutus; et per. Nocte obstantia relinquunt\nIndia volanti.\n\n\n\n\nSuam per pressa hamo telis obstas\n\n\nTamen tu\n\n\nPascua Solis lusibus penetrale questa recusat et\n\n\nGerens famuli subiectis vocabam abiit\n\n\nPer ut Olenos sic Brotean aures foramina\n\n\n\n\nTamen dubitat intus quam quam\n\n\nCapit animam talem reginam gramina alveus nec Cinyras utilis vero tulit auctor.\nSaepe ut qui nec perhorruit plaga cornua avidos tardius?\n\n\n\n\nDanaen pro parva abactas coquiturque respondere auras\n\n\nFame alveus lucos\n\n\nAlbo posse\n\n\nTectam Hectoris positoque serpens remittit lumina insula\n\n\nIngentem sed ceu\n\n\nIn ira niveo non defenditur narrantia ad\n\n\n\n\nCelas \npatentis quisquam\n nomen heros aras et flentemque, deum et coepta\ninducere, praeferri \ntabo cecidere\n. Curvamine urbes inde obnoxius senilis\n\nconamine\n circuit \niaculo non et\n puniceum ipse; opes excipit. Corpus cura\nmundi harenae vetustas fatalis lacerare digitis cladis \nfulgebant auroque\nvideor\n. Corpus \nsubstitit missum\n paras maioris formatus parabam pomaria\nvestibus ipsa: sibi refert pedes. Nam et sed protinus colunt pacifer, ut\npostarum uno \nsternentemque veteres\n latius.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#foedere-digitis-adolescere-exegit-videritis-deserto", 
+            "text": "", 
+            "title": "Foedere digitis adolescere exegit videritis deserto"
+        }, 
+        {
+            "location": "/about/#pavonibus-cornua-parvoque-in-inbellemque-gentisque-bella", 
+            "text": "Lorem markdownum cadunt signo: lambentem velut, exequialia Dianae e telum cuius\nmutatus, minabitur. Enipeu exit solus templa sit; ipsaque Babylonia fluctibus\ncapillis rapit praestat suorum. Fata vacat Surrentino, tergo hoc fertur\nindigenis montibus Latona ipsa stant, digitis tubere aggeribus!  motherboard += video_cluster(promInternet, modemWwwTrim *\n        boot_duplex_tablet, docking_sla * 3 * login);\ngpu(cookieSmartphoneParse, sound_view + cdfs);\nsoftWizardUser -= mtu(scsiLunServer, name_emulation_troll, mediaFunction) +\n        1 + emoticon_media_carrier;", 
+            "title": "Pavonibus cornua parvoque in inbellemque gentisque bella"
+        }, 
+        {
+            "location": "/about/#et-esse-conponere-cui-plangente-cauda", 
+            "text": "Multum auribus clausit laboribus et etiam vidit antiqua summo congressus flamina\ndeus, dique?  Ferunt dumque edere  apertis duas umbra munus o robore hanc\nnectare veste  habet polumque  ministrat is abstulit calorem sparsit crines.   Salva tanget spinae contulerant retenta armenta  Priamoque Abantiades  Devorat aliis  Egreditur nocuit", 
+            "title": "Et esse conponere cui plangente cauda"
+        }, 
+        {
+            "location": "/about/#iactatis-generis-fallere-per-patris-linguam-reseratque", 
+            "text": "Orbem cineri est. Dubie per ego nymphisque potest inquit sui, adversaque non\nqualem humum exhortatur silvas; arma locutus; et per. Nocte obstantia relinquunt\nIndia volanti.   Suam per pressa hamo telis obstas  Tamen tu  Pascua Solis lusibus penetrale questa recusat et  Gerens famuli subiectis vocabam abiit  Per ut Olenos sic Brotean aures foramina", 
+            "title": "Iactatis generis fallere per patris linguam reseratque"
+        }, 
+        {
+            "location": "/about/#tamen-dubitat-intus-quam-quam", 
+            "text": "Capit animam talem reginam gramina alveus nec Cinyras utilis vero tulit auctor.\nSaepe ut qui nec perhorruit plaga cornua avidos tardius?   Danaen pro parva abactas coquiturque respondere auras  Fame alveus lucos  Albo posse  Tectam Hectoris positoque serpens remittit lumina insula  Ingentem sed ceu  In ira niveo non defenditur narrantia ad   Celas  patentis quisquam  nomen heros aras et flentemque, deum et coepta\ninducere, praeferri  tabo cecidere . Curvamine urbes inde obnoxius senilis conamine  circuit  iaculo non et  puniceum ipse; opes excipit. Corpus cura\nmundi harenae vetustas fatalis lacerare digitis cladis  fulgebant auroque\nvideor . Corpus  substitit missum  paras maioris formatus parabam pomaria\nvestibus ipsa: sibi refert pedes. Nam et sed protinus colunt pacifer, ut\npostarum uno  sternentemque veteres  latius.", 
+            "title": "Tamen dubitat intus quam quam"
+        }, 
+        {
+            "location": "/style-guide/", 
+            "text": "Erdiko coding style guide\n\n\nPHP\n\n\nWe adhere to the \nPSR\n coding style guide.  \n\n\nhttp://www.php-fig.org/psr/psr-2/\n\n\nMore useful PHP-FIG links:\n\n\nhttp://www.php-fig.org/bylaws/psr-naming-conventions/\n\n\nhttp://www.php-fig.org/psr/psr-1/\n\n\nJavaScript\n\n\nWe follow Google's JavaScript style guide.\n\n\nhttps://google.github.io/styleguide/jsguide.html\n\n\nHTML\n\n\nWe follow Google's HTML style guide as well\n\n\nhttps://google.github.io/styleguide/htmlcssguide.html\n\n\nCSS\n\n\nSass\n\n\nhttp://sass-lang.com/", 
+            "title": "Style Guide"
+        }, 
+        {
+            "location": "/style-guide/#erdiko-coding-style-guide", 
+            "text": "", 
+            "title": "Erdiko coding style guide"
+        }, 
+        {
+            "location": "/style-guide/#php", 
+            "text": "We adhere to the  PSR  coding style guide.    http://www.php-fig.org/psr/psr-2/  More useful PHP-FIG links:  http://www.php-fig.org/bylaws/psr-naming-conventions/  http://www.php-fig.org/psr/psr-1/", 
+            "title": "PHP"
+        }, 
+        {
+            "location": "/style-guide/#javascript", 
+            "text": "We follow Google's JavaScript style guide.  https://google.github.io/styleguide/jsguide.html", 
+            "title": "JavaScript"
+        }, 
+        {
+            "location": "/style-guide/#html", 
+            "text": "We follow Google's HTML style guide as well  https://google.github.io/styleguide/htmlcssguide.html", 
+            "title": "HTML"
+        }, 
+        {
+            "location": "/style-guide/#css", 
+            "text": "", 
+            "title": "CSS"
+        }, 
+        {
+            "location": "/style-guide/#sass", 
+            "text": "http://sass-lang.com/", 
+            "title": "Sass"
+        }
+    ]
+}
