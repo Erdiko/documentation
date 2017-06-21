@@ -1,5 +1,14 @@
 # Foedere digitis adolescere exegit videritis deserto
 
+## Example styles
+
+These are from the Admonition plugin, [http://squidfunk.github.io/mkdocs-material/extensions/admonition/](http://squidfunk.github.io/mkdocs-material/extensions/admonition/)
+
+!!! note "This is an example note"
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
 ## Pavonibus cornua parvoque in inbellemque gentisque bella
 
 Lorem markdownum cadunt signo: lambentem velut, exequialia Dianae e telum cuius
