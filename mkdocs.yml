@@ -1,4 +1,6 @@
 site_name: Erdiko Docs
+site_description: Erdiko documentation
+site_author: Arroyo Labs
 
 pages:
     - Home: index.md
@@ -6,3 +8,27 @@ pages:
     - Style Guide: style-guide.md
 
 theme: material
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+google_analytics:
+      - 'UA-32448130-2'
+      - auto
+
+markdown_extensions:
+  - admonition
+  - toc(permalink=true)
+
+extra:
+  palette:
+    primary: #0E5806
+    accent: #04BF05
+  social:
+    - type: github
+      link: https://github.com/erdiko
+    - type: twitter
+      link: https://twitter.com/arroyolabs
+    - type: instagram
+      link: https://www.instagram.com/arroyolabs
+  logo: images/logo.png
