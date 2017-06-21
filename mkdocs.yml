@@ -1,0 +1,8 @@
+site_name: Erdiko Docs
+
+pages:
+    - Home: index.md
+    - About: about.md
+
+theme: material
+# theme: flatly
