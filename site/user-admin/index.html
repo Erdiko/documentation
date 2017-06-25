@@ -19,7 +19,7 @@
     
     
       
-        <title>Coding style guide - Erdiko Documentation</title>
+        <title>Overview - Erdiko Documentation</title>
       
     
     
@@ -80,8 +80,12 @@
           
             
               
+                <span class="md-header-nav__parent">
+                  User Admin
+                </span>
+              
             
-            Coding style guide
+            Overview
           
         </span>
       </div>
@@ -178,75 +182,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Coding style guide
-      </label>
-    
-    <a href="./" title="Coding style guide" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../style-guide/" title="Coding style guide" class="md-nav__link">
       Coding style guide
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#php" title="PHP" class="md-nav__link">
-    PHP
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#javascript" title="JavaScript" class="md-nav__link">
-    JavaScript
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html" title="HTML" class="md-nav__link">
-    HTML
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#css" title="CSS" class="md-nav__link">
-    CSS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sass" title="Sass" class="md-nav__link">
-    Sass
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -278,10 +218,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       User Admin
@@ -297,11 +239,82 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../user-admin/" title="Overview" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Overview
+      </label>
+    
+    <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
       Overview
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" title="Intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-quick-start" title="Docker (Quick Start)" class="md-nav__link">
+    Docker (Quick Start)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-login" title="Default Login" class="md-nav__link">
+    Default Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-configuration" title="Setup / Configuration" class="md-nav__link">
+    Setup / Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theming" title="Theming" class="md-nav__link">
+    Theming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" title="Contributing" class="md-nav__link">
+    Contributing
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -311,7 +324,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/extending/" title="Extending" class="md-nav__link">
+    <a href="extending/" title="Extending" class="md-nav__link">
       Extending
     </a>
   </li>
@@ -323,7 +336,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
+    <a href="angular/" title="Angular UI" class="md-nav__link">
       Angular UI
     </a>
   </li>
@@ -335,7 +348,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/extending-angular/" title="Extending Angular UI" class="md-nav__link">
+    <a href="extending-angular/" title="Extending Angular UI" class="md-nav__link">
       Extending Angular UI
     </a>
   </li>
@@ -347,7 +360,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/contributing/" title="Contributing" class="md-nav__link">
+    <a href="contributing/" title="Contributing" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -559,36 +572,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#php" title="PHP" class="md-nav__link">
-    PHP
+  <a href="#intro" title="Intro" class="md-nav__link">
+    Intro
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#javascript" title="JavaScript" class="md-nav__link">
-    JavaScript
+  <a href="#docker-quick-start" title="Docker (Quick Start)" class="md-nav__link">
+    Docker (Quick Start)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#html" title="HTML" class="md-nav__link">
-    HTML
+  <a href="#default-login" title="Default Login" class="md-nav__link">
+    Default Login
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#css" title="CSS" class="md-nav__link">
-    CSS
+  <a href="#setup-configuration" title="Setup / Configuration" class="md-nav__link">
+    Setup / Configuration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sass" title="Sass" class="md-nav__link">
-    Sass
+  <a href="#theming" title="Theming" class="md-nav__link">
+    Theming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" title="Contributing" class="md-nav__link">
+    Contributing
   </a>
   
 </li>
@@ -608,24 +628,28 @@
               
                 
                 
-                <h1 id="erdiko-coding-style-guide">Erdiko coding style guide<a class="headerlink" href="#erdiko-coding-style-guide" title="Permanent link">&para;</a></h1>
-<p>All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript &amp; Sass).  All code is stored on <a href="https://github.com/erdiko">Github</a>.</p>
-<p>Below you will find details on how we write our code.  We do our best to stick to these guidelines.</p>
-<h2 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h2>
-<p>We adhere to the <a href="http://www.php-fig.org/psr/psr-2/">PSR</a> coding style guide.  </p>
-<p><a href="http://www.php-fig.org/psr/psr-2/">http://www.php-fig.org/psr/psr-2/</a></p>
-<p>More useful PHP-FIG links:</p>
-<p><a href="http://www.php-fig.org/bylaws/psr-naming-conventions/">http://www.php-fig.org/bylaws/psr-naming-conventions/</a></p>
-<p><a href="http://www.php-fig.org/psr/psr-1/">http://www.php-fig.org/psr/psr-1/</a></p>
-<h2 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h2>
-<p>We follow Google's JavaScript style guide.</p>
-<p><a href="https://google.github.io/styleguide/jsguide.html">https://google.github.io/styleguide/jsguide.html</a></p>
-<h2 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
-<p>We follow Google's HTML style guide as well</p>
-<p><a href="https://google.github.io/styleguide/htmlcssguide.html">https://google.github.io/styleguide/htmlcssguide.html</a></p>
-<h2 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">&para;</a></h2>
-<h2 id="sass">Sass<a class="headerlink" href="#sass" title="Permanent link">&para;</a></h2>
-<p><a href="http://sass-lang.com/">http://sass-lang.com/</a></p>
+                <h1 id="user-admin">User Admin<a class="headerlink" href="#user-admin" title="Permanent link">&para;</a></h1>
+<p><strong>erdiko/user-admin package</strong></p>
+<p>Installation:</p>
+<pre><code>composer create erdiko/user-admin
+</code></pre>
+<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
+<p>This is what it does...</p>
+<h2 id="docker-quick-start">Docker (Quick Start)<a class="headerlink" href="#docker-quick-start" title="Permanent link">&para;</a></h2>
+<p>The easiest, and recommended, way to get start is to use Docker.  The instructions assume you have Composer, Docker, &amp; Docker Compose already installed on your machine.</p>
+<p>To start your environment do the following.</p>
+<pre><code>composer create erdiko/user-admin
+cd user-admin
+docker-compose up -d
+</code></pre>
+<p>If you are on a PC or mac, the easiest way to install Docker and Docker Compose is to install the <a href="https://www.docker.com/products/docker-toolbox">Docker Toolbox</a> on your computer.  It will also install Kitematic and Machine.</p>
+<h2 id="default-login">Default Login<a class="headerlink" href="#default-login" title="Permanent link">&para;</a></h2>
+<p>If you followed the quick start above, it will create a sample admin user for you.  You can login with the following credentials.</p>
+<p>user: erdiko@arroyolabs.com
+pass: password</p>
+<h2 id="setup-configuration">Setup / Configuration<a class="headerlink" href="#setup-configuration" title="Permanent link">&para;</a></h2>
+<h2 id="theming">Theming<a class="headerlink" href="#theming" title="Permanent link">&para;</a></h2>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
                 
                   
                 
@@ -644,7 +668,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../sample-app/" title="Sample app" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../contributing/" title="Contributing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -653,19 +677,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Sample app
+                Contributing
               </span>
             </div>
           </a>
         
         
-          <a href="../help/" title="Help" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="extending/" title="Extending" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Help
+                Extending
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
