@@ -21,43 +21,58 @@
             "title": "Project layout"
         }, 
         {
-            "location": "/about/", 
-            "text": "Foedere digitis adolescere exegit videritis deserto\n\n\nExample styles\n\n\nThese are from the Admonition plugin, \nhttp://squidfunk.github.io/mkdocs-material/extensions/admonition/\n\n\n\n\nThis is an example note\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\nPavonibus cornua parvoque in inbellemque gentisque bella\n\n\nLorem markdownum cadunt signo: lambentem velut, exequialia Dianae e telum cuius\nmutatus, minabitur. Enipeu exit solus templa sit; ipsaque Babylonia fluctibus\ncapillis rapit praestat suorum. Fata vacat Surrentino, tergo hoc fertur\nindigenis montibus Latona ipsa stant, digitis tubere aggeribus!\n\n\nmotherboard += video_cluster(promInternet, modemWwwTrim *\n        boot_duplex_tablet, docking_sla * 3 * login);\ngpu(cookieSmartphoneParse, sound_view + cdfs);\nsoftWizardUser -= mtu(scsiLunServer, name_emulation_troll, mediaFunction) +\n        1 + emoticon_media_carrier;\n\n\n\nEt esse conponere cui plangente cauda\n\n\nMultum auribus clausit laboribus et etiam vidit antiqua summo congressus flamina\ndeus, dique? \nFerunt dumque edere\n apertis duas umbra munus o robore hanc\nnectare veste \nhabet polumque\n ministrat is abstulit calorem sparsit crines.\n\n\n\n\nSalva tanget spinae contulerant retenta armenta\n\n\nPriamoque Abantiades\n\n\nDevorat aliis\n\n\nEgreditur nocuit\n\n\n\n\nTamen dubitat intus quam quam\n\n\nCapit animam talem reginam gramina alveus nec Cinyras utilis vero tulit auctor.\nSaepe ut qui nec perhorruit plaga cornua avidos tardius?\n\n\n\n\nDanaen pro parva abactas coquiturque respondere auras\n\n\nFame alveus lucos\n\n\nAlbo posse\n\n\nTectam Hectoris positoque serpens remittit lumina insula\n\n\nIngentem sed ceu\n\n\nIn ira niveo non defenditur narrantia ad\n\n\n\n\nCelas \npatentis quisquam\n nomen heros aras et flentemque, deum et coepta\ninducere, praeferri \ntabo cecidere\n. Curvamine urbes inde obnoxius senilis\n\nconamine\n circuit \niaculo non et\n puniceum ipse; opes excipit. Corpus cura\nmundi harenae vetustas fatalis lacerare digitis cladis \nfulgebant auroque\nvideor\n. Corpus \nsubstitit missum\n paras maioris formatus parabam pomaria\nvestibus ipsa: sibi refert pedes. Nam et sed protinus colunt pacifer, ut\npostarum uno \nsternentemque veteres\n latius.", 
-            "title": "About"
+            "location": "/quickstart/", 
+            "text": "Quick Start\n\n\nExample styles\n\n\nThese are from the Admonition plugin, \nhttp://squidfunk.github.io/mkdocs-material/extensions/admonition/\n\n\n\n\nThis is an example note\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\nPavonibus cornua parvoque in inbellemque gentisque bella\n\n\nLorem markdownum cadunt signo: lambentem velut, exequialia Dianae e telum cuius\nmutatus, minabitur. Enipeu exit solus templa sit; ipsaque Babylonia fluctibus\ncapillis rapit praestat suorum. Fata vacat Surrentino, tergo hoc fertur\nindigenis montibus Latona ipsa stant, digitis tubere aggeribus!\n\n\nmotherboard += video_cluster(promInternet, modemWwwTrim *\n        boot_duplex_tablet, docking_sla * 3 * login);\ngpu(cookieSmartphoneParse, sound_view + cdfs);\nsoftWizardUser -= mtu(scsiLunServer, name_emulation_troll, mediaFunction) +\n        1 + emoticon_media_carrier;\n\n\n\nEt esse conponere cui plangente cauda\n\n\nMultum auribus clausit laboribus et etiam vidit antiqua summo congressus flamina\ndeus, dique? \nFerunt dumque edere\n apertis duas umbra munus o robore hanc\nnectare veste \nhabet polumque\n ministrat is abstulit calorem sparsit crines.\n\n\n\n\nSalva tanget spinae contulerant retenta armenta\n\n\nPriamoque Abantiades\n\n\nDevorat aliis\n\n\nEgreditur nocuit\n\n\n\n\nTamen dubitat intus quam quam\n\n\nCapit animam talem reginam gramina alveus nec Cinyras utilis vero tulit auctor.\nSaepe ut qui nec perhorruit plaga cornua avidos tardius?\n\n\n\n\nDanaen pro parva abactas coquiturque respondere auras\n\n\nFame alveus lucos\n\n\nAlbo posse\n\n\nTectam Hectoris positoque serpens remittit lumina insula\n\n\nIngentem sed ceu\n\n\nIn ira niveo non defenditur narrantia ad\n\n\n\n\nCelas \npatentis quisquam\n nomen heros aras et flentemque, deum et coepta\ninducere, praeferri \ntabo cecidere\n. Curvamine urbes inde obnoxius senilis\n\nconamine\n circuit \niaculo non et\n puniceum ipse; opes excipit. Corpus cura\nmundi harenae vetustas fatalis lacerare digitis cladis \nfulgebant auroque\nvideor\n. Corpus \nsubstitit missum\n paras maioris formatus parabam pomaria\nvestibus ipsa: sibi refert pedes. Nam et sed protinus colunt pacifer, ut\npostarum uno \nsternentemque veteres\n latius.", 
+            "title": "Quick start"
         }, 
         {
-            "location": "/about/#foedere-digitis-adolescere-exegit-videritis-deserto", 
+            "location": "/quickstart/#quick-start", 
             "text": "", 
-            "title": "Foedere digitis adolescere exegit videritis deserto"
+            "title": "Quick Start"
         }, 
         {
-            "location": "/about/#example-styles", 
+            "location": "/quickstart/#example-styles", 
             "text": "These are from the Admonition plugin,  http://squidfunk.github.io/mkdocs-material/extensions/admonition/   This is an example note  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.", 
             "title": "Example styles"
         }, 
         {
-            "location": "/about/#pavonibus-cornua-parvoque-in-inbellemque-gentisque-bella", 
+            "location": "/quickstart/#pavonibus-cornua-parvoque-in-inbellemque-gentisque-bella", 
             "text": "Lorem markdownum cadunt signo: lambentem velut, exequialia Dianae e telum cuius\nmutatus, minabitur. Enipeu exit solus templa sit; ipsaque Babylonia fluctibus\ncapillis rapit praestat suorum. Fata vacat Surrentino, tergo hoc fertur\nindigenis montibus Latona ipsa stant, digitis tubere aggeribus!  motherboard += video_cluster(promInternet, modemWwwTrim *\n        boot_duplex_tablet, docking_sla * 3 * login);\ngpu(cookieSmartphoneParse, sound_view + cdfs);\nsoftWizardUser -= mtu(scsiLunServer, name_emulation_troll, mediaFunction) +\n        1 + emoticon_media_carrier;", 
             "title": "Pavonibus cornua parvoque in inbellemque gentisque bella"
         }, 
         {
-            "location": "/about/#et-esse-conponere-cui-plangente-cauda", 
+            "location": "/quickstart/#et-esse-conponere-cui-plangente-cauda", 
             "text": "Multum auribus clausit laboribus et etiam vidit antiqua summo congressus flamina\ndeus, dique?  Ferunt dumque edere  apertis duas umbra munus o robore hanc\nnectare veste  habet polumque  ministrat is abstulit calorem sparsit crines.   Salva tanget spinae contulerant retenta armenta  Priamoque Abantiades  Devorat aliis  Egreditur nocuit", 
             "title": "Et esse conponere cui plangente cauda"
         }, 
         {
-            "location": "/about/#tamen-dubitat-intus-quam-quam", 
+            "location": "/quickstart/#tamen-dubitat-intus-quam-quam", 
             "text": "Capit animam talem reginam gramina alveus nec Cinyras utilis vero tulit auctor.\nSaepe ut qui nec perhorruit plaga cornua avidos tardius?   Danaen pro parva abactas coquiturque respondere auras  Fame alveus lucos  Albo posse  Tectam Hectoris positoque serpens remittit lumina insula  Ingentem sed ceu  In ira niveo non defenditur narrantia ad   Celas  patentis quisquam  nomen heros aras et flentemque, deum et coepta\ninducere, praeferri  tabo cecidere . Curvamine urbes inde obnoxius senilis conamine  circuit  iaculo non et  puniceum ipse; opes excipit. Corpus cura\nmundi harenae vetustas fatalis lacerare digitis cladis  fulgebant auroque\nvideor . Corpus  substitit missum  paras maioris formatus parabam pomaria\nvestibus ipsa: sibi refert pedes. Nam et sed protinus colunt pacifer, ut\npostarum uno  sternentemque veteres  latius.", 
             "title": "Tamen dubitat intus quam quam"
         }, 
         {
+            "location": "/sample-app/", 
+            "text": "Sample Application\n\n\nPHP", 
+            "title": "Sample app"
+        }, 
+        {
+            "location": "/sample-app/#sample-application", 
+            "text": "", 
+            "title": "Sample Application"
+        }, 
+        {
+            "location": "/sample-app/#php", 
+            "text": "", 
+            "title": "PHP"
+        }, 
+        {
             "location": "/style-guide/", 
-            "text": "Erdiko coding style guide\n\n\nPHP\n\n\nWe adhere to the \nPSR\n coding style guide.  \n\n\nhttp://www.php-fig.org/psr/psr-2/\n\n\nMore useful PHP-FIG links:\n\n\nhttp://www.php-fig.org/bylaws/psr-naming-conventions/\n\n\nhttp://www.php-fig.org/psr/psr-1/\n\n\nJavaScript\n\n\nWe follow Google's JavaScript style guide.\n\n\nhttps://google.github.io/styleguide/jsguide.html\n\n\nHTML\n\n\nWe follow Google's HTML style guide as well\n\n\nhttps://google.github.io/styleguide/htmlcssguide.html\n\n\nCSS\n\n\nSass\n\n\nhttp://sass-lang.com/", 
-            "title": "Style Guide"
+            "text": "Erdiko coding style guide\n\n\nAll of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript \n Sass).  All code is stored on \nGithub\n.\n\n\nBelow you will find details on how we write our code.  We do our best to stick to these guidelines.\n\n\nPHP\n\n\nWe adhere to the \nPSR\n coding style guide.  \n\n\nhttp://www.php-fig.org/psr/psr-2/\n\n\nMore useful PHP-FIG links:\n\n\nhttp://www.php-fig.org/bylaws/psr-naming-conventions/\n\n\nhttp://www.php-fig.org/psr/psr-1/\n\n\nJavaScript\n\n\nWe follow Google's JavaScript style guide.\n\n\nhttps://google.github.io/styleguide/jsguide.html\n\n\nHTML\n\n\nWe follow Google's HTML style guide as well\n\n\nhttps://google.github.io/styleguide/htmlcssguide.html\n\n\nCSS\n\n\nSass\n\n\nhttp://sass-lang.com/", 
+            "title": "Coding style guide"
         }, 
         {
             "location": "/style-guide/#erdiko-coding-style-guide", 
-            "text": "", 
+            "text": "All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript   Sass).  All code is stored on  Github .  Below you will find details on how we write our code.  We do our best to stick to these guidelines.", 
             "title": "Erdiko coding style guide"
         }, 
         {
@@ -84,6 +99,276 @@
             "location": "/style-guide/#sass", 
             "text": "http://sass-lang.com/", 
             "title": "Sass"
+        }, 
+        {
+            "location": "/help/", 
+            "text": "Help\n\n\nHaving trouble using Erdiko?\n\n\nRead Erdiko Get Started and Erdiko Documentation\n\n\nCreate a Github issue\n\n\nEmail to us erdiko@arroyolabs.com\n\n\nIf you find an issue with these docs please let us know.  You can also submit a pull request to our \ndocumentation repo\n.  All the pages are markdown so they are easy to edit.", 
+            "title": "Help"
+        }, 
+        {
+            "location": "/help/#help", 
+            "text": "Having trouble using Erdiko?  Read Erdiko Get Started and Erdiko Documentation  Create a Github issue  Email to us erdiko@arroyolabs.com  If you find an issue with these docs please let us know.  You can also submit a pull request to our  documentation repo .  All the pages are markdown so they are easy to edit.", 
+            "title": "Help"
+        }, 
+        {
+            "location": "/contributing/", 
+            "text": "Contributing to Erdiko\n\n\nHow to contribute\n\n\nSee our \nCoding Style Guide\n\n\nContributing to User Admin\n\n\nSee our doc on github to set up a development environment", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/contributing/#contributing-to-erdiko", 
+            "text": "", 
+            "title": "Contributing to Erdiko"
+        }, 
+        {
+            "location": "/contributing/#how-to-contribute", 
+            "text": "See our  Coding Style Guide", 
+            "title": "How to contribute"
+        }, 
+        {
+            "location": "/contributing/#contributing-to-user-admin", 
+            "text": "See our doc on github to set up a development environment", 
+            "title": "Contributing to User Admin"
+        }, 
+        {
+            "location": "/user-admin/", 
+            "text": "User Admin\n\n\nerdiko/user-admin package\n\n\nInstallation:\n\n\ncomposer create erdiko/user-admin\n\n\n\nIntro\n\n\nThis is what it does...\n\n\nDocker (Quick Start)\n\n\nThe easiest, and recommended, way to get start is to use Docker.  The instructions assume you have Composer, Docker, \n Docker Compose already installed on your machine.\n\n\nTo start your environment do the following.\n\n\ncomposer create erdiko/user-admin\ncd user-admin\ndocker-compose up -d\n\n\n\nIf you are on a PC or mac, the easiest way to install Docker and Docker Compose is to install the \nDocker Toolbox\n on your computer.  It will also install Kitematic and Machine.\n\n\nDefault Login\n\n\nIf you followed the quick start above, it will create a sample admin user for you.  You can login with the following credentials.\n\n\nuser: erdiko@arroyolabs.com\npass: password\n\n\nSetup / Configuration\n\n\nTheming\n\n\nContributing", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/user-admin/#user-admin", 
+            "text": "erdiko/user-admin package  Installation:  composer create erdiko/user-admin", 
+            "title": "User Admin"
+        }, 
+        {
+            "location": "/user-admin/#intro", 
+            "text": "This is what it does...", 
+            "title": "Intro"
+        }, 
+        {
+            "location": "/user-admin/#docker-quick-start", 
+            "text": "The easiest, and recommended, way to get start is to use Docker.  The instructions assume you have Composer, Docker,   Docker Compose already installed on your machine.  To start your environment do the following.  composer create erdiko/user-admin\ncd user-admin\ndocker-compose up -d  If you are on a PC or mac, the easiest way to install Docker and Docker Compose is to install the  Docker Toolbox  on your computer.  It will also install Kitematic and Machine.", 
+            "title": "Docker (Quick Start)"
+        }, 
+        {
+            "location": "/user-admin/#default-login", 
+            "text": "If you followed the quick start above, it will create a sample admin user for you.  You can login with the following credentials.  user: erdiko@arroyolabs.com\npass: password", 
+            "title": "Default Login"
+        }, 
+        {
+            "location": "/user-admin/#setup-configuration", 
+            "text": "", 
+            "title": "Setup / Configuration"
+        }, 
+        {
+            "location": "/user-admin/#theming", 
+            "text": "", 
+            "title": "Theming"
+        }, 
+        {
+            "location": "/user-admin/#contributing", 
+            "text": "", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/user-admin/extending/", 
+            "text": "Extending User Admin\n\n\nGeneral customization\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Extending"
+        }, 
+        {
+            "location": "/user-admin/extending/#extending-user-admin", 
+            "text": "", 
+            "title": "Extending User Admin"
+        }, 
+        {
+            "location": "/user-admin/extending/#general-customization", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "General customization"
+        }, 
+        {
+            "location": "/user-admin/extending/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/user-admin/angular/", 
+            "text": "Angular UI", 
+            "title": "Angular UI"
+        }, 
+        {
+            "location": "/user-admin/angular/#angular-ui", 
+            "text": "", 
+            "title": "Angular UI"
+        }, 
+        {
+            "location": "/user-admin/extending-angular/", 
+            "text": "Extending the Angular UI", 
+            "title": "Extending Angular UI"
+        }, 
+        {
+            "location": "/user-admin/extending-angular/#extending-the-angular-ui", 
+            "text": "", 
+            "title": "Extending the Angular UI"
+        }, 
+        {
+            "location": "/user-admin/contributing/", 
+            "text": "Contributing to Erdiko\n\n\nHow to contribute\n\n\nSee our \nCoding Style Guide", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/user-admin/contributing/#contributing-to-erdiko", 
+            "text": "", 
+            "title": "Contributing to Erdiko"
+        }, 
+        {
+            "location": "/user-admin/contributing/#how-to-contribute", 
+            "text": "See our  Coding Style Guide", 
+            "title": "How to contribute"
+        }, 
+        {
+            "location": "/users/", 
+            "text": "Users\n\n\nerdiko/users package\n\n\ninstallation:\n\n\ncomposer require erdiko/users\n\n\n\nIntro\n\n\nThis is what it does...\n\n\nSetup / Configuration", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/users/#users", 
+            "text": "erdiko/users package  installation:  composer require erdiko/users", 
+            "title": "Users"
+        }, 
+        {
+            "location": "/users/#intro", 
+            "text": "This is what it does...", 
+            "title": "Intro"
+        }, 
+        {
+            "location": "/users/#setup-configuration", 
+            "text": "", 
+            "title": "Setup / Configuration"
+        }, 
+        {
+            "location": "/users/ajax/", 
+            "text": "Users Ajax\n\n\nIntro\n\n\nEndpoints", 
+            "title": "Ajax endpoints"
+        }, 
+        {
+            "location": "/users/ajax/#users-ajax", 
+            "text": "", 
+            "title": "Users Ajax"
+        }, 
+        {
+            "location": "/users/ajax/#intro", 
+            "text": "", 
+            "title": "Intro"
+        }, 
+        {
+            "location": "/users/ajax/#endpoints", 
+            "text": "", 
+            "title": "Endpoints"
+        }, 
+        {
+            "location": "/users/models/", 
+            "text": "Models\n\n\nIntro\n\n\nEntities\n\n\nModels", 
+            "title": "Models"
+        }, 
+        {
+            "location": "/users/models/#models", 
+            "text": "", 
+            "title": "Models"
+        }, 
+        {
+            "location": "/users/models/#intro", 
+            "text": "", 
+            "title": "Intro"
+        }, 
+        {
+            "location": "/users/models/#entities", 
+            "text": "", 
+            "title": "Entities"
+        }, 
+        {
+            "location": "/users/models/#models_1", 
+            "text": "", 
+            "title": "Models"
+        }, 
+        {
+            "location": "/users/extending/", 
+            "text": "Extending Users", 
+            "title": "Extending"
+        }, 
+        {
+            "location": "/users/extending/#extending-users", 
+            "text": "", 
+            "title": "Extending Users"
+        }, 
+        {
+            "location": "/authorize/", 
+            "text": "Authorize\n\n\nerdiko/authorize package\n\n\ninstallation:\n\n\ncomposer require erdiko/authorize\n\n\n\nOverview\n\n\nSetup / Configuration", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/authorize/#authorize", 
+            "text": "erdiko/authorize package  installation:  composer require erdiko/authorize", 
+            "title": "Authorize"
+        }, 
+        {
+            "location": "/authorize/#overview", 
+            "text": "", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/authorize/#setup-configuration", 
+            "text": "", 
+            "title": "Setup / Configuration"
+        }, 
+        {
+            "location": "/authorize/security/", 
+            "text": "Security", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/authorize/security/#security", 
+            "text": "", 
+            "title": "Security"
+        }, 
+        {
+            "location": "/authorize/extending/", 
+            "text": "Extending Authorize", 
+            "title": "Extending"
+        }, 
+        {
+            "location": "/authorize/extending/#extending-authorize", 
+            "text": "", 
+            "title": "Extending Authorize"
+        }, 
+        {
+            "location": "/authenticate/", 
+            "text": "Authenticate\n\n\nerdiko/authenticate package\n\n\ninstallation:\n\n\ncomposer require erdiko/authenticate\n\n\n\nOverview\n\n\nSetup / Configuration", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/authenticate/#authenticate", 
+            "text": "erdiko/authenticate package  installation:  composer require erdiko/authenticate", 
+            "title": "Authenticate"
+        }, 
+        {
+            "location": "/authenticate/#overview", 
+            "text": "", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/authenticate/#setup-configuration", 
+            "text": "", 
+            "title": "Setup / Configuration"
+        }, 
+        {
+            "location": "/authenticate/extending/", 
+            "text": "Extending Authenticate", 
+            "title": "Extending"
+        }, 
+        {
+            "location": "/authenticate/extending/#extending-authenticate", 
+            "text": "", 
+            "title": "Extending Authenticate"
         }
     ]
 }

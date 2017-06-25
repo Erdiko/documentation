@@ -13,22 +13,22 @@
         <meta name="author" content="Arroyo Labs">
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.3">
     
     
       
-        <title>Coding style guide - Erdiko Documentation</title>
+        <title>Extending - Erdiko Documentation</title>
       
     
     
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-acc56dad49.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-acc56dad49.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-8817cfa535.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-8817cfa535.palette.css">
       
     
     
@@ -42,7 +42,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     
   </head>
@@ -67,8 +67,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="Erdiko Documentation" class="md-logo md-header-nav__button">
-            <img src="../images/logo.png" width="24" height="24">
+          <a href="../.." title="Erdiko Documentation" class="md-logo md-header-nav__button">
+            <img src="../../images/logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -80,8 +80,12 @@
           
             
               
+                <span class="md-header-nav__parent">
+                  User Admin
+                </span>
+              
             
-            Coding style guide
+            Extending
           
         </span>
       </div>
@@ -130,7 +134,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
       <i class="md-logo md-nav__button">
-        <img src="../images/logo.png">
+        <img src="../../images/logo.png">
       </i>
     
     Erdiko Documentation
@@ -144,7 +148,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -156,7 +160,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../quickstart/" title="Quick start" class="md-nav__link">
+    <a href="../../quickstart/" title="Quick start" class="md-nav__link">
       Quick start
     </a>
   </li>
@@ -168,7 +172,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../sample-app/" title="Sample app" class="md-nav__link">
+    <a href="../../sample-app/" title="Sample app" class="md-nav__link">
       Sample app
     </a>
   </li>
@@ -178,75 +182,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Coding style guide
-      </label>
-    
-    <a href="./" title="Coding style guide" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../style-guide/" title="Coding style guide" class="md-nav__link">
       Coding style guide
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#php" title="PHP" class="md-nav__link">
-    PHP
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#javascript" title="JavaScript" class="md-nav__link">
-    JavaScript
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html" title="HTML" class="md-nav__link">
-    HTML
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#css" title="CSS" class="md-nav__link">
-    CSS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sass" title="Sass" class="md-nav__link">
-    Sass
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -256,7 +196,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../help/" title="Help" class="md-nav__link">
+    <a href="../../help/" title="Help" class="md-nav__link">
       Help
     </a>
   </li>
@@ -268,7 +208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../contributing/" title="Contributing" class="md-nav__link">
+    <a href="../../contributing/" title="Contributing" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -278,10 +218,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       User Admin
@@ -299,7 +241,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/" title="Overview" class="md-nav__link">
+    <a href="../" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -309,11 +251,54 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../user-admin/extending/" title="Extending" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Extending
+      </label>
+    
+    <a href="./" title="Extending" class="md-nav__link md-nav__link--active">
       Extending
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-customization" title="General customization" class="md-nav__link">
+    General customization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-layout" title="Project layout" class="md-nav__link">
+    Project layout
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -323,7 +308,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
+    <a href="../angular/" title="Angular UI" class="md-nav__link">
       Angular UI
     </a>
   </li>
@@ -335,7 +320,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/extending-angular/" title="Extending Angular UI" class="md-nav__link">
+    <a href="../extending-angular/" title="Extending Angular UI" class="md-nav__link">
       Extending Angular UI
     </a>
   </li>
@@ -347,7 +332,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/contributing/" title="Contributing" class="md-nav__link">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -383,7 +368,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../users/" title="Overview" class="md-nav__link">
+    <a href="../../users/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -395,7 +380,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../users/ajax/" title="Ajax endpoints" class="md-nav__link">
+    <a href="../../users/ajax/" title="Ajax endpoints" class="md-nav__link">
       Ajax endpoints
     </a>
   </li>
@@ -407,7 +392,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../users/models/" title="Models" class="md-nav__link">
+    <a href="../../users/models/" title="Models" class="md-nav__link">
       Models
     </a>
   </li>
@@ -419,7 +404,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../users/extending/" title="Extending" class="md-nav__link">
+    <a href="../../users/extending/" title="Extending" class="md-nav__link">
       Extending
     </a>
   </li>
@@ -455,7 +440,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../authorize/" title="Overview" class="md-nav__link">
+    <a href="../../authorize/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -467,7 +452,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../authorize/security/" title="Security" class="md-nav__link">
+    <a href="../../authorize/security/" title="Security" class="md-nav__link">
       Security
     </a>
   </li>
@@ -479,7 +464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../authorize/extending/" title="Extending" class="md-nav__link">
+    <a href="../../authorize/extending/" title="Extending" class="md-nav__link">
       Extending
     </a>
   </li>
@@ -515,7 +500,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../authenticate/" title="Overview" class="md-nav__link">
+    <a href="../../authenticate/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -527,7 +512,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../authenticate/extending/" title="Extending" class="md-nav__link">
+    <a href="../../authenticate/extending/" title="Extending" class="md-nav__link">
       Extending
     </a>
   </li>
@@ -559,36 +544,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#php" title="PHP" class="md-nav__link">
-    PHP
+  <a href="#general-customization" title="General customization" class="md-nav__link">
+    General customization
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#javascript" title="JavaScript" class="md-nav__link">
-    JavaScript
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html" title="HTML" class="md-nav__link">
-    HTML
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#css" title="CSS" class="md-nav__link">
-    CSS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sass" title="Sass" class="md-nav__link">
-    Sass
+  <a href="#project-layout" title="Project layout" class="md-nav__link">
+    Project layout
   </a>
   
 </li>
@@ -608,24 +572,20 @@
               
                 
                 
-                <h1 id="erdiko-coding-style-guide">Erdiko coding style guide<a class="headerlink" href="#erdiko-coding-style-guide" title="Permanent link">&para;</a></h1>
-<p>All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript &amp; Sass).  All code is stored on <a href="https://github.com/erdiko">Github</a>.</p>
-<p>Below you will find details on how we write our code.  We do our best to stick to these guidelines.</p>
-<h2 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h2>
-<p>We adhere to the <a href="http://www.php-fig.org/psr/psr-2/">PSR</a> coding style guide.  </p>
-<p><a href="http://www.php-fig.org/psr/psr-2/">http://www.php-fig.org/psr/psr-2/</a></p>
-<p>More useful PHP-FIG links:</p>
-<p><a href="http://www.php-fig.org/bylaws/psr-naming-conventions/">http://www.php-fig.org/bylaws/psr-naming-conventions/</a></p>
-<p><a href="http://www.php-fig.org/psr/psr-1/">http://www.php-fig.org/psr/psr-1/</a></p>
-<h2 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h2>
-<p>We follow Google's JavaScript style guide.</p>
-<p><a href="https://google.github.io/styleguide/jsguide.html">https://google.github.io/styleguide/jsguide.html</a></p>
-<h2 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">&para;</a></h2>
-<p>We follow Google's HTML style guide as well</p>
-<p><a href="https://google.github.io/styleguide/htmlcssguide.html">https://google.github.io/styleguide/htmlcssguide.html</a></p>
-<h2 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">&para;</a></h2>
-<h2 id="sass">Sass<a class="headerlink" href="#sass" title="Permanent link">&para;</a></h2>
-<p><a href="http://sass-lang.com/">http://sass-lang.com/</a></p>
+                <h1 id="extending-user-admin">Extending User Admin<a class="headerlink" href="#extending-user-admin" title="Permanent link">&para;</a></h1>
+<h2 id="general-customization">General customization<a class="headerlink" href="#general-customization" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
+<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
+<li><code>mkdocs build</code> - Build the documentation site.</li>
+<li><code>mkdocs help</code> - Print this help message.</li>
+</ul>
+<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
+<pre><code>mkdocs.yml    # The configuration file.
+docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre>
                 
                   
                 
@@ -644,7 +604,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../sample-app/" title="Sample app" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -653,19 +613,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Sample app
+                Overview
               </span>
             </div>
           </a>
         
         
-          <a href="../help/" title="Help" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../angular/" title="Angular UI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Help
+                Angular UI
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -707,10 +667,10 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-b30566c560.js"></script>
+      <script src="../../assets/javascripts/application-b30566c560.js"></script>
       
       
-      <script>app.initialize({url:{base:".."}})</script>
+      <script>app.initialize({url:{base:"../.."}})</script>
       
     
     
