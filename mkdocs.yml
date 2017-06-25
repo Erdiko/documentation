@@ -4,8 +4,29 @@ site_author: Arroyo Labs
 
 pages:
     - Home: index.md
-    - About: about.md
-    - Style Guide: style-guide.md
+    - Quick start: quickstart.md
+    - Sample app: sample-app.md
+    - Coding style guide: style-guide.md
+    - Help: help.md
+    - Contributing: contributing.md
+    - User Admin:
+        - 'Overview': user-admin/index.md
+        - 'Extending': user-admin/extending.md
+        - 'Angular UI': user-admin/angular.md
+        - 'Extending Angular UI': user-admin/extending-angular.md
+        - 'Contributing': user-admin/contributing.md
+    - Users:
+        - 'Overview': users/index.md
+        - 'Ajax endpoints': users/ajax.md
+        - 'Models': users/models.md
+        - 'Extending': users/extending.md
+    - Authorize:
+        - 'Overview': authorize/index.md
+        - 'Security': authorize/security.md
+        - 'Extending': authorize/extending.md
+    - Authenticate:
+        - 'Overview': authenticate/index.md
+        - 'Extending': authenticate/extending.md
 
 theme: material
 

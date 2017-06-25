@@ -1,5 +1,9 @@
 # Erdiko coding style guide
 
+All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript & Sass).  All code is stored on [Github](https://github.com/erdiko).
+
+Below you will find details on how we write our code.  We do our best to stick to these guidelines.
+
 ## PHP
 
 We adhere to the [PSR](http://www.php-fig.org/psr/psr-2/) coding style guide.  

@@ -1,4 +1,4 @@
-# Foedere digitis adolescere exegit videritis deserto
+# Quick Start
 
 ## Example styles
 
