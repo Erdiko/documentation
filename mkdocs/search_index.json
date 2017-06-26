@@ -2,23 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Erdiko Documentation\n\n\n\n\nLearn more about \nmarkdown\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Erdiko\n\n\n\n\nA micro MVC framework and suite of packages to build lean web apps and APIs\n\n\nLearn more about Erdiko\n\n\n\n\nWhat is Erdiko?\n \nLearn more about the Erdiko concept and packages\n\n\nErdiko framework Quick Start\n\n\nUser Admin\n \nA complete user system complete with a modular admin", 
             "title": "Home"
         }, 
         {
-            "location": "/#erdiko-documentation", 
-            "text": "Learn more about  markdown", 
-            "title": "Erdiko Documentation"
-        }, 
-        {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
-        }, 
-        {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/#erdiko", 
+            "text": "A micro MVC framework and suite of packages to build lean web apps and APIs  Learn more about Erdiko   What is Erdiko?   Learn more about the Erdiko concept and packages  Erdiko framework Quick Start  User Admin   A complete user system complete with a modular admin", 
+            "title": "Erdiko"
         }, 
         {
             "location": "/quickstart/", 
@@ -64,71 +54,6 @@
             "location": "/sample-app/#php", 
             "text": "", 
             "title": "PHP"
-        }, 
-        {
-            "location": "/style-guide/", 
-            "text": "Erdiko coding style guide\n\n\nAll of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript \n Sass).  All code is stored on \nGithub\n.\n\n\nBelow you will find details on how we write our code.  We do our best to stick to these guidelines.\n\n\nPHP\n\n\nWe adhere to the \nPSR\n coding style guide.  \n\n\nhttp://www.php-fig.org/psr/psr-2/\n\n\nMore useful PHP-FIG links:\n\n\nhttp://www.php-fig.org/bylaws/psr-naming-conventions/\n\n\nhttp://www.php-fig.org/psr/psr-1/\n\n\nJavaScript\n\n\nWe follow Google's JavaScript style guide.\n\n\nhttps://google.github.io/styleguide/jsguide.html\n\n\nHTML\n\n\nWe follow Google's HTML style guide as well\n\n\nhttps://google.github.io/styleguide/htmlcssguide.html\n\n\nCSS\n\n\nSass\n\n\nhttp://sass-lang.com/", 
-            "title": "Coding style guide"
-        }, 
-        {
-            "location": "/style-guide/#erdiko-coding-style-guide", 
-            "text": "All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript   Sass).  All code is stored on  Github .  Below you will find details on how we write our code.  We do our best to stick to these guidelines.", 
-            "title": "Erdiko coding style guide"
-        }, 
-        {
-            "location": "/style-guide/#php", 
-            "text": "We adhere to the  PSR  coding style guide.    http://www.php-fig.org/psr/psr-2/  More useful PHP-FIG links:  http://www.php-fig.org/bylaws/psr-naming-conventions/  http://www.php-fig.org/psr/psr-1/", 
-            "title": "PHP"
-        }, 
-        {
-            "location": "/style-guide/#javascript", 
-            "text": "We follow Google's JavaScript style guide.  https://google.github.io/styleguide/jsguide.html", 
-            "title": "JavaScript"
-        }, 
-        {
-            "location": "/style-guide/#html", 
-            "text": "We follow Google's HTML style guide as well  https://google.github.io/styleguide/htmlcssguide.html", 
-            "title": "HTML"
-        }, 
-        {
-            "location": "/style-guide/#css", 
-            "text": "", 
-            "title": "CSS"
-        }, 
-        {
-            "location": "/style-guide/#sass", 
-            "text": "http://sass-lang.com/", 
-            "title": "Sass"
-        }, 
-        {
-            "location": "/help/", 
-            "text": "Help\n\n\nHaving trouble using Erdiko?\n\n\nRead Erdiko Get Started and Erdiko Documentation\n\n\nCreate a Github issue\n\n\nEmail to us erdiko@arroyolabs.com\n\n\nIf you find an issue with these docs please let us know.  You can also submit a pull request to our \ndocumentation repo\n.  All the pages are markdown so they are easy to edit.", 
-            "title": "Help"
-        }, 
-        {
-            "location": "/help/#help", 
-            "text": "Having trouble using Erdiko?  Read Erdiko Get Started and Erdiko Documentation  Create a Github issue  Email to us erdiko@arroyolabs.com  If you find an issue with these docs please let us know.  You can also submit a pull request to our  documentation repo .  All the pages are markdown so they are easy to edit.", 
-            "title": "Help"
-        }, 
-        {
-            "location": "/contributing/", 
-            "text": "Contributing to Erdiko\n\n\nHow to contribute\n\n\nSee our \nCoding Style Guide\n\n\nContributing to User Admin\n\n\nSee our doc on github to set up a development environment", 
-            "title": "Contributing"
-        }, 
-        {
-            "location": "/contributing/#contributing-to-erdiko", 
-            "text": "", 
-            "title": "Contributing to Erdiko"
-        }, 
-        {
-            "location": "/contributing/#how-to-contribute", 
-            "text": "See our  Coding Style Guide", 
-            "title": "How to contribute"
-        }, 
-        {
-            "location": "/contributing/#contributing-to-user-admin", 
-            "text": "See our doc on github to set up a development environment", 
-            "title": "Contributing to User Admin"
         }, 
         {
             "location": "/user-admin/", 
@@ -369,6 +294,101 @@
             "location": "/authenticate/extending/#extending-authenticate", 
             "text": "", 
             "title": "Extending Authenticate"
+        }, 
+        {
+            "location": "/help/", 
+            "text": "Help\n\n\nHaving trouble using Erdiko?\n\n\nRead Erdiko Get Started and Erdiko Documentation\n\n\nCreate a Github issue\n\n\nEmail to us erdiko@arroyolabs.com\n\n\nIf you find an issue with these docs please let us know.  You can also submit a pull request to our \ndocumentation repo\n.  All the pages are markdown so they are easy to edit.", 
+            "title": "Submitting Issues"
+        }, 
+        {
+            "location": "/help/#help", 
+            "text": "Having trouble using Erdiko?  Read Erdiko Get Started and Erdiko Documentation  Create a Github issue  Email to us erdiko@arroyolabs.com  If you find an issue with these docs please let us know.  You can also submit a pull request to our  documentation repo .  All the pages are markdown so they are easy to edit.", 
+            "title": "Help"
+        }, 
+        {
+            "location": "/style-guide/", 
+            "text": "Erdiko coding style guide\n\n\nAll of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript \n Sass).  All code is stored on \nGithub\n.\n\n\nBelow you will find details on how we write our code.  We do our best to stick to these guidelines.\n\n\nPHP\n\n\nWe adhere to the \nPSR\n coding style guide.  \n\n\nhttp://www.php-fig.org/psr/psr-2/\n\n\nMore useful PHP-FIG links:\n\n\nhttp://www.php-fig.org/bylaws/psr-naming-conventions/\n\n\nhttp://www.php-fig.org/psr/psr-1/\n\n\nJavaScript\n\n\nWe follow Google's JavaScript style guide.\n\n\nhttps://google.github.io/styleguide/jsguide.html\n\n\nHTML\n\n\nWe follow Google's HTML style guide as well\n\n\nhttps://google.github.io/styleguide/htmlcssguide.html\n\n\nCSS\n\n\nSass\n\n\nhttp://sass-lang.com/", 
+            "title": "Coding style guide"
+        }, 
+        {
+            "location": "/style-guide/#erdiko-coding-style-guide", 
+            "text": "All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript   Sass).  All code is stored on  Github .  Below you will find details on how we write our code.  We do our best to stick to these guidelines.", 
+            "title": "Erdiko coding style guide"
+        }, 
+        {
+            "location": "/style-guide/#php", 
+            "text": "We adhere to the  PSR  coding style guide.    http://www.php-fig.org/psr/psr-2/  More useful PHP-FIG links:  http://www.php-fig.org/bylaws/psr-naming-conventions/  http://www.php-fig.org/psr/psr-1/", 
+            "title": "PHP"
+        }, 
+        {
+            "location": "/style-guide/#javascript", 
+            "text": "We follow Google's JavaScript style guide.  https://google.github.io/styleguide/jsguide.html", 
+            "title": "JavaScript"
+        }, 
+        {
+            "location": "/style-guide/#html", 
+            "text": "We follow Google's HTML style guide as well  https://google.github.io/styleguide/htmlcssguide.html", 
+            "title": "HTML"
+        }, 
+        {
+            "location": "/style-guide/#css", 
+            "text": "", 
+            "title": "CSS"
+        }, 
+        {
+            "location": "/style-guide/#sass", 
+            "text": "http://sass-lang.com/", 
+            "title": "Sass"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "What is Erdiko?\n\n\nErdiko is a micro MVC framework and suite of packages to build lean web apps and APIs.  OK, but what does that mean?\n\n\nObjective\n\n\nCompatibility\n\n\nHistory\n\n\nThe future", 
+            "title": "About Us"
+        }, 
+        {
+            "location": "/about/#what-is-erdiko", 
+            "text": "Erdiko is a micro MVC framework and suite of packages to build lean web apps and APIs.  OK, but what does that mean?", 
+            "title": "What is Erdiko?"
+        }, 
+        {
+            "location": "/about/#objective", 
+            "text": "", 
+            "title": "Objective"
+        }, 
+        {
+            "location": "/about/#compatibility", 
+            "text": "", 
+            "title": "Compatibility"
+        }, 
+        {
+            "location": "/about/#history", 
+            "text": "", 
+            "title": "History"
+        }, 
+        {
+            "location": "/about/#the-future", 
+            "text": "", 
+            "title": "The future"
+        }, 
+        {
+            "location": "/contributing/", 
+            "text": "Contributing to Erdiko\n\n\nHow to contribute\n\n\nSee our \nCoding Style Guide\n\n\nContributing to User Admin\n\n\nSee our doc on github to set up a development environment", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/contributing/#contributing-to-erdiko", 
+            "text": "", 
+            "title": "Contributing to Erdiko"
+        }, 
+        {
+            "location": "/contributing/#how-to-contribute", 
+            "text": "See our  Coding Style Guide", 
+            "title": "How to contribute"
+        }, 
+        {
+            "location": "/contributing/#contributing-to-user-admin", 
+            "text": "See our doc on github to set up a development environment", 
+            "title": "Contributing to User Admin"
         }
     ]
 }
