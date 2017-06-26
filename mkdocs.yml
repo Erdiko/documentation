@@ -6,9 +6,6 @@ pages:
     - Home: index.md
     - Quick start: quickstart.md
     - Sample app: sample-app.md
-    - Coding style guide: style-guide.md
-    - Help: help.md
-    - Contributing: contributing.md
     - User Admin:
         - 'Overview': user-admin/index.md
         - 'Extending': user-admin/extending.md
@@ -27,6 +24,11 @@ pages:
     - Authenticate:
         - 'Overview': authenticate/index.md
         - 'Extending': authenticate/extending.md
+    - Help (Learn More):
+        - Submitting Issues: help.md
+        - Coding style guide: style-guide.md
+        - About Us: about.md
+        - Contributing: contributing.md
 
 theme: material
 

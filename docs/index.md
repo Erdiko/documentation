@@ -1,19 +1,11 @@
-# Erdiko Documentation
+# Erdiko
 
 ![Erdiko Shield](/images/ErdikoShield-300.png)
 
-Learn more about [markdown](https://guides.github.com/features/mastering-markdown/)
+*A micro MVC framework and suite of packages to build lean web apps and APIs*
 
-## Commands
+**Learn more about Erdiko**
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [What is Erdiko?](about.md) `Learn more about the Erdiko concept and packages`
+* [Erdiko framework Quick Start](quickstart.md)
+* [User Admin](user-admin/index.md) `A complete user system complete with a modular admin`
