@@ -8,65 +8,57 @@ Installation:
 
 ## Intro
 
-This is what it does...
+The user-admin package provides a secure and attractive UI for managing users with our Erdiko framework. The UX is provided by an AngularJS Application served by our very own Erdiko framework.
+
+The Angular Application itself is based on a Angular CLI application that imports our custom [ngx-user-admin](https://www.npmjs.com/package/@erdiko/ngx-user-admin) package from npm. This package is used to define the angular routes and provide the services and components used to create the UX.
+
+The Erdiko application serves the JS files required for the Angular application as well as providing the routes for the AJAX requests. 
 
 ## Docker (Quick Start)
 
-The easiest, and recommended, way to get start is to use Docker.  The instructions assume you have Composer, Docker, & Docker Compose already installed on your machine.
-
-To start your environment do the following.
-
-    composer create erdiko/user-admin
-    cd user-admin
-    docker-compose up -d
-
-If you are on a PC or mac, the easiest way to install Docker and Docker Compose is to install the [Docker Toolbox](https://www.docker.com/products/docker-toolbox) on your computer.  It will also install Kitematic and Machine.
+Please refer to the [README file](https://github.com/erdiko/user-admin#installation) of this repo for the most up to date information on installing this application.
 
 ## Default Login
 
-If you followed the quick start above, it will create a sample admin user for you.  You can login with the following credentials.
+If you followed the quick start instructions from the readme, it will create a sample admin user for you.  You can login with the following credentials:
 
 user: erdiko@arroyolabs.com
 pass: password
 
-## Setup / Configuration
 
+## How Erdiko serves the Angular Application
 
-In the user-admin repository type the following command in the terminal:
+This Erdiko application serves up the Javascript files that bootstrap the JS application itself, and also provide the AJAX routes as noted above. In our `user-admin` erdiko theme, we use the `theme.json` file to define the Javascript files that actually serve the application. 
+
+The build npm script (noted below) from the Angular CLI application actually compiles the typecsript into common JS files. We would highly recommend reviewing this file if you plan on editing any code.
+
+## Setup / Configuration for ngx-user-admin for local development
+
+Running the Angular CLI application locally is an easy way to see your changes quickly before "building" and allowing the Erdiko Application to serve the compiled files. 
+
+To start this process, navigate to your local clone of the user-admin repository and type the following command in the terminal:
 
     cd /app/themes/user-admin/src/app
 
-Once you're in the correct directory, use the following commands to run the tests.
 
-Local Server:
+### NPM Local Server
+
+This command will start the npm server locally. Files in the angular application are then "watched" and updates to the angular application will be displayed once you save the files. 
+
+You can view the local server at this address: http://localhost:4200
 
     npm run start
 
-After the command, going to localhost:4200 will direct you to the local page.
+#### Compiling you changes
 
-Docker Server:
+Once you have tested and completed your updates, you must "build" the application to compile the typescript to be served by the erdiko application. This step is required before any code can be deployed to a staging or production server.
+
+You can view the Erdiko application at this address: http://docker.local:8088
 
     npm run build
 
-After the command, going to docker.local:8088 will direct you to the build page.
 
-
-## Theming
-
-Here are brief overview of how Erdiko does theming.
-
- - **addMeta()**: Manages metadata of the application.
- - **setPageTitle()** and **setBodyTitle()**: Manages the title.
- - **getCss()** and **getJs()**: their setters add units of code, but the getters retrieves an array of that specific nature (array of css, or array of js stored). The result is a well formed <link> tag according to each array cell.
- - **getTemplateHtml($aPartialToBeRendered)**: we can switch the template for a theme to render html with data.
- - **toHtml()**: Renders HTML.
-
-## Contributing
-
-
-
-
-## Directory Hierarchy
+## ngx-user-admin Directory Hierarchy
 
 The following is a brief hiearchy that highlights the components and the services.
 
@@ -250,3 +242,7 @@ Components/Services Using this service:
  - User List Component
  - Users Event Log Component
  - User Resolve Service
+ 
+## Contributing
+
+Please refer to our main project documentation about [contributing](/user-admin/contributing/). 
