@@ -554,6 +554,64 @@
                 
                 
                 <h1 id="extending-authorize">Extending Authorize<a class="headerlink" href="#extending-authorize" title="Permanent link">&para;</a></h1>
+<p>This package provides you with a framework to create custom validation. There are two different methods to create custom
+validation:</p>
+<ul>
+<li>
+<p>Custom Voters</p>
+<p>Implement <code>Symfony\Component\Security\Core\Authorization\Voter\VoterInterface</code>
+interface, and pass them in an array as second argument of <code>Authorizer</code> constructor.</p>
+</li>
+<li>
+<p>Custom Validator</p>
+<p>Or you can create a <code>Validator</code> class that implements <code>erdiko\authorize ValidatorInterface</code> interface.
+Then you will have to register all validators in <code>/app/config/default/authorize.json</code>, and voila, all the custom validation
+logic you've created is already available to the authorizer.  </p>
+</li>
+</ul>
+<p>authorize.json</p>
+<pre><code class="json">{
+     &quot;validators&quot;:{
+       &quot;custom_types&quot;: [{
+         &quot;name&quot;: &quot;example&quot;,
+         &quot;namespace&quot;: &quot;app_validators_example&quot;,
+         &quot;classname&quot;: &quot;ExampleValidator&quot;,
+         &quot;enabled&quot;: true
+       }]
+     }
+   }
+</code></pre>
+
+<p>In these validator classes you will be able to define custom attributes, "VIEW_ADMIN_DASHBOARD" as we mention above,
+we might want to add "IS_PREMIUM_ACCOUNT", or any other attributes you want.</p>
+<p>Note that <code>namespace</code> field of the above JSON indicate the class <code>namespace</code> and is related to the app root folder,
+e.g. <code>/app/validators/example/ExampleValidator.php</code></p>
+<p>Let's implement the example class registered in the example JSON.  </p>
+<pre><code class="php">class ExampleValidator implements ValidatorInterface
+{
+    public static function supportedAttributes()
+    {
+        return array('IS_PREMIUM_ACCOUNT');
+    }
+
+    public function supportsAttribute($attribute)
+    {
+        return in_array($attribute, self::supportedAttributes());
+    }
+
+    public function validate($token)
+    {
+        $result = false;
+        $user = $token-&gt;getUser();
+        if (!$user instanceof UserInterface) {
+            $result = false;
+        } else {
+            $result = ($user-&gt;getRole()=='ROLE_PREMIUM');
+        }
+        return $result;
+    }
+}
+</code></pre>
                 
                   
                 
