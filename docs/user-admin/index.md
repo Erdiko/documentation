@@ -65,50 +65,154 @@ Here are brief overview of how Erdiko does theming.
 
 
 
-## Brief Overview of Components
+
+## Directory Hierarchy
+
+The following is a brief hiearchy that highlights the components and the services.
+
+
+/src
+
+  - /header
+    - Header Component
+  - /home
+    - Home component
+  - /login
+    - Login Component
+  - /message
+    - Message Component
+  - /password
+    - Password Component
+  - /user-edit
+    - User Edit Component
+  - /user-event-log
+    - User Event Log component
+  - /user-list
+    - User List Component
+  - /users-event-log
+    - Users Event Log Component
+  - App Component
+  - Auth Service
+  - Message Service
+  - Users Service
+  - User Resolve Service
+
+
+
+## Components
 
 Ngx-User-Admins are broken up in following Components
 
-## Header Component
+### Header Component
+
 
 Header Component contains the header menu used to navigate to User List and User Event Log.
 At logged in state, the option to log out is available.
 
-## Home Component
+
+##### Content Files
+
+  - header.component.tpl.ts 
+  - header.component.ts
+
+### Home Component
 
 Home Component holds the page the user-admin will see once logged in. From there, the user-admin can opt to create a user, go to User List or go to User Event Log.
 
-## Login
+
+##### Content Files
+
+  - home.component.tpl.ts 
+  - home.component.ts
+
+### Login
 
 Login Components displays the Login form that is displayed when user is to log in. It also houses the user login form validation.
 
-## Message
+##### Content Files
+
+  - login.component.tpl.ts 
+  - login.component.ts
+
+
+### Message
 
 Message Components hold small notification on the UI whenever there are updates. If the user-admin is successfully / unsuccessfully adding, editing, deleting 
 users in the database, this component is responsible of such notification.
 
-## Password
+##### Content Files
+
+  - message.component.tpl.ts 
+  - message.component.ts
+
+### Password
 
 Password Component is responsible for changing the user's password.
 
-## User-Edit
+##### Content Files
+
+  - password.component.tpl.ts 
+  - password.component.ts
+
+### User-Edit
 
 User Edit Component's function is split into to two tabs:
 
 1. Edit the name, email address, role associated with the user
 2. Change the password assoiated with the user (See Password Component).
 
+##### Content Files
 
-## User-Event-Log
+  - user-edit.component.tpl.ts 
+  - user-edit.component.ts
+
+
+### User-Event-Log
 
 User Event Log Component is nested within the User-Edit component and is displayed under the user-edit form. 
 It retrieves recorded action the specified user has taken. The component also features sort and pagination for easy organization.
 
-## User-List
+##### Content Files
+
+  - user-event-log.component.tpl.ts 
+  - user-event-log.component.ts
+
+### User-List
 
 User-List Component retrieves all the users that are on the database. From here user-admin may target specific user to edit or delete.
 
-## Users-Event-Log
+##### Content Files
+
+  - user-list.component.tpl.ts 
+  - user-list.component.ts
+
+### Users-Event-Log
 
 Users-Event-Log component generates aggregate of all actions taken by every user.
 The component also features sort and pagination for easy organization.
+
+##### Content Files
+
+  - user-event-log.component.tpl.ts 
+  - user-event-log.component.ts
+
+
+## Services
+
+### Auth - auth.service.ts
+
+This service handles logging the users in and out.
+
+### Message - message.service.ts
+
+This service handles the observables which relays information from source to the message component.
+
+### User Resolve - user-resolve.service.ts
+
+This service returns a User model for a provided ID, if one is found. 
+If not found, it returns false and navigate the user to the default route
+
+### Users - users.service.ts
+
+This service deals with create/retrieve/update/delete aspects of the Users.
+It is also responsible of listing the users as well as retrieving the user events.

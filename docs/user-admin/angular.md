@@ -53,7 +53,7 @@ The user list will be generated as soon as you start creating users! (Cody Belli
 
 ![Screenshot](images/List-User.png)
 
-##Users-Event-Log
+## Users-Event-Log
 
 Erdiko's User Admin package collects significant histories of action taken by each user. When **User Event Log** is clicked, a brief overview of every action every user has made is generated.
 
