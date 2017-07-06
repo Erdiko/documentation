@@ -22,8 +22,8 @@ Please refer to the [README file](https://github.com/erdiko/user-admin#installat
 
 If you followed the quick start instructions from the readme, it will create a sample admin user for you.  You can login with the following credentials:
 
-user: erdiko@arroyolabs.com
-pass: password
+- username: erdiko@arroyolabs.com
+- password: password
 
 
 ## How Erdiko serves the Angular Application
