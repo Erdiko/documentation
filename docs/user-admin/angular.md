@@ -17,11 +17,11 @@ You can use the following credentials to start the log-in process.
 
 User:
 
-    foo@mail.com
+    foo@mail.com (placeholder)
 
 Password:
 
-    asdf1234
+    asdf1234 (placeholder)
 
 Assuming everything goes well, you should be brought into the home page and a message that tells you that the Login is Successful.
 Lets click on **Create User** below the Erdiko User Admin header title to create our first User.
@@ -53,7 +53,7 @@ The user list will be generated as soon as you start creating users! (Cody Belli
 
 ![Screenshot](images/List-User.png)
 
-##Users-Event-Log
+## Users-Event-Log
 
 Erdiko's User Admin package collects significant histories of action taken by each user. When **User Event Log** is clicked, a brief overview of every action every user has made is generated.
 
