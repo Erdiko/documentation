@@ -17,11 +17,11 @@ You can use the following credentials to start the log-in process.
 
 User:
 
-    foo@mail.com
+    foo@mail.com (placeholder)
 
 Password:
 
-    asdf1234
+    asdf1234 (placeholder)
 
 Assuming everything goes well, you should be brought into the home page and a message that tells you that the Login is Successful.
 Lets click on **Create User** below the Erdiko User Admin header title to create our first User.

@@ -31,6 +31,84 @@ pass: password
 
 ## Setup / Configuration
 
+
+In the user-admin repository type the following command in the terminal:
+
+    cd /app/themes/user-admin/src/app
+
+Once you're in the correct directory, use the following commands to run the tests.
+
+Local Server:
+
+    npm run start
+
+After the command, going to localhost:4200 will direct you to the local page.
+
+Docker Server:
+
+    npm run build
+
+After the command, going to docker.local:8088 will direct you to the build page.
+
+
 ## Theming
 
+Here are brief overview of how Erdiko does theming.
+
+ - **addMeta()**: Manages metadata of the application.
+ - **setPageTitle()** and **setBodyTitle()**: Manages the title.
+ - **getCss()** and **getJs()**: their setters add units of code, but the getters retrieves an array of that specific nature (array of css, or array of js stored). The result is a well formed <link> tag according to each array cell.
+ - **getTemplateHtml($aPartialToBeRendered)**: we can switch the template for a theme to render html with data.
+ - **toHtml()**: Renders HTML.
+
 ## Contributing
+
+
+
+## Brief Overview of Components
+
+Ngx-User-Admins are broken up in following Components
+
+## Header Component
+
+Header Component contains the header menu used to navigate to User List and User Event Log.
+At logged in state, the option to log out is available.
+
+## Home Component
+
+Home Component holds the page the user-admin will see once logged in. From there, the user-admin can opt to create a user, go to User List or go to User Event Log.
+
+## Login
+
+Login Components displays the Login form that is displayed when user is to log in. It also houses the user login form validation.
+
+## Message
+
+Message Components hold small notification on the UI whenever there are updates. If the user-admin is successfully / unsuccessfully adding, editing, deleting 
+users in the database, this component is responsible of such notification.
+
+## Password
+
+Password Component is responsible for changing the user's password.
+
+## User-Edit
+
+User Edit Component's function is split into to two tabs:
+
+1. Edit the name, email address, role associated with the user
+2. Change the password assoiated with the user (See Password Component).
+
+
+## User-Event-Log
+
+User Event Log Component is nested within the User-Edit component and is displayed under the user-edit form. 
+It retrieves recorded action the specified user has taken. The component also features sort and pagination for easy organization.
+
+## User-List
+
+User-List Component retrieves all the users that are on the database. From here user-admin may target specific user to edit or delete.
+
+## Users-Event-Log
+
+Users-Event-Log component generates aggregate of all actions taken by every user.
+The component also features sort and pagination for easy organization.
