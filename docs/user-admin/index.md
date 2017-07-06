@@ -28,7 +28,9 @@ If you followed the quick start instructions from the readme, it will create a s
 
 ## How Erdiko serves the Angular Application
 
-This Erdiko application serves up the Javascript files that bootstrap the JS application itself, and also provide the AJAX routes as noted above. In our `user-admin` erdiko theme, we use the `theme.json` file to define the Javascript files that actually serve the application. 
+This Erdiko application serves up the Javascript files that bootstrap the JS application itself, and also provide the AJAX routes as noted above. 
+
+In our `user-admin` erdiko theme, we use the `theme.json` file to define the Javascript files that actually serve the application. Please refer to our [erdiko/erdiko documentation](https://github.com/Erdiko/erdiko) for more information.
 
 The build npm script (noted below) from the Angular CLI application actually compiles the typecsript into common JS files. We would highly recommend reviewing this file if you plan on editing any code.
 
