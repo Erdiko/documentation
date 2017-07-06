@@ -32,7 +32,7 @@ This Erdiko application serves up the Javascript files that bootstrap the JS app
 
 The build npm script (noted below) from the Angular CLI application actually compiles the typecsript into common JS files. We would highly recommend reviewing this file if you plan on editing any code.
 
-## Setup / Configuration for ngx-user-admin for local development
+## Setup / Configuration of ngx-user-admin for local development
 
 Running the Angular CLI application locally is an easy way to see your changes quickly before "building" and allowing the Erdiko Application to serve the compiled files. 
 
@@ -49,7 +49,7 @@ You can view the local server at this address: http://localhost:4200
 
     npm run start
 
-### Compiling you changes
+### Compiling your changes
 
 Once you have tested and completed your updates, you must "build" the application to compile the typescript to be served by the erdiko application. This step is required before any code can be deployed to a staging or production server.
 
