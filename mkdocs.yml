@@ -12,9 +12,6 @@ pages:
         - 'Angular UI': user-admin/angular.md
         - 'Extending Angular UI': user-admin/extending-angular.md
         - 'Contributing': user-admin/contributing.md
-    - ngx-user-admin:
-        - 'Overview': ngx-user-admin/index.md
-        - 'Extending': ngx-user-admin/extending.md
     - Users:
         - 'Overview': users/index.md
         - 'Ajax endpoints': users/ajax.md
