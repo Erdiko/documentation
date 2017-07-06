@@ -183,51 +183,15 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../../style-guide/" title="Coding style guide" class="md-nav__link">
-      Coding style guide
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../help/" title="Help" class="md-nav__link">
-      Help
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-4">
       User Admin
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-4">
         User Admin
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -305,13 +269,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-5">
       Users
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-5">
         Users
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -379,13 +343,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
-    <label class="md-nav__link" for="nav-9">
+    <label class="md-nav__link" for="nav-6">
       Authorize
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
+      <label class="md-nav__title" for="nav-6">
         Authorize
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -448,13 +412,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
-    <label class="md-nav__link" for="nav-10">
+    <label class="md-nav__link" for="nav-7">
       Authenticate
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-10">
+      <label class="md-nav__title" for="nav-7">
         Authenticate
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -480,6 +444,78 @@
   <li class="md-nav__item">
     <a href="../../authenticate/extending/" title="Extending" class="md-nav__link">
       Extending
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Help (Learn More)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Help (Learn More)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/" title="Submitting Issues" class="md-nav__link">
+      Submitting Issues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../style-guide/" title="Coding style guide" class="md-nav__link">
+      Coding style guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/" title="About Us" class="md-nav__link">
+      About Us
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributing/" title="Contributing" class="md-nav__link">
+      Contributing
     </a>
   </li>
 
@@ -518,6 +554,64 @@
                 
                 
                 <h1 id="extending-authorize">Extending Authorize<a class="headerlink" href="#extending-authorize" title="Permanent link">&para;</a></h1>
+<p>This package provides you with a framework to create custom validation. There are two different methods to create custom
+validation:</p>
+<ul>
+<li>
+<p>Custom Voters</p>
+<p>Implement <code>Symfony\Component\Security\Core\Authorization\Voter\VoterInterface</code>
+interface, and pass them in an array as second argument of <code>Authorizer</code> constructor.</p>
+</li>
+<li>
+<p>Custom Validator</p>
+<p>Or you can create a <code>Validator</code> class that implements <code>erdiko\authorize ValidatorInterface</code> interface.
+Then you will have to register all validators in <code>/app/config/default/authorize.json</code>, and voila, all the custom validation
+logic you've created is already available to the authorizer.  </p>
+</li>
+</ul>
+<p>authorize.json</p>
+<pre><code class="json">{
+     &quot;validators&quot;:{
+       &quot;custom_types&quot;: [{
+         &quot;name&quot;: &quot;example&quot;,
+         &quot;namespace&quot;: &quot;app_validators_example&quot;,
+         &quot;classname&quot;: &quot;ExampleValidator&quot;,
+         &quot;enabled&quot;: true
+       }]
+     }
+   }
+</code></pre>
+
+<p>In these validator classes you will be able to define custom attributes, "VIEW_ADMIN_DASHBOARD" as we mention above,
+we might want to add "IS_PREMIUM_ACCOUNT", or any other attributes you want.</p>
+<p>Note that <code>namespace</code> field of the above JSON indicate the class <code>namespace</code> and is related to the app root folder,
+e.g. <code>/app/validators/example/ExampleValidator.php</code></p>
+<p>Let's implement the example class registered in the example JSON.  </p>
+<pre><code class="php">class ExampleValidator implements ValidatorInterface
+{
+    public static function supportedAttributes()
+    {
+        return array('IS_PREMIUM_ACCOUNT');
+    }
+
+    public function supportsAttribute($attribute)
+    {
+        return in_array($attribute, self::supportedAttributes());
+    }
+
+    public function validate($token)
+    {
+        $result = false;
+        $user = $token-&gt;getUser();
+        if (!$user instanceof UserInterface) {
+            $result = false;
+        } else {
+            $result = ($user-&gt;getRole()=='ROLE_PREMIUM');
+        }
+        return $result;
+    }
+}
+</code></pre>
                 
                   
                 
