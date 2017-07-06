@@ -1,112 +1,182 @@
-# Angular UI
+## Directory Hierarchy
 
-## Welcome to the Angular UI!
+The following is a brief hiearchy that highlights the components and the services.
 
-If you are able to see the page in the screenshot below then ..congratulations! 
-The hardest part is now over. 
-
-Now, let's get started!
-
-## Log-In
-
-![Screenshot](images/Log-In.png)
-
-At the very start of the app, you should see the Email and Password form.
-
-You can use the following credentials to start the log-in process.
-
-User:
-
-    foo@mail.com (placeholder)
-
-Password:
-
-    asdf1234 (placeholder)
-
-Assuming everything goes well, you should be brought into the home page and a message that tells you that the Login is Successful.
-Lets click on **Create User** below the Erdiko User Admin header title to create our first User.
-
-![Screenshot](images/Logged-In.png)
-
-## Create User
-
-When Create a User is clicked from the home page, you will be directed to the following page:
-
-![Screenshot](images/Create-User.png)
-
-The User information requires a name, valid email address, a role (Admin, User, etc) as well as a password that requires at least a numeric character and at least 5 characters.
-
-Let's create a User name created at random ...say Cody Bellinger.
-
-![Screenshot](images/Creating-User.png)
-
-When valid name, email address and password is used, a new user will be created.
-
-![Screenshot](images/Created-User.png)
+```
+├── auth.guard.ts
+├── auth.service.ts
+├── header
+│   ├── header.component.tpl.ts
+│   └── header.component.ts
+├── home
+│   ├── home.component.tpl.ts
+│   └── home.component.ts
+├── login
+│   ├── login.component.tpl.ts
+│   └── login.component.ts
+├── message
+│   ├── message.component.tpl.ts
+│   └── message.component.ts
+├── message.service.ts
+├── password
+│   ├── password.component.tpl.ts
+│   └── password.component.ts
+├── user-admin.module.ts
+├── user-edit
+│   ├── user-edit.component.tpl.ts
+│   └── user-edit.component.ts
+├── user-event-log
+│   ├── user-event-log.component.tpl.ts
+│   └── user-event-log.component.ts
+├── user-list
+│   ├── user-list.component.tpl.ts
+│   └── user-list.component.ts
+├── user-resolve.service.ts
+├── user.model.ts
+├── users-event-log
+│   ├── users-event-log.component.tpl.ts
+│   └── users-event-log.component.ts
+└── users.service.ts
+```
 
 
-## User List
+## Components
 
-When User List is clicked from either the navigation bar or the content. Below is the list of names containing the names generated from our database. 
-(If you have jumped in straight to the User List without creating a user, the list will be empty).
-The user list will be generated as soon as you start creating users! (Cody Bellinger is available at top of the list from our previous examplef).
+Ngx-User-Admins are broken up in following Components.
+Note: tpl.ts is used instead of HTML due to compilation process with rollup.js
 
-![Screenshot](images/List-User.png)
-
-## Users-Event-Log
-
-Erdiko's User Admin package collects significant histories of action taken by each user. When **User Event Log** is clicked, a brief overview of every action every user has made is generated.
-
-![Screenshot](images/Users-Event-Log.png)
-
-## Edit / Update User Information
-
-If/When you decide that the user information is outdated and needs to be changed, click on the **Edit** link in the Row of a user you would like changed.
-In the Edit-User Page's **Edit User** tab, all the User information is available for change. In the Edit-User page, value of name, email and user's role which are initially given in the Create User section can be changed.
-When all the editable information are valid, the **Save** button will be enabled. 
-
-![Screenshot](images/Edit-User.png)
-
-Cody Bellinger's name and email will be replaced by Clark Kent and his email address. (Notice how the User ID, Joined Date as well as Last Login is same as before).
-
-![Screenshot](images/Editing-User.png)
-
-Cody Bellinger is now Clark Kent!
-
-![Screenshot](images/Edited-User.png)
-
-You can go back to the User-List to confirm the change.
-
-![Screenshot](images/Edited-List-User.png)
+### Header Component
 
 
-## Edit / Update User Password
-
-Just like changing the User Information, User Password can also be changed with ease.
-
-Click on the **Update Password** tab next to the **Edit User** tab to create a new password. Just like as in **Create User**, the new password also requires at least a numeric character and at least 5 characters. 
-
-Password being changed is shown below:
-
-![Screenshot](images/Edited-User-Pass.png)
-
-## User-Event Log
-
-Below the Edit User form is an User Event Log. This table generates the grid listing all the actions taken by this specified user. Because this user has not taken any action thus far, none is generated.
+Header Component contains the header menu used to navigate to User List and User Event Log.
+At logged in state, the option to log out is available.
 
 
-## Delete User
+  **Component & Template Files**
 
-If the User happenned to be created by a mistake, the red **Delete** button is available at the last column of the **User List**. Please click the Delete button of the User's Row you want deleted.
+  - header.component.tpl.ts 
+  - header.component.ts
 
-It will prompt you one last time to ensure this is the action you would want to take.
-![Screenshot](images/Delete-User.png)
+### Home Component
 
-After confirming the action, quick glance at the top of User List will verify that Clark Kent is no more.
-
-![Screenshot](images/Deleted-User.png)
+Home Component holds the page the user-admin will see once logged in. From there, the user-admin can opt to create a user, go to User List or go to User Event Log.
 
 
-## Log-Out 
+  **Component & Template Files**
 
-If everything is well finished, click the **Logout** link in the Navigation Bar to logout.
+  - home.component.tpl.ts 
+  - home.component.ts
+
+### Login
+
+Login Components displays the Login form that is displayed when user is to log in. It also houses the user login form validation.
+
+  **Component & Template Files**
+
+  - login.component.tpl.ts 
+  - login.component.ts
+
+
+### Message
+
+Message Components hold small notification on the UI whenever there are updates. If the user-admin is successfully / unsuccessfully adding, editing, deleting 
+users in the database, this component is responsible of such notification.
+
+  **Component & Template Files**
+
+  - message.component.tpl.ts 
+  - message.component.ts
+
+### Password
+
+Password Component is responsible for changing the user's password.
+
+  **Component & Template Files**
+
+  - password.component.tpl.ts 
+  - password.component.ts
+
+### User-Edit
+
+User Edit Component's function is split into to two tabs:
+
+1. Edit the name, email address, role associated with the user
+2. Change the password assoiated with the user (See Password Component).
+
+  **Component & Template Files**
+
+  - user-edit.component.tpl.ts 
+  - user-edit.component.ts
+
+
+### User-Event-Log
+
+User Event Log Component is nested within the User-Edit component and is displayed under the user-edit form. 
+It retrieves recorded action the specified user has taken. The component also features sort and pagination for easy organization.
+
+  **Component & Template Files**
+
+  - user-event-log.component.tpl.ts 
+  - user-event-log.component.ts
+
+### User-List
+
+User-List Component retrieves all the users that are on the database. From here user-admin may target specific user to edit or delete.
+
+  **Component & Template Files**
+
+  - user-list.component.tpl.ts 
+  - user-list.component.ts
+
+### Users-Event-Log
+
+Users-Event-Log component generates aggregate of all actions taken by every user.
+The component also features sort and pagination for easy organization.
+
+  **Component & Template Files**
+
+  - user-event-log.component.tpl.ts 
+  - user-event-log.component.ts
+
+
+## Services
+
+### Auth - auth.service.ts
+
+This service handles logging the users in and out.
+
+Components/Services Using this service:
+ - Header Component
+ - Login Component
+ - Users Service
+
+### Message - message.service.ts
+
+This service handles the observables which relays information from source to the message component.
+
+Components/Services Using this service:
+ - Message Component
+ - User Edit Component
+ - User List Component
+
+### User Resolve - user-resolve.service.ts
+
+This service returns a User model for a provided ID, if one is found. 
+If not found, it returns false and navigate the user to the default route
+
+Components/Services Using this service:
+- Users Service
+
+### Users - users.service.ts
+
+This service deals with create/retrieve/update/delete aspects of the Users.
+It is also responsible of listing the users as well as retrieving the user events.
+
+Components/Services Using this service:
+
+ - User Edit Component
+ - Auth Service
+ - User Event Log Component
+ - User List Component
+ - Users Event Log Component
+ - User Resolve Service

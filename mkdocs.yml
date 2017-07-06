@@ -10,6 +10,7 @@ pages:
         - 'Overview': user-admin/index.md
         - 'Extending': user-admin/extending.md
         - 'Angular UI': user-admin/angular.md
+        - 'Angular GUI': user-admin/angulargui.md
         - 'Extending Angular UI': user-admin/extending-angular.md
         - 'Contributing': user-admin/contributing.md
     - Users:
