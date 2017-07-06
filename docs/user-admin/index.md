@@ -49,7 +49,7 @@ You can view the local server at this address: http://localhost:4200
 
     npm run start
 
-#### Compiling you changes
+### Compiling you changes
 
 Once you have tested and completed your updates, you must "build" the application to compile the typescript to be served by the erdiko application. This step is required before any code can be deployed to a staging or production server.
 
