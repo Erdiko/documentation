@@ -205,8 +205,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../documentation/" title="Documentation" class="md-nav__link">
-      Documentation
+    <a href="../databases/" title="Databases" class="md-nav__link">
+      Databases
     </a>
   </li>
 
@@ -658,17 +658,30 @@
 <p>Open the main config file located at <code>app/config/default/application.json</code></p>
 </li>
 <li>
-<p>Find the menu section and insert the following code.</p>
-<pre><code>,
- {
-    "href":"/examples/bmi",
-    "title":"BMI"
- }
-</code></pre>
-<ol>
-<li>Open the routing config file located at <code>/app/config/default/routes.json</code>.
-We can see that sites located at <code>/</code> will be routed to the controller Index and sites located at <code>/examples/</code> will be routed to the controller Example.</li>
+<p>Find the menu section, for example:</p>
+</li>
 </ol>
+<pre><code>&quot;menu&quot;: {
+    &quot;main&quot;: [{
+        &quot;href&quot;: &quot;/examples/examples&quot;,
+        &quot;title&quot;: &quot;Examples&quot;
+    }, {
+        &quot;href&quot;: &quot;/examples/markup&quot;,
+        &quot;title&quot;: &quot;Mark-Up&quot;
+    } ...
+</code></pre>
+
+<p>Insert the following json code under main:</p>
+<pre><code>    {
+        &quot;href&quot;:&quot;/examples/bmi&quot;,
+        &quot;title&quot;:&quot;BMI&quot;
+    }
+</code></pre>
+
+<ol>
+<li>
+<p>Open the routing config file located at <code>/app/config/default/routes.json</code>.
+    We can see that sites located at <code>/</code> will be routed to the controller Index and sites located at <code>/examples/</code> will be routed to the controller Example.</p>
 </li>
 <li>
 <p>Open the controller Example located at <code>/app/controllers/Examples.php</code></p>
@@ -714,16 +727,17 @@ We can see that sites located at <code>/</code> will be routed to the controller
 </li>
 <li>
 <p>Find the menu section and insert the following code.</p>
-<pre><code>,
- {
-    "href":"/Calculator/bmi_version2",
-    "title":"BMI"
- }
-</code></pre>
 </li>
+</ol>
+<pre><code>{
+    &quot;href&quot;:&quot;/Calculator/bmi_version2&quot;,
+    &quot;title&quot;:&quot;BMI&quot;
+}
+</code></pre>
+
+<ol>
 <li>
-<p>Open the routing config file located at <code>Erdiko/app/config/default/routes.json</code>.
-    Add a new rule to the route.</p>
+<p>Open the routing config file located at <code>app/config/default/routes.json</code>.  Add a new rule to the route.</p>
 <pre><code>["Calculator/([a-zA-Z0-9_\-/]+)", "\app\controllers\Calculator"],
 </code></pre>
 </li>
@@ -732,17 +746,17 @@ We can see that sites located at <code>/</code> will be routed to the controller
     To create a new controller, create <code>Calculator.php</code> under the folder <code>/app/controllers/</code></p>
 </li>
 <li>
-<p>Paste the following code inside the <code>Calculator.php</code></p>
+<p>Paste the following code inside <code>Calculator.php</code></p>
 </li>
 </ol>
 <script src="https://gist.github.com/rajesh28892/dc523f2739b48b1ff224.js"></script>
 
 <ol>
 <li>
-<p>Create a file called <code>bmi.php</code> under <code>/app/views/examples/</code></p>
+<p>Create a view called <code>bmi.php</code> under <code>/app/views/examples/</code></p>
 </li>
 <li>
-<p>Open the bmi.php and add the following code:</p>
+<p>Open bmi.php and add the following code:</p>
 </li>
 </ol>
 <script src="https://gist.github.com/colemantung/c45003580e391cff6239.js"></script>
@@ -763,10 +777,10 @@ We can see that sites located at <code>/</code> will be routed to the controller
 </li>
 <li>
 <p>Click the BMI tab on the menu, and then you should see the following results.</p>
-<p><a href="../assets/themes/bootstrap-3.1.1/img/getStarted/BMI_V2_1.png">BMI Version 2</a></p>
-<p><a href="../assets/themes/bootstrap-3.1.1/img/getStarted/BMI_V2_2.png">BMI Version 2 Result</a></p>
 </li>
 </ol>
+<p><img alt="BMI Version 2" src="../../images/examples/BMI_V2_1.png" /></p>
+<p><img alt="BMI Version 2 Result" src="../../images/examples/BMI_V2_2.png" /></p>
                 
                   
                 
@@ -785,7 +799,7 @@ We can see that sites located at <code>/</code> will be routed to the controller
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../documentation/" title="Documentation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../databases/" title="Databases" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -794,7 +808,7 @@ We can see that sites located at <code>/</code> will be routed to the controller
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Documentation
+                Databases
               </span>
             </div>
           </a>

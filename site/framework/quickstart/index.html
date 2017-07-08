@@ -240,8 +240,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-web-environment" title="Setup web environment" class="md-nav__link">
-    Setup web environment
+  <a href="#setup-your-environment" title="Setup your environment" class="md-nav__link">
+    Setup your environment
   </a>
   
 </li>
@@ -320,8 +320,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../documentation/" title="Documentation" class="md-nav__link">
-      Documentation
+    <a href="../databases/" title="Databases" class="md-nav__link">
+      Databases
     </a>
   </li>
 
@@ -759,8 +759,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-web-environment" title="Setup web environment" class="md-nav__link">
-    Setup web environment
+  <a href="#setup-your-environment" title="Setup your environment" class="md-nav__link">
+    Setup your environment
   </a>
   
 </li>
@@ -837,12 +837,10 @@
 <p>To download Erdiko from our Git repository, enter the following command in command prompt:</p>
 <pre><code>    git clone https://github.com/arroyolabs/erdiko
 </code></pre>
-<p>It will clone our Git repository to your local machince. Then, go to the Erdiko root folder and install Erdiko using Composer.</p>
-<pre><code>composer install
+<p>It will clone our Git repository to your local machine. Then, go to the Erdiko root folder and install Erdiko using Composer.</p>
+<pre><code>    composer install
 </code></pre>
-<div id = "setup"></div>
-
-<h2 id="setup-web-environment">Setup web environment<a class="headerlink" href="#setup-web-environment" title="Permanent link">&para;</a></h2>
+<h2 id="setup-your-environment">Setup your environment<a class="headerlink" href="#setup-your-environment" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>Open the config file of your web server</p>
@@ -864,21 +862,13 @@
 <p>If you can see the Hello world page, you have successfully installed Erdiko!</p>
 </li>
 </ol>
-<div class="alert alert-dismissable alert-warning">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4>Warning!</h4>
-  <p>If you cannot open the Hello world page, go back to the config file of your web server to check if the port is 80.  If the port is other than 80, you need to specify the port in Step 4. For example, if you port is 8080, the URL link will be http://localhost:8080 .</p>
+<div class="admonition important">
+<p class="admonition-title">Keep in mind<p>All of your server side application code should go in the /app folder.</p>
+<p>All js, css, or media files or asset should go in the /public folder.</p>
+<p>Theme files go in the /app/themes folder while view files and application code goes in the /app/views folder.</p>
+<p>Do not modify files in /vendor/erdiko/* if you want to maintain an easy upgrade path with Erdiko.</p>
+</p>
 </div>
-
-<div class="alert alert-dismissable alert-info">
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <strong>Heads up!</strong>
-    <p>
-        All of your server side application code should go in the /app folder while any js file, css file or asset should go in the /public folder.
-    </p>
-    <p>Theme files go in the /public folder while view files and application code goes in the /app folder. Do not modify files in /vendor/erdiko/* if you want to maintain an easy upgrade path with Erdiko.</p>
-</div>
-
 <h2 id="create-add-your-first-page">Create add your first page<a class="headerlink" href="#create-add-your-first-page" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
@@ -956,11 +946,9 @@
 </code></pre>
 </li>
 </ol>
-<div class="alert alert-dismissable alert-info">
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <strong>Heads up!</strong> The root of the path is `/public/`.<br>
-    For example, if you want to include the .js file located at `/app/themes/bootstrap/js/test.js`,
-    the path will be `/themes/bootstrap/js/test.js`.
+<div class="admonition note">
+<p class="admonition-title">The webserver root is <code>/public</code><p>For example, if you want to include an example.js file the path will be <code>/public/themes/bootstrap/js/example.js</code>.</p>
+</p>
 </div>
                 
                   
