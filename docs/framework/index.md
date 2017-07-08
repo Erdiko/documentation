@@ -1,262 +1,151 @@
-System Requirements
--------------------
+## Config
 
-##### Webserver
-* NGINX, Apache (with mod rewrite) or equivalent server
+The config folder is stored in `/app/config/` directory and the default application config file is located at `/app/config/application/default.json`.
+In the config file, you can modify some settings of the site and plugins, such as logging, cache, and analytics.  
 
-##### PHP
-* PHP 5.4 or higher
+If you wish to store configurations for other applications, we recommend you to create a new config file under `/app/config/` directory. Moreover, all config files are stored in JSON format and you can retrieve config from the config file though the getConfig function in Erdiko class.  
 
+For example, to read the configuration of Cache which is located at `/app/config/cache.json` directory, you can use the following code:
 
-Quick Installation
-------------------
+		$config = \Erdiko::getConfig("local/cache");
+		$host = $config["memcached"]["host"];				
+		$port = $config["memcached"]["port"];
 
-#### Via Composer
+## Routes
 
-* The Eridko framework utilizes Composer for installation and dependency management. If you have not install Composer, start by installing Composer.
+Application routes are defined in the file, `/app/config/application/routes.json`
+Update your app's routes in this file.
 
-After you installed Composer, you can run the following command in your terminal:
+Erdiko uses the same routing conventions defined by ToroPHP (modeled after Tornado, a python framework)
 
-	composer create-project erdiko/erdiko project-name
+To route the root of the site to the Example controller
 
-This command will download and install a fresh copy of Erdiko in a new project-name folder within your current directory. Then, you can move to next step to [Setup web environment](#setup)
+		"/": "\app\controllers\Example"
 
+To route example.com/examples/token, where the token is an alpha only name used in the controller
 
-#### Via Github
+		"examples/:alpha": "\app\controllers\Example"
 
-* Step #1: [Download Erdiko](#download)
-* Step #2: [Setup web environment](#setup)
+For more information on routing see [Toro PHP routing](https://github.com/anandkunal/ToroPHP#routing-basics)
 
+### Tokens
 
-<div id = "download"></div>
+you can use convenient tokens in your routes.  These token are simply convenient regular expressions and defined as follows.
 
-Download Erdiko
----------------
+```':string' // '([a-zA-Z]+)'
+':number' // '([0-9]+)',
+':alpha'  // '([a-zA-Z0-9-_]+)',
+':action'  // '([a-zA-Z0-9-_/]+)'
+```
 
-To download Erdiko from our Git repository, enter the following command in command prompt:
+#### Examples
 
-	git clone https://github.com/arroyolabs/erdiko
+```"page/:string": "\app\controllers\Page" // This will match /page/one
 
-It will clone our Git repository to your local machince. Then, go to the Erdiko root folder and install Erdiko using Composer.
+"page/:number": "\app\controllers\Page" // This will match /page/123
 
-	composer install
+"page/:alpha": "\app\controllers\Page" // This will match /page/123 and /page/one
 
+"book/:action": "\app\controllers\Book" // This will match /book/1/page/123 and pass the everything including the / to the method so it can be further parsed.  e.g. '1/page/123'
+```
 
-<div id = "setup"></div>
+### RESTful routes
 
-Setup web environment
----------------------
+Your route will come in based off of the route and http request type
 
-1. Open the config file of your web server
+```// Route (in routes.json)
+"rest/:alpha": "\app\controllers\Rest"
 
-2. Change the webroot to `[local erdiko code path]/public`
+// Controller
+class Rest extends \erdiko\core\Controller
+{
+    function get() {}
+    function post() {}
+    function get_xhr() {}
+    function post_xhr() {}
+}
+```
 
-3. Create a folder named var in  `[local erdiko code path]/` and change the group of the `/var` folder to `www-data` using chgrp www-data
-   `[local erdiko code path]/var`
+### Auto routes
 
-4. Save changes and restart your web server.
+If you do not explicitly define a route for get(), post(), etc then Erdiko will automatically route based off of a naming convention.
 
-5. Type http://localhost into your browser (or your virtual host name)
+Lets look at this route
 
-6. If you can see the Hello world page, you have successfully installed Erdiko!
+		"examples/:alpha": "\app\controllers\Example"
 
-<div class="alert alert-dismissable alert-warning">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4>Warning!</h4>
-  <p>If you cannot open the Hello world page, go back to the config file of your web server to check if the port is 80.  If the port is other than 80, you need to specify the port in Step 4. For example, if you port is 8080, the URL link will be http://localhost:8080 .</p>
-</div>
+If you go to yoursite.com/examples/hello, this will resolve to Example->getHello().  Where Example is the controller and getHello() is the method
 
-<div class="alert alert-dismissable alert-info">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-	<strong>Heads up!</strong>
-	<p>
-		All of your server side application code should go in the /app folder while any js file, css file or asset should go in the /public folder.
-	</p>
-	<p>Theme files go in the /public folder while view files and application code goes in the /app folder. Do not modify files in /vendor/erdiko/* if you want to maintain an easy upgrade path with Erdiko.</p>
-</div>
+## Controllers
 
+If you have already configurated the routes file, the next step would be creating controllers which determine the content of pages.  Controllers are typically stored in `app/controllers/` directory.  Since Erdiko uses Composer to auto-load our PHP classes, you may place controllers in other directory as long as they have the same namespace anc corresponding folder structure.
 
-<div id = "createYourFirstPage"></div>
+Here is an example of a basic controller class:
 
-Create add your first page
---------------------------
+	class Example extends \erdiko\core\Controller
+	{
+		/** Before */
+		public function _before()
+		{
+			$this->setThemeName('bootstrap');
+			$this->prepareTheme();
+		}
 
-1. We will first need to add a tab to the menu.  To do so, open the main config file located at `Erdiko/app/config/application/default.json`
+		/** Get Hello */
+		public function getHello()
+		{
+			$this->setTitle('Hello World');
+			$this->setContent("Hello World");
+		}
+	}
 
-2. Find the menu section and insert the following code.
+In a controller class, every function whose name starts with 'get' represents the logic of a page. For example, if you are running the site on your local machine, the url of the site on the example above would be `http://localhost/hello`.
 
-<script src="https://gist.github.com/colemantung/77e795c36662e2c5b8a4.js"></script>
+## Views
 
-3. After inserting the code above, the menu section should look like this.
+The views are stored in `app/views/` directory.  Views is similar to Layout, however, they are not actually the same. Layout can set inside a layout or a view which view can only contain Layout. Moreover, you can put any HTML or PHP code inside a view.
 
-<script src="https://gist.github.com/colemantung/070eb875dc5fe5779932.js"></script>
+Here is an example of a view:
 
-4. Save the changes of the file, and open the site in your browser.
-   You should be able to see that there is a new tab on the menu.
+		<p>This is a view template.</p>
+		<p><?php echo $data[0] ?> world</p>
 
-<div class="alert alert-dismissable alert-info">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-	<strong>Heads up!</strong> When you click on the tab, it will show error.
-    <p>It is normal because you have not set any contents to the page. </p>
-</div>
+It supports HTML tags and ables to use PHP to retrieve variables.
 
+## Models
 
-<div id = "setContent"></div>
+Erdiko is a mash-up framework and our goal is to make Erdiko be able to mash-up multiple applications/frameworks like Drupal, Magento, WordPress, Zend, and etc.  There are lots of different models out there and it is not feasible to cover all of that.  Therefore, you may design your model layer depending on your needs.
 
-Set content of a page
----------------------
+For example, if you site is using database MySQL, Oracle, Microsoft SQL Server, PostgreSQL, SAP Sybase SQL Anywhere, SQLite, or Drizzle, you may consider to adopt Doctrine's Database Abstraction Layer framework to Erdiko.
+Here is a link to a tutorial of basic usage.
 
-5. To add contents to a page, open the page config file located at `Erdiko/app/controllers/Example.php`.
+## Hooks
 
-6. Add the following function inside the Index class
+In Erdiko, a hook is mainly driven by the ToroPHP router. Hook is very useful in Erdiko framework and it allows you to execute code before and after a controller is called.  It can also increase the security when communicating with third party applications.  For example, when you made a request to a third party application which is going to do a call-back action to your site, you can use hooks to hooks to verfiy the session.
 
-<script src="https://gist.github.com/rajesh28892/e705c62d5e623a2ede57.js"></script>
+For more hooks information, please see https://github.com/anandkunal/ToroPHP#torohook-callbacks
 
-7. Save the changes and open the site in your browser.
-   You should be able to see your first page.
+## About Erdiko
 
-<div class="alert alert-dismissable alert-success">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  <strong>Well done!</strong>
-  <p>You successfully create your first page using Erdiko.</p>
-</div>
+Erdiko wants to make your php development easier. If you need a lightweight MVC framework you have come to the right place. Our goal is to offer a clean framework to create sites optimized for mobile devices, APIs and multiple browsers.  Get work done without a lot of unneccessary plumbing to get in the way.  It is camptible with composer, which makes it easy to use with other PHP projects like Doctrine
 
-<div class="alert alert-dismissable alert-info">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-	<strong>Heads up!</strong>
-	<p>If you want to create a full page, you can add the following line in the getMyfirstpage function. <br>
-	<p align="center">$this->setTemplate('fullpage');</p>
-	</p>
-</div>
+Erdiko can act as a middleware framework, hence the name which means 'middle' in the Basque language (Euskara). Use Erdiko if you need to mash-up multiple applications/frameworks like Drupal, Magento, WordPress, and Zend into a unified application.
 
+## Team
 
-<div id = "phpPage"></div>
+### Author
 
-Use a PHP template
-------------------
+* John Arroyo - Architect, Lead Developer
 
-1. Open the corresponding controller file under the folder `Erdiko/app/controllers/`.
+### Contributors
 
-2. Inside the controller, find the function of the page you want to use PHP.
+* Andy Armstrong - Development
+* Leo Daidone - Development
+* Coleman Tung - Development, Documentation and unit testing
+* Varun Brahme - Development and unit testing
 
-3. Insert the following code:
+If you want to help, please do, we'd love more code! Make your enhancements and do a pull request. If you want to get to even more involved please contact us!
 
-		$this->addView('[Path of the .php file]');
+## Special Thanks
 
-<div class="alert alert-dismissable alert-info">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-	<strong>Heads up!</strong> The root of the path is `Erdiko/app/views`.<br>
-	For example, if you want to use the php file located at `Erdiko/app/views/example/test.php`,
-	the path will be `/example/test`.
-</div>
-
-
-
-<div id = "javascriptPage"></div>
-
-Add JavaScript to a page
-------------------------
-
-1. Open the corresponding controller file under the folder `Erdiko/www/app/controllers/`.
-
-2. Inside the controller, find the function of the page you want to use Javascript.
-
-3. Insert the following code:
-
-		$this->addJs('[Path of the .js file]');
-
-<div class="alert alert-dismissable alert-info">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-	<strong>Heads up!</strong> The root of the path is `/public/`.<br>
-	For example, if you want to include the .js file located at `/app/themes/bootstrap/js/test.js`,
-	the path will be `/themes/bootstrap/js/test.js`.
-</div>
-
-
-<div id = "javascriptCalculator"></div>
-
-Add a BMI calculator page using Javascript
-------------------------------------------
-
-1. 	Open the main config file located at `/app/config/default/application.json`
-
-2. 	Find the menu section and insert the following code.
-
-		,
-         {
-            "href":"/examples/bmi",
-            "title":"BMI"
-         }
-3. 	Open the routing config file located at `/app/config/default/routes.json`.
-	We can see that sites located at `/` will be routed to the controller Index and sites located at `/examples/` will be routed to the controller Example.
-
-4.  Open the controller Example located at `/app/controllers/Examples.php`
-
-5.  Add the following function inside the Examples class
-
-<script src="https://gist.github.com/rajesh28892/20a1af56027064effdb9.js"></script>
-
-6.  Create a file called `bmi.php` under `/app/views/examples/`
-
-7.  Open the bmi.php and add the following code:
-
-<script src="https://gist.github.com/colemantung/3cff36bbc3ac250db19f.js"></script>
-
-8.  Create `example.js` under the folder `/app/themes/hello/js/`
-
-9.  Paste the following code to `example.js`
-
-<script src="https://gist.github.com/colemantung/6fb653cd88415e427a14.js"></script>
-
-10.  Save all changes, and open a web brower.
-
-11.  Go to localhost, click the BMI tab on the menu, and then you should see [this](./assets/themes/bootstrap-3.1.1/img/getStarted/BMI_V1_1.png).
-
-
-
-<div id = "calculator"></div>
-
-Add a BMI calculator page using new route
------------------------------------------
-
-1. 	Open the main config file located at `/app/config/default/application.json`
-
-2. 	Find the menu section and insert the following code.
-
-		,
-         {
-            "href":"/Calculator/bmi_version2",
-            "title":"BMI"
-         }
-
-3. 	Open the routing config file located at `Erdiko/app/config/default/routes.json`.
-	Add a new rule to the route.
-
-		["Calculator/([a-zA-Z0-9_\-/]+)", "\app\controllers\Calculator"],
-
-4.  Then, we will need to create a new controller for the new route.
-	To create a new controller, create `Calculator.php` under the folder `/app/controllers/`
-
-5.  Paste the following code inside the `Calculator.php`
-
-<script src="https://gist.github.com/rajesh28892/dc523f2739b48b1ff224.js"></script>
-
-6.  Create a file called `bmi.php` under `/app/views/examples/`
-
-7.  Open the bmi.php and add the following code:
-
-<script src="https://gist.github.com/colemantung/c45003580e391cff6239.js"></script>
-
-8.  Create a file called `bmi_post.php` under `/app/views/examples/`
-
-9.  Open the bmi_post.php and add the following code:
-
-<script src="https://gist.github.com/colemantung/ffffdf39b78d650a4734.js"></script>
-
-10.  Save all changes, and open the site in your web brower.
-
-11.  Click the BMI tab on the menu, and then you should see the following results.
-
-	 [BMI Version 2](./assets/themes/bootstrap-3.1.1/img/getStarted/BMI_V2_1.png)
-
-	 [BMI Version 2 Result](./assets/themes/bootstrap-3.1.1/img/getStarted/BMI_V2_2.png)
+Arroyo Labs - For sponsoring development, [http://arroyolabs.com](http://arroyolabs.com)

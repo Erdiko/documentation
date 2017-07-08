@@ -126,9 +126,5 @@ Add JavaScript to a page
 
 		$this->addJs('[Path of the .js file]');
 
-<div class="alert alert-dismissable alert-info">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-	<strong>Heads up!</strong> The root of the path is `/public/`.<br>
-	For example, if you want to include the .js file located at `/app/themes/bootstrap/js/test.js`,
-	the path will be `/themes/bootstrap/js/test.js`.
-</div>
+!!! note "The root of the path is `/public/`"
+		For example, if you want to include the .js file located at `/app/themes/bootstrap/js/test.js`, the path will be `/themes/bootstrap/js/test.js`.

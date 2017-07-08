@@ -8,6 +8,7 @@ pages:
     - Framework:
         - 'Overview': framework/index.md
         - 'Documentation': framework/documentation.md
+        - 'Databases': framework/databases.md
         - 'Example App': framework/example.md
     - User Admin:
         - 'Overview': user-admin/index.md

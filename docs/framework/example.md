@@ -2,13 +2,28 @@
 
 1. 	Open the main config file located at `app/config/default/application.json`
 
-2. 	Find the menu section and insert the following code.
+2. 	Find the menu section, for example:
 
-		,
-         {
-            "href":"/examples/bmi",
-            "title":"BMI"
-         }
+```
+"menu": {
+	"main": [{
+		"href": "/examples/examples",
+		"title": "Examples"
+	}, {
+		"href": "/examples/markup",
+		"title": "Mark-Up"
+	} ...
+```
+
+Insert the following json code under main:
+
+```
+	{
+  		"href":"/examples/bmi",
+  		"title":"BMI"
+	}
+```
+
 3. 	Open the routing config file located at `/app/config/default/routes.json`.
 	We can see that sites located at `/` will be routed to the controller Index and sites located at `/examples/` will be routed to the controller Example.
 
