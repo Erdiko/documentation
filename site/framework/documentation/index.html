@@ -19,7 +19,7 @@
     
     
       
-        <title>Extending - Erdiko Documentation</title>
+        <title>Documentation - Erdiko Documentation</title>
       
     
     
@@ -81,11 +81,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Authenticate
+                  Framework
                 </span>
               
             
-            Extending
+            Documentation
           
         </span>
       </div>
@@ -160,7 +160,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../framework/quickstart/" title="Quick Start" class="md-nav__link">
+    <a href="../quickstart/" title="Quick Start" class="md-nav__link">
       Quick Start
     </a>
   </li>
@@ -170,10 +170,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Framework
@@ -191,7 +193,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../framework/" title="Overview" class="md-nav__link">
+    <a href="../" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -201,11 +203,159 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../framework/documentation/" title="Documentation" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Documentation
+      </label>
+    
+    <a href="./" title="Documentation" class="md-nav__link md-nav__link--active">
       Documentation
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config" title="Config" class="md-nav__link">
+    Config
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routes" title="Routes" class="md-nav__link">
+    Routes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokens" title="Tokens" class="md-nav__link">
+    Tokens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restful-routes" title="RESTful routes" class="md-nav__link">
+    RESTful routes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-routes" title="Auto routes" class="md-nav__link">
+    Auto routes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllers" title="Controllers" class="md-nav__link">
+    Controllers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#views" title="Views" class="md-nav__link">
+    Views
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" title="Models" class="md-nav__link">
+    Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hooks" title="Hooks" class="md-nav__link">
+    Hooks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-erdiko" title="About Erdiko" class="md-nav__link">
+    About Erdiko
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" title="Note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team" title="Team" class="md-nav__link">
+    Team
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#author" title="Author" class="md-nav__link">
+    Author
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contributors" title="Contributors" class="md-nav__link">
+    Contributors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-thanks" title="Special Thanks" class="md-nav__link">
+    Special Thanks
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -215,7 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../framework/example/" title="Example App" class="md-nav__link">
+    <a href="../example/" title="Example App" class="md-nav__link">
       Example App
     </a>
   </li>
@@ -446,12 +596,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       Authenticate
@@ -469,7 +617,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Overview" class="md-nav__link">
+    <a href="../../authenticate/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -479,54 +627,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Extending
-      </label>
-    
-    <a href="./" title="Extending" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../authenticate/extending/" title="Extending" class="md-nav__link">
       Extending
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#storage" title="Storage" class="md-nav__link">
-    Storage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#authentication-types" title="Authentication types" class="md-nav__link">
-    Authentication types
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -621,22 +726,129 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#storage" title="Storage" class="md-nav__link">
-    Storage
+  <a href="#config" title="Config" class="md-nav__link">
+    Config
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication-types" title="Authentication types" class="md-nav__link">
-    Authentication types
+  <a href="#routes" title="Routes" class="md-nav__link">
+    Routes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokens" title="Tokens" class="md-nav__link">
+    Tokens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restful-routes" title="RESTful routes" class="md-nav__link">
+    RESTful routes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-routes" title="Auto routes" class="md-nav__link">
+    Auto routes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controllers" title="Controllers" class="md-nav__link">
+    Controllers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#views" title="Views" class="md-nav__link">
+    Views
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" title="Models" class="md-nav__link">
+    Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hooks" title="Hooks" class="md-nav__link">
+    Hooks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-erdiko" title="About Erdiko" class="md-nav__link">
+    About Erdiko
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note" title="Note" class="md-nav__link">
+    Note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team" title="Team" class="md-nav__link">
+    Team
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#author" title="Author" class="md-nav__link">
+    Author
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contributors" title="Contributors" class="md-nav__link">
+    Contributors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-thanks" title="Special Thanks" class="md-nav__link">
+    Special Thanks
   </a>
   
 </li>
@@ -656,164 +868,145 @@
               
                 
                 
-                <h1 id="extending-authenticate">Extending Authenticate<a class="headerlink" href="#extending-authenticate" title="Permanent link">&para;</a></h1>
-<h3 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h3>
-<p>We provide a Session Storage type as default method to manage your user's status and other data. However you can choose
-a different storage like database, filesystem or memcached just mention few.</p>
-<p>In order to create your own storage service, you will have to create a class that implements <code>erdiko\authenticate\StorageInterface</code>
-like:</p>
-<pre><code class="php">Class SessionStorage implements StorageInterface {
+                  <h1>Documentation</h1>
+                
+                <h2 id="config">Config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h2>
+<p>The config folder is stored in <code>/app/config/</code> directory and the default application config file is located at <code>/app/config/application/default.json</code>.
+In the config file, you can modify some settings of the site and plugins, such as logging, cache, and analytics.  </p>
+<p>If you wish to store configurations for other applications, we recommend you to create a new config file under <code>/app/config/</code> directory. Moreover, all config files are stored in JSON format and you can retrieve config from the config file though the getConfig function in Erdiko class.  </p>
+<p>For example, to read the configuration of Cache which is located at <code>/app/config/cache.json</code> directory, you can use the following code:</p>
+<pre><code>    $config = \Erdiko::getConfig("local/cache");
+    $host = $config["memcached"]["host"];               
+    $port = $config["memcached"]["port"];
+</code></pre>
+<div id = "routes"></div>
 
-    public function persist(UserStorageInterface $user)
-    {
-        $this-&gt;startSession();
-        $_SESSION[&quot;current_user&quot;] = $user-&gt;marshall();
-    }
+<h2 id="routes">Routes<a class="headerlink" href="#routes" title="Permanent link">&para;</a></h2>
+<p>Application routes are defined in the file, <code>/app/config/application/routes.json</code>
+Update your app's routes in this file.</p>
+<p>Erdiko uses the same routing conventions defined by ToroPHP (modeled after Tornado, a python framework)</p>
+<p>To route the root of the site to the Example controller</p>
+<pre><code>"/": "\app\controllers\Example"
+</code></pre>
+<p>To route example.com/examples/token, where the token is an alpha only name used in the controller</p>
+<pre><code>"examples/:alpha": "\app\controllers\Example"
+</code></pre>
+<p>For more information on routing see <a href="https://github.com/anandkunal/ToroPHP#routing-basics">Toro PHP routing</a></p>
+<h3 id="tokens">Tokens<a class="headerlink" href="#tokens" title="Permanent link">&para;</a></h3>
+<p>you can use convenient tokens in your routes.  These token are simply convenient regular expressions and defined as follows.</p>
+<p>```':string' // '([a-zA-Z]+)'
+':number' // '([0-9]+)',
+':alpha'  // '([a-zA-Z0-9-<em>]+)',
+':action'  // '([a-zA-Z0-9-</em>/]+)'</p>
+<pre><code>
+**examples**
 
-    public function attemptLoad(UserStorageInterface $userModel)
-    {
-        $user = null;
+```&quot;page/:string&quot;: &quot;\app\controllers\Page&quot; // This will match /page/one
 
-        $sapi = php_sapi_name();
-        if(!$this-&gt;contains('cli', $sapi)){
-            $this-&gt;startSession();
-        }
+&quot;page/:number&quot;: &quot;\app\controllers\Page&quot; // This will match /page/123
 
-        if(array_key_exists(&quot;current_user&quot;, $_SESSION)){
-            $_user = $_SESSION[&quot;current_user&quot;];
-            if(!empty($_user)){
-                $user = $userModel::unmarshall($_user);
-            }
-        }
-        return $user;
-    }
+&quot;page/:alpha&quot;: &quot;\app\controllers\Page&quot; // This will match /page/123 and /page/one
 
-    public function contains($needle, $haystack)
-    {
-        return strpos($haystack, $needle) !== false;
-    }
-
-    public function destroy()
-    {
-        $this-&gt;startSession();
-        if(array_key_exists(&quot;current_user&quot;, $_SESSION)){
-            unset($_SESSION[&quot;current_user&quot;]);
-        }
-        @session_destroy();
-    }
-
-    private function startSession()
-    {
-        if(!file_exists(ERDIKO_VAR . &quot;/session&quot;)) {
-            mkdir(ERDIKO_VAR . &quot;/session&quot;);
-        }
-        ini_set('session.save_path',ERDIKO_VAR . &quot;/session&quot;);
-        if(session_id() == '') {
-            @session_start();
-        } else {
-            if (session_status() === PHP_SESSION_NONE) {
-                @session_start();
-            }
-        }
-    }
-}
+&quot;book/:action&quot;: &quot;\app\controllers\Book&quot; // This will match /book/1/page/123 and pass the everything including the / to the method so it can be further parsed.  e.g. '1/page/123'
 </code></pre>
 
-<p>and edit your <code>authenticate.json</code> config by adding new item in the <strong><em><em>storage</em></em></strong> section and put it as <strong>selected</strong></p>
-<pre><code class="json">{
-  &quot;storage&quot;: {
-    &quot;selected&quot;: &quot;custom&quot;,
-    &quot;storage_types&quot;: [{
-      &quot;name&quot;: &quot;session&quot;,
-      &quot;namespace&quot;: &quot;erdiko_authenticate_services&quot;,
-      &quot;classname&quot;: &quot;SessionStorage&quot;,
-      &quot;enabled&quot;: true
-    },
-    {
-      &quot;name&quot;: &quot;custom&quot;,
-      &quot;namespace&quot;: &quot;app_lib_authenticate_services&quot;,
-      &quot;classname&quot;: &quot;CustomStorage&quot;,
-      &quot;enabled&quot;: true
-    }]
-  }
-}
-</code></pre>
-
-<h2 id="authentication-types">Authentication types<a class="headerlink" href="#authentication-types" title="Permanent link">&para;</a></h2>
-<p>As we mention before, here we need to split in two, <strong>authentication</strong> and <strong>authenticator</strong>.
-Let's start with __authentication<strong><em>, here we will create class that implements </em>_<strong>AuthenticationInterface</strong></strong> where 
-we will put the custom user's validation logic, no matter if it's just a <code>return true</code>, and <strong>LDAP</strong> call or any other
-crazy algorithm.</p>
-<p>Same as we did with <strong>storage</strong>, we need to add this new class in the <code>authenticate.json</code> within the <code>available_types</code>
-section.</p>
-<pre><code class="json">{
-  &quot;authentication&quot;: {
-    &quot;available_types&quot;: [{
-      &quot;name&quot;: &quot;jwt_auth&quot;,
-      &quot;namespace&quot;: &quot;erdiko_authenticate_services&quot;,
-      &quot;classname&quot;: &quot;JWTAuthentication&quot;,
-      &quot;enabled&quot;: true
-    },
-    {
-      &quot;name&quot;: &quot;custom_auth&quot;,
-      &quot;namespace&quot;: &quot;app_lib_authenticate_services&quot;,
-      &quot;classname&quot;: &quot;CustomAuthentication&quot;,
-      &quot;enabled&quot;: true
-    }]
-  }
-}
-</code></pre>
-
-<p>The last step is create an <strong>authenticator</strong> class that implements <strong><em><em>AuthenticatorInterface</em></em></strong>.
-This class is the one you will use in your app to preform the actual login process.</p>
-<p>Within this class you will use previous defined tools to authenticate and store data, based on configuration file.
-Here's an example of login method:</p>
-<pre><code class="php">public function login($credentials = array(), $type = 'jwt_auth')
+<h3 id="restful-routes">RESTful routes<a class="headerlink" href="#restful-routes" title="Permanent link">&para;</a></h3>
+<p>Your route will come in based off of the route and http request type</p>
+<p>```// Route (in routes.json)
+"rest/:alpha": "\app\controllers\Rest"</p>
+<p>// Controller
+class Rest extends \erdiko\core\Controller
 {
-    $storage = $this-&gt;container[&quot;STORAGES&quot;][$this-&gt;selectedStorage];
-    $result = false;
+    function get() {}
+    function post() {}
+    function get_xhr() {}
+    function post_xhr() {}
+}
+```</p>
+<h3 id="auto-routes">Auto routes<a class="headerlink" href="#auto-routes" title="Permanent link">&para;</a></h3>
+<p>If you do not explicitly define a route for get(), post(), etc then Erdiko will automatically route based off of a naming convention.</p>
+<pre><code>Lets look at this route
+"examples/:alpha": "\app\controllers\Example"
 
-    // checks if it's already logged in
-    $user = $storage-&gt;attemptLoad($this-&gt;erdikoUser);
-    if($user instanceof UserStorageInterface) {
-        $this-&gt;logout();
+if you go to yoursite.com/examples/hello, this will resolve to Example-&gt;getHello().  Where Example is the controller and getHello() is the method
+</code></pre>
+<div id = "controllers"></div>
+
+<h2 id="controllers">Controllers<a class="headerlink" href="#controllers" title="Permanent link">&para;</a></h2>
+<p>If you have already configurated the routes file, the next step would be creating controllers which determine the content of pages.  Controllers are typically stored in <code>app/controllers/</code> directory.  Since Erdiko uses Composer to auto-load our PHP classes, you may place controllers in other directory as long as they have the same namespace anc corresponding folder structure.</p>
+<p>Here is an example of a basic controller class:</p>
+<pre><code>class Example extends \erdiko\core\Controller
+{
+    /** Before */
+    public function _before()
+    {
+        $this-&gt;setThemeName('bootstrap');
+        $this-&gt;prepareTheme();
     }
 
-    $auth = $this-&gt;container[&quot;AUTHENTICATIONS&quot;][$type];
-    $result = $auth-&gt;login($credentials);
-    if(isset($result-&gt;user))
-        $user = $result-&gt;user;
-    else
-        throw new \Exception(&quot;User failed to load&quot;);
-
-    if(!empty($user) &amp;&amp; (false !== $user)) {
-        $this-&gt;persistUser( $user );
-        $response = true;
+    /** Get Hello */
+    public function getHello()
+    {
+        $this-&gt;setTitle('Hello World');
+        $this-&gt;setContent("Hello World");
     }
-
-    return $result;
 }
 </code></pre>
+<p>In a controller class, every function whose name starts with 'get' represents the logic of a page. For example, if you are running the site on your local machine, the url of the site on the example above would be <code>http://localhost/hello</code>.</p>
+<div id = "views"></div>
 
-<p>Of course is your choice what method implement, for example, you can opt to skip <code>persistUser</code> if you want to use client
-side cookie instead of session or any other method on the server side. Said that, we encourage you to implement<br />
-<code>persistUser</code> method like this:</p>
-<pre><code class="php">public function persistUser(UserStorageInterface $user)
-{
-    $this-&gt;generateTokenStorage($user);
-}
-
-public function generateTokenStorage(UserStorageInterface $user)
-{
-    $entityUser = $user-&gt;getEntity();
-
-    $userToken = new UsernamePasswordToken($entityUser-&gt;getEmail(),$entityUser-&gt;getPassword(),'main',$user-&gt;getRoles());
-    $_SESSION['tokenstorage'] = $userToken;
-}
+<h2 id="views">Views<a class="headerlink" href="#views" title="Permanent link">&para;</a></h2>
+<p>The views are stored in <code>app/views/</code> directory.  Views is similar to Layout, however, they are not actually the same. Layout can set inside a layout or a view which view can only contain Layout. Moreover, you can put any HTML or PHP code inside a view.</p>
+<p>Here is an example of a view:</p>
+<pre><code>&lt;p&gt;This is a view template.&lt;/p&gt;
+&lt;p&gt;&lt;?php echo $data[0] ?&gt; world&lt;/p&gt;
 </code></pre>
+<p>It supports HTML tags and ables to use PHP to retrieve variables.</p>
+<div id = "models"></div>
 
-<p>It will give you the chance to interconnect your authenticated user with other packages like <code>erdiko/authorize</code> or any
-<code>Symfony/Security</code>.</p>
+<h2 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h2>
+<p>Erdiko is a mash-up framework and our goal is to make Erdiko be able to mash-up multiple applications/frameworks like Drupal, Magento, WordPress, Zend, and etc.  There are lots of different models out there and it is not feasible to cover all of that.  Therefore, you may design your model layer depending on your needs.</p>
+<p>For example, if you site is using database MySQL, Oracle, Microsoft SQL Server, PostgreSQL, SAP Sybase SQL Anywhere, SQLite, or Drizzle, you may consider to adopt Doctrine's Database Abstraction Layer framework to Erdiko.
+Here is a link to a tutorial of basic usage.</p>
+<div id = "hooks"></div>
+
+<h2 id="hooks">Hooks<a class="headerlink" href="#hooks" title="Permanent link">&para;</a></h2>
+<p>In Erdiko, Hook is mainly driven by the router ToroPHP. Hook is very useful in Erdiko framework and it allows you to excute code before and after a controller is called.  It can also increase the security when communicating with third party applications.  For example, when you made a request to a third party application which is going to do a call-back action to your site, you can use hooks to hooks to verfiy the session.</p>
+<p>For more hooks information, please see https://github.com/anandkunal/ToroPHP#torohook-callbacks</p>
+<div id = "about_erdiko"></div>
+
+<h2 id="about-erdiko">About Erdiko<a class="headerlink" href="#about-erdiko" title="Permanent link">&para;</a></h2>
+<p>Erdiko wants to make your php development easier. If you need a lightweight MVC framework you have come to the right place. Our goal is to offer a clean framework to create sites optimized for mobile devices, APIs and multiple browsers.  Get work done without a lot of unneccessary plumbing to get in the way.  It is camptible with composer, which makes it easy to use with other PHP projects like Doctrine</p>
+<p>Erdiko can act as a middleware framework, hence the name which means 'middle' in the Basque language (Euskara). Use Erdiko if you need to mash-up multiple applications/frameworks like Drupal, Magento, WordPress, and Zend into a unified application.</p>
+<div id = "note"></div>
+
+<h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h2>
+<p>The code is a work in progress, and although stable, may contain items that need more refinement. There are various production sites currently using this software yet it is best to consider it beta.</p>
+<p>We value feedback and would love to hear your thoughts about the architecture and ease of use of this framework. There are a lot of possibilities for Erdiko, we value your ideas and thoughts about where to take this codebase.</p>
+<div id = "team"></div>
+
+<h2 id="team">Team<a class="headerlink" href="#team" title="Permanent link">&para;</a></h2>
+<p><br></p>
+<h3 id="author">Author<a class="headerlink" href="#author" title="Permanent link">&para;</a></h3>
+<ul>
+<li>John Arroyo - Architect, Lead Developer</li>
+</ul>
+<p><br></p>
+<h4 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Andy Armstrong - Development</li>
+<li>Leo Daidone - Development</li>
+<li>Coleman Tung - Development, Documentation and unit testing</li>
+<li>Varun Brahme - Development and unit testing</li>
+</ul>
+<p><br></p>
+<p>If you want to help, please do, we'd love more code! Make your enhancements and do a pull request. If you want to get to even more involved please contact us!</p>
+<div id = "special_thanks"></div>
+
+<h2 id="special-thanks">Special Thanks<a class="headerlink" href="#special-thanks" title="Permanent link">&para;</a></h2>
+<p>Arroyo Labs - For sponsoring development, <a href="http://arroyolabs.com">http://arroyolabs.com</a></p>
+<p>less - dynamic stylesheet language, <a href="http://lesscss.org">http://lesscss.org</a></p>
+<p>Toro - PHP router, <a href="https://github.com/anandkunal/ToroPHP">https://github.com/anandkunal/ToroPHP</a></p>
                 
                   
                 
@@ -847,13 +1040,13 @@ public function generateTokenStorage(UserStorageInterface $user)
           </a>
         
         
-          <a href="../../help/" title="Submitting Issues" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../example/" title="Example App" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Submitting Issues
+                Example App
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
