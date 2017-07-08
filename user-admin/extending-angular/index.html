@@ -268,6 +268,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#why-do-i-need-to-extend-the-components" title="Why do I need to extend the components?" class="md-nav__link">
+    Why do I need to extend the components?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-your-components-application-module-set-up" title="Create your Components &amp; Application Module Set Up" class="md-nav__link">
     Create your Components &amp; Application Module Set Up
   </a>
@@ -587,6 +594,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#why-do-i-need-to-extend-the-components" title="Why do I need to extend the components?" class="md-nav__link">
+    Why do I need to extend the components?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-your-components-application-module-set-up" title="Create your Components &amp; Application Module Set Up" class="md-nav__link">
     Create your Components &amp; Application Module Set Up
   </a>
@@ -623,22 +637,28 @@
                 
                 
                 <h1 id="extending-the-ngx-user-admin-package">Extending the ngx-user-admin Package<a class="headerlink" href="#extending-the-ngx-user-admin-package" title="Permanent link">&para;</a></h1>
-<p>Extending the ngx-user-admin package is simple and a safe way to extend the package for usage in your package. While the official Angular Docs have more complete instructions and tips on how to extend elements, I have created an example that we dissect below where we extend two components and we provide custom a custom HTML template: Home Component &amp; User Edit Component.</p>
+<p>Extending the ngx-user-admin package is simple and a safe way to extend the package for usage in your package. While the official <a href="https://angular.io/guide/architecture">Angular Docs</a> have more complete instructions and tips on how to extend elements, I have created an example that we dissect below where we extend two components and we provide custom a custom HTML template: Home Component &amp; User Edit Component.</p>
 <p>You can see the full example on my <a href="https://github.com/saarmstrong/ngx-user-admin-test">github repo here</a>).</p>
 <p>This example is a "fresh" vanilla Angular CLI application I created for this example via the simple command <code>ng new ngx-user-admin-test</code>.  </p>
+<h2 id="why-do-i-need-to-extend-the-components">Why do I need to extend the components?<a class="headerlink" href="#why-do-i-need-to-extend-the-components" title="Permanent link">&para;</a></h2>
+<p>Extending components allows you to add or manipulate existing code so you can use it more effectively in your application. The reason we suggest extending this package is for package re-use, the parent class is unaffected no matter what you do in your custom code.</p>
+<p>Extending the components also allows the underlying package to be upgraded without need to patch your custom code.</p>
 <h2 id="create-your-components-application-module-set-up">Create your Components &amp; Application Module Set Up<a class="headerlink" href="#create-your-components-application-module-set-up" title="Permanent link">&para;</a></h2>
 <p>I created two components (MyhomeComponent &amp; MyusereditComponent) with the following commands:</p>
 <p><code>ng generate component myhome &amp;&amp; ng generate component myuseredit</code></p>
 <p>After importing the <code>@erdiko/ngx-user-admin</code> module, you will need to import these into your new Application module as seen below:</p>
+<p>(<strong>NOTE</strong> - Custom code will be noted by comments prefixed with <code>**UPDATE**</code>)</p>
 <p>File: <code>app/app.module.ts</code></p>
 <pre><code>...
 
-// Import the ngx-user-admin module
+// **UPDATE** Import the ngx-user-admin module
 import { UserAdminModule }      from '@erdiko/ngx-user-admin';
 
 ...
 
-// Import the extended components from ngx-user-admin package
+// your extended components from ngx-user-admin package added 
+// automatically by ng-cli
+
 import { MyhomeComponent }      from './myhome/myhome.component';
 import { MyusereditComponent }  from './myuseredit/myuseredit.component';
 </code></pre>
@@ -648,7 +668,7 @@ import { MyusereditComponent }  from './myuseredit/myuseredit.component';
 <pre><code>...
 
 /**
-  Custom routing to make sure we use our extended components
+  **UPDATE** Custom routing to make sure we use our extended components
  */
 
 // clang-format off
@@ -672,7 +692,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
 
-    // Declare our custom components
+    // declare our custom components, this is added automatically by ng-cli
     MyhomeComponent,
     MyusereditComponent
   ],
@@ -680,7 +700,7 @@ const routes: Routes = [
 
     ...
 
-    // Import our custom routes
+    // **UPDATE** Import our custom routes
     RouterModule.forRoot(routes),
   ],
   providers: [ ],
@@ -691,7 +711,8 @@ export class AppModule { }
 
 <p>And then you will need to update the Application component HTML template to include the <code>&lt;router-outlet&gt;</code> component so we can see the router output.</p>
 <p>File: <code>app/app.component.html</code></p>
-<pre><code class="html">&lt;h1&gt;
+<pre><code class="html">&lt;!-- **UPDATE** add all this HTML below to your template --&gt;
+&lt;h1&gt;
   {{title}}
 &lt;/h1&gt;
 &lt;div class=&quot;page-content&quot;&gt;
@@ -704,10 +725,11 @@ export class AppModule { }
 <p>A screenshot of this custom component in action:</p>
 <p><img alt="image" src="../../user-admin/images/myhome_screenshot.png" /></p>
 <p>Here are the two files that make up our custom component:</p>
+<p>(<strong>NOTE</strong> - Custom code will be noted by comments prefixed with <code>**UPDATE**</code>)</p>
 <p>File: <code>myhome/myhome.component.ts</code></p>
 <pre><code>...
 
-// Import the component we will extend
+// **UPDATE** Import the component we will extend
 import { HomeComponent }   from '@erdiko/ngx-user-admin';
 
 @Component({
@@ -717,6 +739,7 @@ import { HomeComponent }   from '@erdiko/ngx-user-admin';
 export class MyhomeComponent extends HomeComponent {
 
   constructor() {
+    // **UPDATE** call the parent component's constructor method
     super();
   }
 
@@ -724,7 +747,8 @@ export class MyhomeComponent extends HomeComponent {
 </code></pre>
 
 <p>File: <code>myhome/myhome.component.html</code></p>
-<pre><code class="html">&lt;div class=&quot;row&quot;&gt;
+<pre><code class="html">&lt;!-- **UPDATE** copy and paste this html into the template --&gt;
+&lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;col-xs-12&quot;&gt;
     &lt;h1 id=&quot;welcome-title&quot;&gt;My Extended ngx-user-admin Home Component&lt;/h1&gt;
   &lt;/div&gt;
@@ -750,10 +774,11 @@ export class MyhomeComponent extends HomeComponent {
 <p>A screenshot of this custom component in action:</p>
 <p><img alt="image" src="../../user-admin/images/myuseredit_screenshot.png" /></p>
 <p>Here are the two files that make up our custom component:</p>
+<p>(<strong>NOTE</strong> - Custom code will be noted by comments prefixed with <code>**UPDATE**</code>)</p>
 <p>File: <code>myuseredit/myuseredit.component.ts</code></p>
 <pre><code>...
 
-// Import the components &amp; service we will extend
+// **UPDATE** Import the components &amp; service we will extend
 import { UserEditComponent }    from '@erdiko/ngx-user-admin';
 import { AuthService }          from '@erdiko/ngx-user-admin';
 import { UsersService }         from '@erdiko/ngx-user-admin';
@@ -762,16 +787,20 @@ import { MessageService }       from '@erdiko/ngx-user-admin';
 @Component({
   selector: 'app-myusereditcomponent',
   templateUrl: './myuseredit.component.html',
+
+  // **UPDATE** add the following services as providers
   providers: [AuthService, UsersService, MessageService]
 })
 export class MyusereditComponent extends UserEditComponent {
 
+    // **UPDATE** the constructor to accept the services as params
     constructor(
             @Inject(UsersService) usersService: UsersService,
             @Inject(ActivatedRoute) route: ActivatedRoute,
             @Inject(Router) router: Router,
             @Inject(MessageService) messageService: MessageService) {
 
+        // **UPDATE** call the parent component's constructor method
         super(usersService, route, router, messageService);
     }
 
@@ -779,7 +808,8 @@ export class MyusereditComponent extends UserEditComponent {
 </code></pre>
 
 <p>File: <code>myuseredit/myuseredit.component.html</code></p>
-<pre><code class="html">&lt;div class=&quot;row&quot;&gt;
+<pre><code class="html">&lt;!-- **UPDATE** copy and paste this html into the template --&gt;
+&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-xs-12&quot;&gt;
         &lt;button class=&quot;btn btn-info btn-sm&quot; routerLink=&quot;/&quot;&gt;
             &lt;i class=&quot;fa fa-chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Back to Home
