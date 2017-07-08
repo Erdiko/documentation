@@ -29,15 +29,11 @@ To download Erdiko from our Git repository, enter the following command in comma
 
 		git clone https://github.com/arroyolabs/erdiko
 
-It will clone our Git repository to your local machince. Then, go to the Erdiko root folder and install Erdiko using Composer.
+It will clone our Git repository to your local machine. Then, go to the Erdiko root folder and install Erdiko using Composer.
 
-	composer install
+		composer install
 
-
-<div id = "setup"></div>
-
-Setup web environment
----------------------
+## Setup your environment
 
 1. Open the config file of your web server
 
@@ -52,20 +48,14 @@ Setup web environment
 
 6. If you can see the Hello world page, you have successfully installed Erdiko!
 
-<div class="alert alert-dismissable alert-warning">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4>Warning!</h4>
-  <p>If you cannot open the Hello world page, go back to the config file of your web server to check if the port is 80.  If the port is other than 80, you need to specify the port in Step 4. For example, if you port is 8080, the URL link will be http://localhost:8080 .</p>
-</div>
+!!! important "Keep in mind"
+		All of your server side application code should go in the /app folder.
 
-<div class="alert alert-dismissable alert-info">
-	<button type="button" class="close" data-dismiss="alert">×</button>
-	<strong>Heads up!</strong>
-	<p>
-		All of your server side application code should go in the /app folder while any js file, css file or asset should go in the /public folder.
-	</p>
-	<p>Theme files go in the /public folder while view files and application code goes in the /app folder. Do not modify files in /vendor/erdiko/* if you want to maintain an easy upgrade path with Erdiko.</p>
-</div>
+		All js, css, or media files or asset should go in the /public folder.
+
+		Theme files go in the /app/themes folder while view files and application code goes in the /app/views folder.
+
+		Do not modify files in /vendor/erdiko/* if you want to maintain an easy upgrade path with Erdiko.
 
 ## Create add your first page
 
@@ -115,8 +105,7 @@ Setup web environment
 !!! note "The root of the path is `Erdiko/app/views`"
 		For example, if you want to use the php file located at `Erdiko/app/views/example/test.php`, the path will be `/example/test`
 
-Add JavaScript to a page
-------------------------
+## Add JavaScript to a page
 
 1. Open the corresponding controller file under the folder `Erdiko/www/app/controllers/`.
 
@@ -126,5 +115,5 @@ Add JavaScript to a page
 
 		$this->addJs('[Path of the .js file]');
 
-!!! note "The root of the path is `/public/`"
-		For example, if you want to include the .js file located at `/app/themes/bootstrap/js/test.js`, the path will be `/themes/bootstrap/js/test.js`.
+!!! note "The webserver root is `/public`"
+		For example, if you want to include an example.js file the path will be `/public/themes/bootstrap/js/example.js`.

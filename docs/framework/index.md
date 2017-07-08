@@ -32,28 +32,36 @@ For more information on routing see [Toro PHP routing](https://github.com/anandk
 
 you can use convenient tokens in your routes.  These token are simply convenient regular expressions and defined as follows.
 
-```':string' // '([a-zA-Z]+)'
+```
+':string' // '([a-zA-Z]+)'
 ':number' // '([0-9]+)',
 ':alpha'  // '([a-zA-Z0-9-_]+)',
-':action'  // '([a-zA-Z0-9-_/]+)'
+':action' // '([a-zA-Z0-9-_/]+)'
 ```
 
-#### Examples
+### Examples
 
-```"page/:string": "\app\controllers\Page" // This will match /page/one
+```
+// This will match /page/one
+"page/:string": "\app\controllers\Page"
 
-"page/:number": "\app\controllers\Page" // This will match /page/123
+// This will match /page/123
+"page/:number": "\app\controllers\Page"
 
-"page/:alpha": "\app\controllers\Page" // This will match /page/123 and /page/one
+// This will match /page/123 and /page/one
+"page/:alpha": "\app\controllers\Page"
 
-"book/:action": "\app\controllers\Book" // This will match /book/1/page/123 and pass the everything including the / to the method so it can be further parsed.  e.g. '1/page/123'
+// This will match /book/1/page/123 and pass the everything including
+// the '/' to the method so it can be further parsed. e.g. '1/page/123'
+"book/:action": "\app\controllers\Book"
 ```
 
 ### RESTful routes
 
 Your route will come in based off of the route and http request type
 
-```// Route (in routes.json)
+```
+// Route (in routes.json)
 "rest/:alpha": "\app\controllers\Rest"
 
 // Controller
@@ -82,22 +90,24 @@ If you have already configurated the routes file, the next step would be creatin
 
 Here is an example of a basic controller class:
 
-	class Example extends \erdiko\core\Controller
-	{
+```
+class Example extends \erdiko\core\Controller
+{
 		/** Before */
 		public function _before()
 		{
-			$this->setThemeName('bootstrap');
-			$this->prepareTheme();
+				$this->setThemeName('bootstrap');
+				$this->prepareTheme();
 		}
 
 		/** Get Hello */
 		public function getHello()
 		{
-			$this->setTitle('Hello World');
-			$this->setContent("Hello World");
+				$this->setTitle('Hello World');
+				$this->setContent("Hello World");
 		}
-	}
+}
+```
 
 In a controller class, every function whose name starts with 'get' represents the logic of a page. For example, if you are running the site on your local machine, the url of the site on the example above would be `http://localhost/hello`.
 
@@ -133,16 +143,16 @@ Erdiko can act as a middleware framework, hence the name which means 'middle' in
 
 ## Team
 
-### Author
+**Author**
 
 * John Arroyo - Architect, Lead Developer
 
-### Contributors
+**Contributors**
 
 * Andy Armstrong - Development
 * Leo Daidone - Development
-* Coleman Tung - Development, Documentation and unit testing
-* Varun Brahme - Development and unit testing
+
+To see all the see all the contributors go to [erdiko](https://github.com/Erdiko/erdiko/graphs/contributors) and [core](https://github.com/Erdiko/core/graphs/contributors)
 
 If you want to help, please do, we'd love more code! Make your enhancements and do a pull request. If you want to get to even more involved please contact us!
 

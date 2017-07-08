@@ -7,7 +7,6 @@ pages:
     - Quick Start: framework/quickstart.md
     - Framework:
         - 'Overview': framework/index.md
-        - 'Documentation': framework/documentation.md
         - 'Databases': framework/databases.md
         - 'Example App': framework/example.md
     - User Admin:
@@ -40,8 +39,8 @@ extra_css:
   - 'stylesheets/extra.css'
 
 google_analytics:
-      - 'UA-32448130-2'
-      - auto
+  - 'UA-32448130-2'
+  - auto
 
 markdown_extensions:
   - admonition

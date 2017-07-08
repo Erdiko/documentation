@@ -55,27 +55,27 @@ Insert the following json code under main:
 
 2. 	Find the menu section and insert the following code.
 
-		,
-         {
-            "href":"/Calculator/bmi_version2",
-            "title":"BMI"
-         }
+```
+{
+    "href":"/Calculator/bmi_version2",
+    "title":"BMI"
+}
+```
 
-3. 	Open the routing config file located at `Erdiko/app/config/default/routes.json`.
-	Add a new rule to the route.
+3. 	Open the routing config file located at `app/config/default/routes.json`.  Add a new rule to the route.
 
 		["Calculator/([a-zA-Z0-9_\-/]+)", "\app\controllers\Calculator"],
 
 4.  Then, we will need to create a new controller for the new route.
 	To create a new controller, create `Calculator.php` under the folder `/app/controllers/`
 
-5.  Paste the following code inside the `Calculator.php`
+5.  Paste the following code inside `Calculator.php`
 
 <script src="https://gist.github.com/rajesh28892/dc523f2739b48b1ff224.js"></script>
 
-6.  Create a file called `bmi.php` under `/app/views/examples/`
+6.  Create a view called `bmi.php` under `/app/views/examples/`
 
-7.  Open the bmi.php and add the following code:
+7.  Open bmi.php and add the following code:
 
 <script src="https://gist.github.com/colemantung/c45003580e391cff6239.js"></script>
 
@@ -89,6 +89,6 @@ Insert the following json code under main:
 
 11.  Click the BMI tab on the menu, and then you should see the following results.
 
-	 [BMI Version 2](./assets/themes/bootstrap-3.1.1/img/getStarted/BMI_V2_1.png)
+![BMI Version 2](/images/examples/BMI_V2_1.png)
 
-	 [BMI Version 2 Result](./assets/themes/bootstrap-3.1.1/img/getStarted/BMI_V2_2.png)
+![BMI Version 2 Result](/images/examples/BMI_V2_2.png)
