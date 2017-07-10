@@ -4,8 +4,11 @@ site_author: Arroyo Labs
 
 pages:
     - Home: index.md
-    - Quick start: quickstart.md
-    - Sample app: sample-app.md
+    - Quick Start: framework/quickstart.md
+    - Framework:
+        - 'Overview': framework/index.md
+        - 'Databases': framework/databases.md
+        - 'Example App': framework/example.md
     - User Admin:
         - 'Overview': user-admin/index.md
         - 'Extending': user-admin/extending.md
@@ -25,10 +28,10 @@ pages:
         - 'Overview': authenticate/index.md
         - 'Extending': authenticate/extending.md
     - Help (Learn More):
-        - Submitting Issues: help.md
-        - Coding style guide: style-guide.md
-        - About Us: about.md
-        - Contributing: contributing.md
+        - Submitting Issues: help/index.md
+        - Coding style guide: help/style-guide.md
+        - About Us: help/about.md
+        - Contributing: help/contributing.md
 
 theme: material
 
@@ -36,8 +39,8 @@ extra_css:
   - 'stylesheets/extra.css'
 
 google_analytics:
-      - 'UA-32448130-2'
-      - auto
+  - 'UA-32448130-2'
+  - auto
 
 markdown_extensions:
   - admonition
