@@ -13,18 +13,12 @@ It includes JWT as default authenticator.
 
 ## Setup / Configuration
 
-### Requirements
+##### Requirements
 
-This package requires Pimple version 3.0 or above, Symfony-security package version 3.2 or above, 
-and firebase/php-jwt 4.0 or above.
-If this dependency is not installed automatically when you run `composer update` in your project folder
-please add to the project by
-
-`composer require pimple/pimple`
-
-`composer require symfony/security`
-
-`composer require firebase/php-jwt`
+Between its requirements we count on Pimple, Symfony Security and Firebase PHP-JWT.
+In case of Pimple, we choose this package to manage Dependency Injection, allowing us to add more flexibility and 
+extensibility. It also adds compatibility with Symfony Security module. Finally the JWT package, is being used to 
+provide a build in  working example of authentication extension using this protocol.
 
 ---
 
