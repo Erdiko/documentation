@@ -8,7 +8,8 @@ To start using it in your code just create an instance of `Authorizer` class. Th
 `AuthenticationManagerInterface` from symfony/security package as a constructor parameter.
 
 Here's an example:
- ```php
+
+```php
  class AuthenticationManager implements AuthenticationManagerInterface
  {
      private $authenticationManager;
@@ -62,20 +63,18 @@ Here's an example:
          return $authenticatedToken;
      }
  }
- ```
+```
 
 It’s a best practice to add instance creation in the `_before` hook. An example of this best practice looks like this:
 
 ```php
-...
  public function _before()
  {
      $authManager = new AuthenticationManager();
      $this->auth = new Authorizer($authManager);
-     // Run the parent beore filter to prep the theme
+     // Run the parent before filter to prep the theme
      parent::_before();
  }
-...
 ```
 
 You will then have a `$this->auth` attribute available to use in any _get_ or _post_ action. This will be used in `can`
@@ -84,7 +83,7 @@ methods that determine access, allowing you to grant or reject access to a resou
 For example, if current user has ADMIN role, then it will be redirected to admin dashboard (GRANTED), otherwise the user
 will be redirected to login page (REJECTED).
 
-```php 
+```php
 public function getDashboard()
 {
     if($this->auth->can("VIEW_ADMIN_DASHBOARD")) {
@@ -98,28 +97,29 @@ public function getDashboard()
 }
 ```
 Note that in this example, current user is an instance of `Symfony\Component\Security\Core\Authentication\Token\TokenInterface`,
-stored in `$_SESSION['tokenstorage']`.
+stored in `$_SESSION['tokenstorage']`
 
 Also available is the “VIEW_ADMIN_DASHBOARD” attribute we will use to grant or reject access for the current user.
 
 You can use the same logic to validate Models by adding a `__construct` method where you will place the authorize creation
 
 ```php
-   public function __construct()
-   {
-       $authManager = new AuthenticationManager();
-       $this->auth = new Authorizer($authManager);
-   }
+public function __construct()
+{
+    $authManager = new AuthenticationManager();
+    $this->auth = new Authorizer($authManager);
+}
 ```
 
 Same for GRANT/REJECT:
+
 ```php
-   public function doSomething1()
-   {
-       if($this->auth->can("CAN_DO_1")) {
-           return "success something one";
-       } else {
-           throw new \Exception("You are not granted");
-       }
-   }
+public function doSomething1()
+{
+    if($this->auth->can("CAN_DO_1")) {
+        return "success something one";
+    } else {
+        throw new \Exception("You are not granted");
+    }
+}
 ```
