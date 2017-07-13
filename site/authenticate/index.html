@@ -263,8 +263,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/extending/" title="Extending" class="md-nav__link">
-      Extending
+    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
+      Angular UI
     </a>
   </li>
 
@@ -275,8 +275,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
-      Angular UI
+    <a href="../user-admin/angulargui/" title="Angular GUI" class="md-nav__link">
+      Angular GUI
     </a>
   </li>
 
@@ -515,18 +515,12 @@
     Requirements
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#add-authenticatejson-config" title="Add authenticate.json config." class="md-nav__link">
     Add authenticate.json config.
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -673,18 +667,12 @@
     Requirements
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#add-authenticatejson-config" title="Add authenticate.json config." class="md-nav__link">
     Add authenticate.json config.
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -717,14 +705,11 @@
 <p>This package helps you to manage authentication process. 
 It includes JWT as default authenticator.</p>
 <h2 id="setup-configuration">Setup / Configuration<a class="headerlink" href="#setup-configuration" title="Permanent link">&para;</a></h2>
-<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
-<p>This package requires Pimple version 3.0 or above, Symfony-security package version 3.2 or above, 
-and firebase/php-jwt 4.0 or above.
-If this dependency is not installed automatically when you run <code>composer update</code> in your project folder
-please add to the project by</p>
-<p><code>composer require pimple/pimple</code></p>
-<p><code>composer require symfony/security</code></p>
-<p><code>composer require firebase/php-jwt</code></p>
+<h5 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h5>
+<p>Between its requirements we count on Pimple, Symfony Security and Firebase PHP-JWT.
+In case of Pimple, we choose this package to manage Dependency Injection, allowing us to add more flexibility and 
+extensibility. It also adds compatibility with Symfony Security module. Finally the JWT package, is being used to 
+provide a build in  working example of authentication extension using this protocol.</p>
 <hr />
 <p>Before you start using this package, it needs some initial setup/config.</p>
 <h5 id="add-authenticatejson-config">Add <code>authenticate.json</code> config.<a class="headerlink" href="#add-authenticatejson-config" title="Permanent link">&para;</a></h5>
