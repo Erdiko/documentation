@@ -263,8 +263,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/extending/" title="Extending" class="md-nav__link">
-      Extending
+    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
+      Angular UI
     </a>
   </li>
 
@@ -275,8 +275,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
-      Angular UI
+    <a href="../user-admin/angulargui/" title="Angular GUI" class="md-nav__link">
+      Angular GUI
     </a>
   </li>
 
@@ -705,11 +705,11 @@
 <p>This package implements the authorization process, allowing grant or reject user for performing an action over a resource
 based on your own business rules.</p>
 <h2 id="setup-configuration">Setup / Configuration<a class="headerlink" href="#setup-configuration" title="Permanent link">&para;</a></h2>
-<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
-<p>This package requires Pimple version 3.0 or above and Symfony-security package version 3.2 or above.
-To ensure all dependencies are installed when you run composer update in your project folder run the following commands:</p>
-<p><code>composer require pimple/pimple</code></p>
-<p><code>composer require symfony/security</code></p>
+<h5 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h5>
+<p>Between its requirements we count on Pimple and Symfony Security.
+In case of Pimple, we choose this package to manage Dependency Injection, allowing us to add more flexibility and 
+extensibility. 
+It also adds compatibility with Symfony Security module.</p>
 <h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
 <p>In <code>/app/config/default/</code> folder add <code>authorize.json</code> like below example: </p>
 <pre><code class="json">{
