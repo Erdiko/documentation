@@ -3,7 +3,7 @@
 
     
     <url>
-     <loc>/</loc>
+     <loc>http://erdiko.org/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -11,7 +11,7 @@
 
     
     <url>
-     <loc>/framework/quickstart/</loc>
+     <loc>http://erdiko.org/framework/quickstart/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -20,53 +20,19 @@
     
         
     <url>
-     <loc>/framework/</loc>
+     <loc>http://erdiko.org/framework/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/framework/databases/</loc>
+     <loc>http://erdiko.org/framework/databases/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/framework/example/</loc>
-     <lastmod>2017-07-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/user-admin/</loc>
-     <lastmod>2017-07-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user-admin/angular/</loc>
-     <lastmod>2017-07-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user-admin/angulargui/</loc>
-     <lastmod>2017-07-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user-admin/extending-angular/</loc>
-     <lastmod>2017-07-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user-admin/contributing/</loc>
+     <loc>http://erdiko.org/framework/example/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -76,47 +42,31 @@
     
         
     <url>
-     <loc>/users/</loc>
+     <loc>http://erdiko.org/user-admin/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/users/ajax/</loc>
+     <loc>http://erdiko.org/user-admin/angular/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/users/models/</loc>
+     <loc>http://erdiko.org/user-admin/angulargui/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/users/extending/</loc>
-     <lastmod>2017-07-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/authorize/</loc>
+     <loc>http://erdiko.org/user-admin/extending-angular/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/authorize/security/</loc>
-     <lastmod>2017-07-14</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/authorize/extending/</loc>
+     <loc>http://erdiko.org/user-admin/contributing/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -126,13 +76,25 @@
     
         
     <url>
-     <loc>/authenticate/</loc>
+     <loc>http://erdiko.org/users/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/authenticate/extending/</loc>
+     <loc>http://erdiko.org/users/ajax/</loc>
+     <lastmod>2017-07-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://erdiko.org/users/models/</loc>
+     <lastmod>2017-07-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://erdiko.org/users/extending/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -142,25 +104,63 @@
     
         
     <url>
-     <loc>/help/</loc>
+     <loc>http://erdiko.org/authorize/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/help/style-guide/</loc>
+     <loc>http://erdiko.org/authorize/security/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/help/about/</loc>
+     <loc>http://erdiko.org/authorize/extending/</loc>
+     <lastmod>2017-07-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://erdiko.org/authenticate/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/help/contributing/</loc>
+     <loc>http://erdiko.org/authenticate/extending/</loc>
+     <lastmod>2017-07-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://erdiko.org/help/</loc>
+     <lastmod>2017-07-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://erdiko.org/help/style-guide/</loc>
+     <lastmod>2017-07-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://erdiko.org/help/about/</loc>
+     <lastmod>2017-07-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://erdiko.org/help/contributing/</loc>
      <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
