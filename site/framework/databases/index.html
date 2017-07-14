@@ -210,6 +210,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Databases
@@ -223,13 +225,15 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuring" title="Configuring" class="md-nav__link">
-    Configuring
+  <a href="#configuring-a-database" title="Configuring a database" class="md-nav__link">
+    Configuring a database
   </a>
   
 </li>
@@ -239,11 +243,31 @@
     Pick your ORM or db adapter
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doctrine" title="Doctrine" class="md-nav__link">
+    Doctrine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eloquent" title="Eloquent" class="md-nav__link">
+    Eloquent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#roll-your-own" title="roll your own" class="md-nav__link">
-    roll your own
+  <a href="#roll-your-own" title="Roll your own" class="md-nav__link">
+    Roll your own
   </a>
   
 </li>
@@ -624,13 +648,15 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuring" title="Configuring" class="md-nav__link">
-    Configuring
+  <a href="#configuring-a-database" title="Configuring a database" class="md-nav__link">
+    Configuring a database
   </a>
   
 </li>
@@ -640,11 +666,31 @@
     Pick your ORM or db adapter
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doctrine" title="Doctrine" class="md-nav__link">
+    Doctrine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eloquent" title="Eloquent" class="md-nav__link">
+    Eloquent
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#roll-your-own" title="roll your own" class="md-nav__link">
-    roll your own
+  <a href="#roll-your-own" title="Roll your own" class="md-nav__link">
+    Roll your own
   </a>
   
 </li>
@@ -664,11 +710,45 @@
               
                 
                 
-                  <h1>Databases</h1>
-                
-                <h2 id="configuring">Configuring<a class="headerlink" href="#configuring" title="Permanent link">&para;</a></h2>
+                <h1 id="databases">Databases<a class="headerlink" href="#databases" title="Permanent link">&para;</a></h1>
+<h2 id="configuring-a-database">Configuring a database<a class="headerlink" href="#configuring-a-database" title="Permanent link">&para;</a></h2>
+<p>Your database credentials belong in <code>app/config/shared/database.json</code></p>
+<p>The default settings are good for most projects, but can be easily changed.  At a minimum, you will need to update 'host', 'database', 'username', and 'password'.</p>
+<pre><code>{
+    &quot;default&quot;: &quot;master&quot;,
+    &quot;entities&quot;: &quot;/entities&quot;,
+    &quot;is_dev_mode&quot;: 1,
+    &quot;connections&quot;: {
+        &quot;master&quot;: {
+            &quot;driver&quot;: &quot;pdo_mysql&quot;,
+            &quot;host&quot;: &quot;localhost&quot;,
+            &quot;database&quot;: &quot;orms&quot;,
+            &quot;username&quot;: &quot;webuser&quot;,
+            &quot;password&quot;: &quot;webuserpass&quot;,
+            &quot;charset&quot;: &quot;utf8&quot;,
+            &quot;collation&quot;: &quot;utf8_unicode_ci&quot;,
+            &quot;prefix&quot;: &quot;&quot;
+        }
+    }
+}
+</code></pre>
+
 <h2 id="pick-your-orm-or-db-adapter">Pick your ORM or db adapter<a class="headerlink" href="#pick-your-orm-or-db-adapter" title="Permanent link">&para;</a></h2>
-<h2 id="roll-your-own">roll your own<a class="headerlink" href="#roll-your-own" title="Permanent link">&para;</a></h2>
+<p>We have built in support for the (arguably) two most popular database ORMs in the PHP community.  These are Doctrine and Eloquent.</p>
+<p>Install one of the existing adapters by using composer.  Update the database.json config file and use following composer commands to add the ORM of choice.</p>
+<h3 id="doctrine">Doctrine<a class="headerlink" href="#doctrine" title="Permanent link">&para;</a></h3>
+<pre><code>composer require erdiko/doctrine
+</code></pre>
+
+<p>See more information on <a href="https://github.com/Erdiko/doctrine">Github</a></p>
+<h3 id="eloquent">Eloquent<a class="headerlink" href="#eloquent" title="Permanent link">&para;</a></h3>
+<pre><code>composer require erdiko/eloquent
+</code></pre>
+
+<p>See more information on <a href="https://github.com/Erdiko/eloquent">Github</a></p>
+<h2 id="roll-your-own">Roll your own<a class="headerlink" href="#roll-your-own" title="Permanent link">&para;</a></h2>
+<p>Look at the above packages for examples of how you can easily create your own.  Reach out to us if you have some ideas or need help using other ORMs or database adapters with Erdiko.</p>
+<p>We have used erdiko with other database packages but have not officially supported them.  We have been contemplating adding <a href="https://zendframework.github.io/zend-db/">zend-db</a> and <a href="http://propelorm.org/">propel</a> and <a href="http://phpdatamapper.com/">spot</a>.  If you wish to contribute an integration package please let us know.</p>
                 
                   
                 

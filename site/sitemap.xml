@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/framework/quickstart/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,19 +21,19 @@
         
     <url>
      <loc>/framework/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/framework/databases/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/framework/example/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -43,31 +43,31 @@
         
     <url>
      <loc>/user-admin/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/user-admin/angular/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/user-admin/angulargui/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/user-admin/extending-angular/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/user-admin/contributing/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -77,25 +77,25 @@
         
     <url>
      <loc>/users/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/users/ajax/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/users/models/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/users/extending/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -105,19 +105,19 @@
         
     <url>
      <loc>/authorize/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/authorize/security/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/authorize/extending/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -127,13 +127,13 @@
         
     <url>
      <loc>/authenticate/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/authenticate/extending/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -143,25 +143,25 @@
         
     <url>
      <loc>/help/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/help/style-guide/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/help/about/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/help/contributing/</loc>
-     <lastmod>2017-07-13</lastmod>
+     <lastmod>2017-07-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
