@@ -147,23 +147,38 @@
         }, 
         {
             "location": "/framework/databases/", 
-            "text": "Configuring\n\n\nPick your ORM or db adapter\n\n\nroll your own", 
+            "text": "Databases\n\n\nConfiguring a database\n\n\nYour database credentials belong in \napp/config/shared/database.json\n\n\nThe default settings are good for most projects, but can be easily changed.  At a minimum, you will need to update 'host', 'database', 'username', and 'password'.\n\n\n{\n    \ndefault\n: \nmaster\n,\n    \nentities\n: \n/entities\n,\n    \nis_dev_mode\n: 1,\n    \nconnections\n: {\n        \nmaster\n: {\n            \ndriver\n: \npdo_mysql\n,\n            \nhost\n: \nlocalhost\n,\n            \ndatabase\n: \norms\n,\n            \nusername\n: \nwebuser\n,\n            \npassword\n: \nwebuserpass\n,\n            \ncharset\n: \nutf8\n,\n            \ncollation\n: \nutf8_unicode_ci\n,\n            \nprefix\n: \n\n        }\n    }\n}\n\n\n\n\nPick your ORM or db adapter\n\n\nWe have built in support for the (arguably) two most popular database ORMs in the PHP community.  These are Doctrine and Eloquent.\n\n\nInstall one of the existing adapters by using composer.  Update the database.json config file and use following composer commands to add the ORM of choice.\n\n\nDoctrine\n\n\ncomposer require erdiko/doctrine\n\n\n\n\nSee more information on \nGithub\n\n\nEloquent\n\n\ncomposer require erdiko/eloquent\n\n\n\n\nSee more information on \nGithub\n\n\nRoll your own\n\n\nLook at the above packages for examples of how you can easily create your own.  Reach out to us if you have some ideas or need help using other ORMs or database adapters with Erdiko.\n\n\nWe have used erdiko with other database packages but have not officially supported them.  We have been contemplating adding \nzend-db\n and \npropel\n and \nspot\n.  If you wish to contribute an integration package please let us know.", 
             "title": "Databases"
         }, 
         {
-            "location": "/framework/databases/#configuring", 
+            "location": "/framework/databases/#databases", 
             "text": "", 
-            "title": "Configuring"
+            "title": "Databases"
+        }, 
+        {
+            "location": "/framework/databases/#configuring-a-database", 
+            "text": "Your database credentials belong in  app/config/shared/database.json  The default settings are good for most projects, but can be easily changed.  At a minimum, you will need to update 'host', 'database', 'username', and 'password'.  {\n     default :  master ,\n     entities :  /entities ,\n     is_dev_mode : 1,\n     connections : {\n         master : {\n             driver :  pdo_mysql ,\n             host :  localhost ,\n             database :  orms ,\n             username :  webuser ,\n             password :  webuserpass ,\n             charset :  utf8 ,\n             collation :  utf8_unicode_ci ,\n             prefix :  \n        }\n    }\n}", 
+            "title": "Configuring a database"
         }, 
         {
             "location": "/framework/databases/#pick-your-orm-or-db-adapter", 
-            "text": "", 
+            "text": "We have built in support for the (arguably) two most popular database ORMs in the PHP community.  These are Doctrine and Eloquent.  Install one of the existing adapters by using composer.  Update the database.json config file and use following composer commands to add the ORM of choice.", 
             "title": "Pick your ORM or db adapter"
         }, 
         {
+            "location": "/framework/databases/#doctrine", 
+            "text": "composer require erdiko/doctrine  See more information on  Github", 
+            "title": "Doctrine"
+        }, 
+        {
+            "location": "/framework/databases/#eloquent", 
+            "text": "composer require erdiko/eloquent  See more information on  Github", 
+            "title": "Eloquent"
+        }, 
+        {
             "location": "/framework/databases/#roll-your-own", 
-            "text": "", 
-            "title": "roll your own"
+            "text": "Look at the above packages for examples of how you can easily create your own.  Reach out to us if you have some ideas or need help using other ORMs or database adapters with Erdiko.  We have used erdiko with other database packages but have not officially supported them.  We have been contemplating adding  zend-db  and  propel  and  spot .  If you wish to contribute an integration package please let us know.", 
+            "title": "Roll your own"
         }, 
         {
             "location": "/framework/example/", 
@@ -402,17 +417,17 @@
         }, 
         {
             "location": "/user-admin/contributing/", 
-            "text": "Contributing to Erdiko\n\n\nHow to contribute\n\n\nSee our \nCoding Style Guide", 
+            "text": "Contributing to Erdiko\n\n\nWe love when folks from the community get involved.  We welcome pull requests and encourage folks to contribute in any way that makes sense for them.\n\n\nHow to contribute\n\n\nPlease see our \nContributing page\n for more information.", 
             "title": "Contributing"
         }, 
         {
             "location": "/user-admin/contributing/#contributing-to-erdiko", 
-            "text": "", 
+            "text": "We love when folks from the community get involved.  We welcome pull requests and encourage folks to contribute in any way that makes sense for them.", 
             "title": "Contributing to Erdiko"
         }, 
         {
             "location": "/user-admin/contributing/#how-to-contribute", 
-            "text": "See our  Coding Style Guide", 
+            "text": "Please see our  Contributing page  for more information.", 
             "title": "How to contribute"
         }, 
         {
