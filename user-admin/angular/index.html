@@ -313,6 +313,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../gui/" title="User Interface (GUI)" class="md-nav__link">
+      User Interface (GUI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -467,18 +479,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../angulargui/" title="Angular GUI" class="md-nav__link">
-      Angular GUI
-    </a>
   </li>
 
         
@@ -924,7 +924,8 @@
                 
                   <h1>Angular UI</h1>
                 
-                <h2 id="directory-hierarchy">Directory Hierarchy<a class="headerlink" href="#directory-hierarchy" title="Permanent link">&para;</a></h2>
+                <p>The GUI for the user-admin is created using that latest Angular framework.  Lets take a look at how this works.</p>
+<h2 id="directory-hierarchy">Directory Hierarchy<a class="headerlink" href="#directory-hierarchy" title="Permanent link">&para;</a></h2>
 <p>The following is a brief hiearchy that highlights the components and the services.</p>
 <pre><code>├── auth.guard.ts
 ├── auth.service.ts
@@ -970,36 +971,36 @@ Note: tpl.ts is used instead of HTML due to compilation process with rollup.js</
 At logged in state, the option to log out is available.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>header.component.tpl.ts </li>
+<li>header.component.tpl.ts</li>
 <li>header.component.ts</li>
 </ul>
 <h3 id="home-component">Home Component<a class="headerlink" href="#home-component" title="Permanent link">&para;</a></h3>
 <p>Home Component holds the page the user-admin will see once logged in. From there, the user-admin can opt to create a user, go to User List or go to User Event Log.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>home.component.tpl.ts </li>
+<li>home.component.tpl.ts</li>
 <li>home.component.ts</li>
 </ul>
 <h3 id="login">Login<a class="headerlink" href="#login" title="Permanent link">&para;</a></h3>
 <p>Login Components displays the Login form that is displayed when user is to log in. It also houses the user login form validation.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>login.component.tpl.ts </li>
+<li>login.component.tpl.ts</li>
 <li>login.component.ts</li>
 </ul>
 <h3 id="message">Message<a class="headerlink" href="#message" title="Permanent link">&para;</a></h3>
-<p>Message Components hold small notification on the UI whenever there are updates. If the user-admin is successfully / unsuccessfully adding, editing, deleting 
+<p>Message Components hold small notification on the UI whenever there are updates. If the user-admin is successfully / unsuccessfully adding, editing, deleting
 users in the database, this component is responsible of such notification.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>message.component.tpl.ts </li>
+<li>message.component.tpl.ts</li>
 <li>message.component.ts</li>
 </ul>
 <h3 id="password">Password<a class="headerlink" href="#password" title="Permanent link">&para;</a></h3>
 <p>Password Component is responsible for changing the user's password.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>password.component.tpl.ts </li>
+<li>password.component.tpl.ts</li>
 <li>password.component.ts</li>
 </ul>
 <h3 id="user-edit">User-Edit<a class="headerlink" href="#user-edit" title="Permanent link">&para;</a></h3>
@@ -1010,22 +1011,22 @@ users in the database, this component is responsible of such notification.</p>
 </ol>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>user-edit.component.tpl.ts </li>
+<li>user-edit.component.tpl.ts</li>
 <li>user-edit.component.ts</li>
 </ul>
 <h3 id="user-event-log">User-Event-Log<a class="headerlink" href="#user-event-log" title="Permanent link">&para;</a></h3>
-<p>User Event Log Component is nested within the User-Edit component and is displayed under the user-edit form. 
+<p>User Event Log Component is nested within the User-Edit component and is displayed under the user-edit form.
 It retrieves recorded action the specified user has taken. The component also features sort and pagination for easy organization.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>user-event-log.component.tpl.ts </li>
+<li>user-event-log.component.tpl.ts</li>
 <li>user-event-log.component.ts</li>
 </ul>
 <h3 id="user-list">User-List<a class="headerlink" href="#user-list" title="Permanent link">&para;</a></h3>
 <p>User-List Component retrieves all the users that are on the database. From here user-admin may target specific user to edit or delete.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>user-list.component.tpl.ts </li>
+<li>user-list.component.tpl.ts</li>
 <li>user-list.component.ts</li>
 </ul>
 <h3 id="users-event-log">Users-Event-Log<a class="headerlink" href="#users-event-log" title="Permanent link">&para;</a></h3>
@@ -1033,7 +1034,7 @@ It retrieves recorded action the specified user has taken. The component also fe
 The component also features sort and pagination for easy organization.</p>
 <p><strong>Component &amp; Template Files</strong></p>
 <ul>
-<li>user-event-log.component.tpl.ts </li>
+<li>user-event-log.component.tpl.ts</li>
 <li>user-event-log.component.ts</li>
 </ul>
 <h2 id="services">Services<a class="headerlink" href="#services" title="Permanent link">&para;</a></h2>
@@ -1050,7 +1051,7 @@ The component also features sort and pagination for easy organization.</p>
  - User Edit Component
  - User List Component</p>
 <h3 id="user-resolve-user-resolveservicets">User Resolve - user-resolve.service.ts<a class="headerlink" href="#user-resolve-user-resolveservicets" title="Permanent link">&para;</a></h3>
-<p>This service returns a User model for a provided ID, if one is found. 
+<p>This service returns a User model for a provided ID, if one is found.
 If not found, it returns false and navigate the user to the default route</p>
 <p>Components/Services Using this service:
 - Users Service</p>
@@ -1084,7 +1085,7 @@ It is also responsible of listing the users as well as retrieving the user event
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../gui/" title="User Interface (GUI)" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1093,19 +1094,19 @@ It is also responsible of listing the users as well as retrieving the user event
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Overview
+                User Interface (GUI)
               </span>
             </div>
           </a>
         
         
-          <a href="../angulargui/" title="Angular GUI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../extending-angular/" title="Extending Angular UI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Angular GUI
+                Extending Angular UI
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

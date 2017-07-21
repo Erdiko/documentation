@@ -351,15 +351,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-erdiko-serves-the-angular-application" title="How Erdiko serves the Angular Application" class="md-nav__link">
-    How Erdiko serves the Angular Application
+  <a href="#how-erdiko-serves-the-angular-application-gui" title="How Erdiko serves the Angular application (GUI)" class="md-nav__link">
+    How Erdiko serves the Angular application (GUI)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-configuration-of-ngx-user-admin-for-local-development" title="Setup / Configuration of ngx-user-admin for local development" class="md-nav__link">
-    Setup / Configuration of ngx-user-admin for local development
+  <a href="#setup-configuration-of-ngx-user-admin-for-local-development-optional" title="Setup / Configuration of ngx-user-admin for local development (optional)" class="md-nav__link">
+    Setup / Configuration of ngx-user-admin for local development (optional)
   </a>
   
     <nav class="md-nav">
@@ -399,8 +399,8 @@
 
 
   <li class="md-nav__item">
-    <a href="angular/" title="Angular UI" class="md-nav__link">
-      Angular UI
+    <a href="gui/" title="User Interface (GUI)" class="md-nav__link">
+      User Interface (GUI)
     </a>
   </li>
 
@@ -411,8 +411,8 @@
 
 
   <li class="md-nav__item">
-    <a href="angulargui/" title="Angular GUI" class="md-nav__link">
-      Angular GUI
+    <a href="angular/" title="Angular UI" class="md-nav__link">
+      Angular UI
     </a>
   </li>
 
@@ -740,15 +740,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-erdiko-serves-the-angular-application" title="How Erdiko serves the Angular Application" class="md-nav__link">
-    How Erdiko serves the Angular Application
+  <a href="#how-erdiko-serves-the-angular-application-gui" title="How Erdiko serves the Angular application (GUI)" class="md-nav__link">
+    How Erdiko serves the Angular application (GUI)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-configuration-of-ngx-user-admin-for-local-development" title="Setup / Configuration of ngx-user-admin for local development" class="md-nav__link">
-    Setup / Configuration of ngx-user-admin for local development
+  <a href="#setup-configuration-of-ngx-user-admin-for-local-development-optional" title="Setup / Configuration of ngx-user-admin for local development (optional)" class="md-nav__link">
+    Setup / Configuration of ngx-user-admin for local development (optional)
   </a>
   
     <nav class="md-nav">
@@ -795,34 +795,56 @@
 <p>Installation:</p>
 <pre><code>composer create erdiko/user-admin
 </code></pre>
+
 <h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
 <p>The user-admin package provides a secure and attractive UI for managing users with our Erdiko framework. The UX is provided by an AngularJS Application served by our very own Erdiko framework.</p>
 <p>The Angular Application itself is based on a Angular CLI application that imports our custom <a href="https://www.npmjs.com/package/@erdiko/ngx-user-admin">ngx-user-admin</a> package from npm. This package is used to define the angular routes and provide the services and components used to create the UX.</p>
-<p>The Erdiko application serves the JS files required for the Angular application as well as providing the routes for the AJAX requests. </p>
+<p>The Erdiko application serves the JS files required for the Angular application as well as providing the routes for the AJAX requests.</p>
+<p>Example page: Create user
+<img alt="Screenshot" src="./images/Create-User.png" /></p>
 <h2 id="docker-quick-start">Docker (Quick Start)<a class="headerlink" href="#docker-quick-start" title="Permanent link">&para;</a></h2>
-<p>Please refer to the <a href="https://github.com/erdiko/user-admin#installation">README file</a> of this repo for the most up to date information on installing this application.</p>
+<p>To use docker and composer to start your environment</p>
+<pre><code>composer create erdiko/user-admin
+cd user-admin
+docker-compose up -d
+</code></pre>
+
+<p>This will give you a set of containers for a working website (running mysql, php and nginx).  In order to use the admin and get started managing users you still need to populate the database.  We have a convenient script to do just that.</p>
+<pre><code>docker exec -it erdiko_users_php /code/scripts/install-db.sh
+</code></pre>
+
+<p>Now you are ready to login and use the Erdiko User Admin.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don't have composer, refer to <a href="https://getcomposer.org/download/">these installation instructions</a>.
+For the most up to date installation instructions refer to the <a href="https://github.com/erdiko/user-admin#installation">user-admin README file</a>.</p>
+</div>
 <h2 id="default-login">Default Login<a class="headerlink" href="#default-login" title="Permanent link">&para;</a></h2>
 <p>If you followed the quick start instructions from the readme, it will create a sample admin user for you.  You can login with the following credentials:</p>
 <ul>
 <li>username: erdiko@arroyolabs.com</li>
 <li>password: password</li>
 </ul>
-<h2 id="how-erdiko-serves-the-angular-application">How Erdiko serves the Angular Application<a class="headerlink" href="#how-erdiko-serves-the-angular-application" title="Permanent link">&para;</a></h2>
-<p>This Erdiko application serves up the Javascript files that bootstrap the JS application itself, and also provide the AJAX routes as noted above. </p>
-<p>In our <code>user-admin</code> erdiko theme, we use the <code>theme.json</code> file to define the Javascript files that actually serve the application. Please refer to our <a href="https://github.com/Erdiko/erdiko">erdiko/erdiko documentation</a> for more information.</p>
-<p>The build npm script (noted below) from the Angular CLI application actually compiles the typecsript into common JS files. We would highly recommend reviewing this file if you plan on editing any code.</p>
-<h2 id="setup-configuration-of-ngx-user-admin-for-local-development">Setup / Configuration of ngx-user-admin for local development<a class="headerlink" href="#setup-configuration-of-ngx-user-admin-for-local-development" title="Permanent link">&para;</a></h2>
-<p>Running the Angular CLI application locally is an easy way to see your changes quickly before "building" and allowing the Erdiko Application to serve the compiled files. </p>
-<p>To start this process, navigate to your local clone of the user-admin repository and type the following command in the terminal:</p>
-<pre><code>cd /app/themes/user-admin/src/app
-</code></pre>
+<h2 id="how-erdiko-serves-the-angular-application-gui">How Erdiko serves the Angular application (GUI)<a class="headerlink" href="#how-erdiko-serves-the-angular-application-gui" title="Permanent link">&para;</a></h2>
+<p>This Erdiko application serves up the Ajax endpoints and the JavaScript files that bootstrap the Angular JS application.</p>
+<p>In our user-admin erdiko theme, <code>user-admin\app\themes\user-admin</code>, we use the <code>theme.json</code> file to define which Javascript files are included on the page to serve the Angular application. Please refer to our <a href="../framework/">erdiko documentation</a> for more information on customizing themes and routes.</p>
+<p>The build npm script (noted below) from the Angular CLI application actually compiles the typecsript into common JS files. We would highly recommend reviewing this file if you plan on editing any of the Angular code.</p>
+<h2 id="setup-configuration-of-ngx-user-admin-for-local-development-optional">Setup / Configuration of ngx-user-admin for local development (optional)<a class="headerlink" href="#setup-configuration-of-ngx-user-admin-for-local-development-optional" title="Permanent link">&para;</a></h2>
+<p>If you wish to modify the existing Angular application you will need to have a local development environment.  For example you may wish to customize a component by extending it or create a new component and add it to your app.</p>
+<p>Running the Angular CLI application locally is an easy way to see your changes quickly before "building" and allowing the Erdiko Application to serve the compiled files.</p>
+<p>The source of the Angular code is at <code>user-admin/app/themes/user-admin/src/app</code></p>
 <h3 id="npm-local-server">NPM Local Server<a class="headerlink" href="#npm-local-server" title="Permanent link">&para;</a></h3>
-<p>This command will start the npm server locally. Files in the angular application are then "watched" and updates to the angular application will be displayed once you save the files. </p>
+<p>This command will start the npm server locally. Files in the angular application are then "watched" and updates to the angular application will be displayed once you save the files.</p>
 <p>You can view the local server at this address: http://localhost:4200</p>
-<pre><code>npm run start
+<pre><code>cd app/themes/user-admin/src/app
+npm run start
 </code></pre>
+
 <h3 id="compiling-your-changes">Compiling your changes<a class="headerlink" href="#compiling-your-changes" title="Permanent link">&para;</a></h3>
 <p>Once you have tested and completed your updates, you must "build" the application to compile the typescript to be served by the erdiko application. This step is required before any code can be deployed to a staging or production server.</p>
+<pre><code>npm run build
+</code></pre>
+
 <p>You can view the Erdiko application at this address: http://docker.local:8088</p>
                 
                   
@@ -857,13 +879,13 @@
           </a>
         
         
-          <a href="angular/" title="Angular UI" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="gui/" title="User Interface (GUI)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Angular UI
+                User Interface (GUI)
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

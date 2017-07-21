@@ -48,13 +48,13 @@
     </url>
         
     <url>
-     <loc>http://erdiko.org/user-admin/angular/</loc>
+     <loc>http://erdiko.org/user-admin/gui/</loc>
      <lastmod>2017-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://erdiko.org/user-admin/angulargui/</loc>
+     <loc>http://erdiko.org/user-admin/angular/</loc>
      <lastmod>2017-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
