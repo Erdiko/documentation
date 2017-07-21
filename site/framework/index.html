@@ -248,6 +248,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Overview
@@ -260,6 +262,8 @@
       
 <nav class="md-nav md-nav--secondary">
   
+  
+    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -437,8 +441,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
-      Angular UI
+    <a href="../user-admin/gui/" title="User Interface (GUI)" class="md-nav__link">
+      User Interface (GUI)
     </a>
   </li>
 
@@ -449,8 +453,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-admin/angulargui/" title="Angular GUI" class="md-nav__link">
-      Angular GUI
+    <a href="../user-admin/angular/" title="Angular UI" class="md-nav__link">
+      Angular UI
     </a>
   </li>
 
@@ -750,6 +754,8 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -868,17 +874,17 @@
                   <a href="https://github.com/erdiko/erdiko/edit/master/docs/framework/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Overview</h1>
-                
-                <h2 id="config">Config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h2>
+                <h1 id="erdiko-framework-overview">Erdiko Framework Overview<a class="headerlink" href="#erdiko-framework-overview" title="Permanent link">&para;</a></h1>
+<h2 id="config">Config<a class="headerlink" href="#config" title="Permanent link">&para;</a></h2>
 <p>The config folder is stored in <code>/app/config/</code> directory and the default application config file is located at <code>/app/config/application/default.json</code>.
 In the config file, you can modify some settings of the site and plugins, such as logging, cache, and analytics.  </p>
 <p>If you wish to store configurations for other applications, we recommend you to create a new config file under <code>/app/config/</code> directory. Moreover, all config files are stored in JSON format and you can retrieve config from the config file though the getConfig function in Erdiko class.  </p>
 <p>For example, to read the configuration of Cache which is located at <code>/app/config/cache.json</code> directory, you can use the following code:</p>
-<pre><code>    $config = \Erdiko::getConfig("local/cache");
-    $host = $config["memcached"]["host"];               
-    $port = $config["memcached"]["port"];
+<pre><code>$config = \Erdiko::getConfig(&quot;local/cache&quot;);
+$host = $config[&quot;memcached&quot;][&quot;host&quot;];               
+$port = $config[&quot;memcached&quot;][&quot;port&quot;];
 </code></pre>
+
 <h2 id="routes">Routes<a class="headerlink" href="#routes" title="Permanent link">&para;</a></h2>
 <p>Application routes are defined in the file, <code>/app/config/application/routes.json</code>
 Update your app's routes in this file.</p>
