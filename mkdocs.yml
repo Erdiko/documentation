@@ -2,7 +2,7 @@ site_name: Erdiko Documentation
 site_description: Erdiko Documentation
 site_author: Arroyo Labs
 site_url: http://erdiko.org
-repo_url: https://github.com/erdiko/documentation/
+repo_url: https://github.com/erdiko/erdiko
 
 pages:
     - Home: index.md
