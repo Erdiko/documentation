@@ -6,7 +6,7 @@ Installation:
 composer create erdiko/erdiko
 ```
 
-Git Repo: [https://github.com/Erdiko/erdiko](https://github.com/Erdiko/erdiko)
+Git repo: [https://github.com/Erdiko/erdiko](https://github.com/Erdiko/erdiko)
 
 ## Config
 
