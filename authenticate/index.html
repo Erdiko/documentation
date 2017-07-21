@@ -550,6 +550,19 @@
     Overview
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" title="Requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -561,15 +574,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
-    Requirements
+  <a href="#add-config" title="Add config" class="md-nav__link">
+    Add config
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-authenticatejson-config" title="Add authenticate.json config." class="md-nav__link">
-    Add authenticate.json config.
+  <a href="#configuration" title="Configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
@@ -702,6 +715,19 @@
     Overview
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" title="Requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -713,15 +739,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requirements" title="Requirements" class="md-nav__link">
-    Requirements
+  <a href="#add-config" title="Add config" class="md-nav__link">
+    Add config
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-authenticatejson-config" title="Add authenticate.json config." class="md-nav__link">
-    Add authenticate.json config.
+  <a href="#configuration" title="Configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
@@ -753,31 +779,36 @@
 <p>installation:</p>
 <pre><code>composer require erdiko/authenticate
 </code></pre>
+
+<p>Git repo: <a href="https://github.com/Erdiko/authenticate">https://github.com/Erdiko/authenticate</a>  </p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>This package helps you to manage authentication process. 
+<p>This package helps you to manage authentication process.
 It includes JWT as default authenticator.</p>
-<h2 id="setup-configuration">Setup / Configuration<a class="headerlink" href="#setup-configuration" title="Permanent link">&para;</a></h2>
-<h5 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h5>
-<p>Between its requirements we count on Pimple, Symfony Security and Firebase PHP-JWT.
-In case of Pimple, we choose this package to manage Dependency Injection, allowing us to add more flexibility and 
-extensibility. It also adds compatibility with Symfony Security module. Finally the JWT package, is being used to 
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
+<p>Authenticate uses Pimple, Symfony Security and Firebase PHP-JWT. These are listed in the package.json file and are automatically downloaded.</p>
+<p>In case of Pimple, we chose this package to manage Dependency Injection, allowing us to add more flexibility and
+extensibility. It also adds compatibility with Symfony Security module. Finally the JWT package, is being used to
 provide a build in  working example of authentication extension using this protocol.</p>
-<hr />
+<h2 id="setup-configuration">Setup / Configuration<a class="headerlink" href="#setup-configuration" title="Permanent link">&para;</a></h2>
 <p>Before you start using this package, it needs some initial setup/config.</p>
-<h5 id="add-authenticatejson-config">Add <code>authenticate.json</code> config.<a class="headerlink" href="#add-authenticatejson-config" title="Permanent link">&para;</a></h5>
+<h3 id="add-config">Add config<a class="headerlink" href="#add-config" title="Permanent link">&para;</a></h3>
+<p>Authenticate needs a config file called <code>authenticate.json</code></p>
+<pre><code>app\config\default\authenticate.json
+</code></pre>
+
 <p>In this file will be defined two major components, the first one related with storage and the other related with
 authentication.</p>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
 <p>For the storage we provided a SessionStorage service, but you can add your custom storage service just implementing
 <code>erdiko\authenticate\StorageInterface</code> interface and adding it to the config file. For more details refer to
 <strong><a href="./extending/">Extending</a></strong></p>
-<p>In case of authentication, there are two steps, <strong>Authenticator</strong> and <strong>Authentication</strong> that implements 
+<p>In case of authentication, there are two steps, <strong>Authenticator</strong> and <strong>Authentication</strong> that implements
 <code>erdiko\authenticate\AuthenticatorInterface</code> and <code>erdiko\authenticate\AuthenticationInterface</code> respectively.
-Within your app, let's say LoginController or whenever you place the <strong>login</strong>, you will use an instance of 
+Within your app, let's say LoginController or whenever you place the <strong>login</strong>, you will use an instance of
 <strong>Authenticator</strong> that will provide you a set of useful method to login, logout, maintain cache among others.
 This authenticator object will use the <strong>authentication</strong> type you select, between all of the enabled options you defined
 in the <code>authenticate.json</code> config, and that is the implementation of the second Interface.</p>
-<p>Here's an example of config file
-(you can copy from <code>&lt;project&gt;/vendor/erdiko/authenticate/app/config/default/authenticate.json</code>)</p>
+<p>There is an example of config file located in the package. You can copy from <code>vendor/erdiko/authenticate/app/config/default/authenticate.json</code></p>
 <pre><code>{
   &quot;authentication&quot;: {
     &quot;available_types&quot;: [{

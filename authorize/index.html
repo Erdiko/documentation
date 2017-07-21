@@ -750,20 +750,21 @@
                 
                 <h1 id="authorize">Authorize<a class="headerlink" href="#authorize" title="Permanent link">&para;</a></h1>
 <p><strong>erdiko/authorize package</strong></p>
-<p>installation:</p>
+<p>Installation:</p>
 <pre><code>composer require erdiko/authorize
 </code></pre>
+
+<p>Git repo: <a href="https://github.com/Erdiko/authorize">https://github.com/Erdiko/authorize</a>  </p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>This package implements the authorization process, allowing grant or reject user for performing an action over a resource
 based on your own business rules.</p>
 <h2 id="setup-configuration">Setup / Configuration<a class="headerlink" href="#setup-configuration" title="Permanent link">&para;</a></h2>
-<h5 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h5>
-<p>Between its requirements we count on Pimple and Symfony Security.
-In case of Pimple, we choose this package to manage Dependency Injection, allowing us to add more flexibility and 
-extensibility. 
-It also adds compatibility with Symfony Security module.</p>
+<h4 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h4>
+<p>Authorize uses Pimple and Symfony Security.  These are listed in the package.json file and are automatically downloaded.</p>
+<p>In the case of Pimple, we chose this package to manage Dependency Injection, allowing us to add more flexibility and
+extensibility. It also adds compatibility with the Symfony Security package.</p>
 <h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
-<p>In <code>/app/config/default/</code> folder add <code>authorize.json</code> like below example: </p>
+<p>In <code>/app/config/default/</code> folder add <code>authorize.json</code> like below example:</p>
 <pre><code class="json">{
      &quot;validators&quot;:{
        &quot;custom_types&quot;: [{

@@ -912,9 +912,14 @@
                 
                 <h1 id="users">Users<a class="headerlink" href="#users" title="Permanent link">&para;</a></h1>
 <p><strong>erdiko/users package</strong></p>
-<p>The <code>erdiko/users</code> is a package adding Service Models and AJAX endpoints for user 
-management in a Erdiko application.</p>
+<p>Installation:</p>
+<pre><code>composer require erdiko/users
+</code></pre>
+
+<p>Git repo: <a href="https://github.com/Erdiko/users">https://github.com/Erdiko/users</a></p>
 <h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
+<p>The <code>erdiko/users</code> is a package adding Service Models and AJAX endpoints for user
+management in a Erdiko application.</p>
 <p>This package provides ORM entities &amp; service models to manage user records, and exposes AJAX endpoints to allow your application to interact with these service models.</p>
 <h2 id="package-installation-setup">Package Installation &amp; Setup:<a class="headerlink" href="#package-installation-setup" title="Permanent link">&para;</a></h2>
 <h3 id="install-the-package">Install the Package<a class="headerlink" href="#install-the-package" title="Permanent link">&para;</a></h3>
@@ -968,7 +973,7 @@ management in a Erdiko application.</p>
 
 <h2 id="current-directory-structure">Current Directory Structure<a class="headerlink" href="#current-directory-structure" title="Permanent link">&para;</a></h2>
 <p>Below is the current directory structure for the project, with a brief explanation below:</p>
-<pre><code>├── composer.json   
+<pre><code>├── composer.json
 ├── scripts      
 ├── sql
 │   ├── dumps
@@ -989,9 +994,9 @@ management in a Erdiko application.</p>
 <h3 id="sql">sql<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h3>
 <p>This directory contains complete database dumps and update scripts, named respectively <code>dumps</code> and <code>updates</code></p>
 <p>The database dumps in <code>dumps</code> are used to create the initial tables. There is a version of the database structure named <code>user-admin.sql</code> that contains the base table definition and an alternate version named <code>user-admin-with-data.sql</code> with some sample data used for testing and development of the package.</p>
-<p>The <code>updates</code> directory contains upgrade SQL scripts used to alter the DB defintion and table structures without touching the existing data in these tables. </p>
+<p>The <code>updates</code> directory contains upgrade SQL scripts used to alter the DB defintion and table structures without touching the existing data in these tables.</p>
 <h4 id="update-file-naming-structure">Update File Naming Structure<a class="headerlink" href="#update-file-naming-structure" title="Permanent link">&para;</a></h4>
-<p>These files have a naming scheme so we can create a script to run these in order with a future feature. The file name is prepended with an integer indicating the order in which this script needs to be run, the larger the number the later the upgrade. </p>
+<p>These files have a naming scheme so we can create a script to run these in order with a future feature. The file name is prepended with an integer indicating the order in which this script needs to be run, the larger the number the later the upgrade.</p>
 <p>Here is an example filename:</p>
 <p><code>[INTEGER WITH LEADING ZEROS]-[USER FRIENDLY NAME].sql</code></p>
 <h3 id="src">src<a class="headerlink" href="#src" title="Permanent link">&para;</a></h3>
