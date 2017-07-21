@@ -2,9 +2,13 @@
 
 **erdiko/authorize package**
 
-installation:
+Installation:
 
-    composer require erdiko/authorize
+```
+composer require erdiko/authorize
+```
+
+Git repo: [https://github.com/Erdiko/authorize](https://github.com/Erdiko/authorize)  
 
 ## Overview
 
@@ -13,16 +17,16 @@ based on your own business rules.
 
 ## Setup / Configuration
 
-##### Requirements
+#### Requirements
 
-Between its requirements we count on Pimple and Symfony Security.
-In case of Pimple, we choose this package to manage Dependency Injection, allowing us to add more flexibility and 
-extensibility. 
-It also adds compatibility with Symfony Security module.
+Authorize uses Pimple and Symfony Security.  These are listed in the package.json file and are automatically downloaded.
+
+In the case of Pimple, we chose this package to manage Dependency Injection, allowing us to add more flexibility and
+extensibility. It also adds compatibility with the Symfony Security package.
 
 ### Configuration
 
-In `/app/config/default/` folder add `authorize.json` like below example: 
+In `/app/config/default/` folder add `authorize.json` like below example:
 
 ```json
 {

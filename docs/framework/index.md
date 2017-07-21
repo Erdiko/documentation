@@ -1,5 +1,13 @@
 # Erdiko Framework Overview
 
+Installation:
+
+```
+composer create erdiko/erdiko
+```
+
+Git Repo: [https://github.com/Erdiko/erdiko](https://github.com/Erdiko/erdiko)
+
 ## Config
 
 The config folder is stored in `/app/config/` directory and the default application config file is located at `/app/config/application/default.json`.

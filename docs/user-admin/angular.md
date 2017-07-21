@@ -1,4 +1,4 @@
-The GUI for the user-admin is created using that latest Angular framework.  Lets take a look at how this works.
+The GUI for the user-admin is created using that latest [Angular framework](https://angular.io/).  Lets take a look at how this works.
 
 ## Directory Hierarchy
 

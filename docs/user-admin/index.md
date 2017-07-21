@@ -8,9 +8,11 @@ Installation:
 composer create erdiko/user-admin
 ```
 
+Git repo: [https://github.com/Erdiko/user-admin](https://github.com/Erdiko/user-admin)
+
 ## Intro
 
-The user-admin package provides a secure and attractive UI for managing users with our Erdiko framework. The UX is provided by an AngularJS Application served by our very own Erdiko framework.
+The user-admin package provides a secure and attractive UI for managing users with our Erdiko framework. The UX is provided by an [AngularJS](https://angular.io/) Application served by our very own [Erdiko framework](/framework/index.md).
 
 The Angular Application itself is based on a Angular CLI application that imports our custom [ngx-user-admin](https://www.npmjs.com/package/@erdiko/ngx-user-admin) package from npm. This package is used to define the angular routes and provide the services and components used to create the UX.
 

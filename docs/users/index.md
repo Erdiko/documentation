@@ -2,10 +2,18 @@
 
 **erdiko/users package**
 
-The `erdiko/users` is a package adding Service Models and AJAX endpoints for user 
-management in a Erdiko application.
+Installation:
+
+```
+composer require erdiko/users
+```
+
+Git repo: [https://github.com/Erdiko/users](https://github.com/Erdiko/users)
 
 ## Intro
+
+The `erdiko/users` is a package adding Service Models and AJAX endpoints for user
+management in a Erdiko application.
 
 This package provides ORM entities & service models to manage user records, and exposes AJAX endpoints to allow your application to interact with these service models.
 
@@ -63,7 +71,7 @@ Below is an example config containing all the AJAX endpoints exposed by the pack
 Below is the current directory structure for the project, with a brief explanation below:
 
 ```
-├── composer.json	
+├── composer.json
 ├── scripts		 
 ├── sql
 │   ├── dumps
@@ -90,11 +98,11 @@ This directory contains complete database dumps and update scripts, named respec
 
 The database dumps in `dumps` are used to create the initial tables. There is a version of the database structure named `user-admin.sql` that contains the base table definition and an alternate version named `user-admin-with-data.sql` with some sample data used for testing and development of the package.
 
-The `updates` directory contains upgrade SQL scripts used to alter the DB defintion and table structures without touching the existing data in these tables. 
+The `updates` directory contains upgrade SQL scripts used to alter the DB defintion and table structures without touching the existing data in these tables.
 
 #### Update File Naming Structure
 
-These files have a naming scheme so we can create a script to run these in order with a future feature. The file name is prepended with an integer indicating the order in which this script needs to be run, the larger the number the later the upgrade. 
+These files have a naming scheme so we can create a script to run these in order with a future feature. The file name is prepended with an integer indicating the order in which this script needs to be run, the larger the number the later the upgrade.
 
 Here is an example filename:
 
