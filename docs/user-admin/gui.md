@@ -1,11 +1,8 @@
-# Angular GUI
+# User Admin GUI
 
-## Welcome to the Angular GUI!
+If you are able to see the page in the screenshot below then...congratulations you're ready to start using the admin!
 
-If you are able to see the page in the screenshot below then ..congratulations! 
-The hardest part is now over. 
-
-Now, let's get started!
+Now, let's get started with an overview of what this application does.
 
 ## Log-In
 
@@ -47,7 +44,7 @@ When valid name, email address and password is used, a new user will be created.
 
 ## User List
 
-When User List is clicked from either the navigation bar or the content. Below is the list of names containing the names generated from our database. 
+When User List is clicked from either the navigation bar or the content. Below is the list of names containing the names generated from our database.
 (If you have jumped in straight to the User List without creating a user, the list will be empty).
 The user list will be generated as soon as you start creating users! (Cody Bellinger is available at top of the list from our previous examplef).
 
@@ -63,7 +60,7 @@ Erdiko's User Admin package collects significant histories of action taken by ea
 
 If/When you decide that the user information is outdated and needs to be changed, click on the **Edit** link in the Row of a user you would like changed.
 In the Edit-User Page's **Edit User** tab, all the User information is available for change. In the Edit-User page, value of name, email and user's role which are initially given in the Create User section can be changed.
-When all the editable information are valid, the **Save** button will be enabled. 
+When all the editable information are valid, the **Save** button will be enabled.
 
 ![Screenshot](images/Edit-User.png)
 
@@ -84,7 +81,7 @@ You can go back to the User-List to confirm the change.
 
 Just like changing the User Information, User Password can also be changed with ease.
 
-Click on the **Update Password** tab next to the **Edit User** tab to create a new password. Just like as in **Create User**, the new password also requires at least a numeric character and at least 5 characters. 
+Click on the **Update Password** tab next to the **Edit User** tab to create a new password. Just like as in **Create User**, the new password also requires at least a numeric character and at least 5 characters.
 
 Password being changed is shown below:
 
@@ -107,6 +104,6 @@ After confirming the action, quick glance at the top of User List will verify th
 ![Screenshot](images/Deleted-User.png)
 
 
-## Log-Out 
+## Log-Out
 
 If everything is well finished, click the **Logout** link in the Navigation Bar to logout.

@@ -1,3 +1,5 @@
+The GUI for the user-admin is created using that latest Angular framework.  Lets take a look at how this works.
+
 ## Directory Hierarchy
 
 The following is a brief hiearchy that highlights the components and the services.
@@ -54,7 +56,7 @@ At logged in state, the option to log out is available.
 
   **Component & Template Files**
 
-  - header.component.tpl.ts 
+  - header.component.tpl.ts
   - header.component.ts
 
 ### Home Component
@@ -64,7 +66,7 @@ Home Component holds the page the user-admin will see once logged in. From there
 
   **Component & Template Files**
 
-  - home.component.tpl.ts 
+  - home.component.tpl.ts
   - home.component.ts
 
 ### Login
@@ -73,18 +75,18 @@ Login Components displays the Login form that is displayed when user is to log i
 
   **Component & Template Files**
 
-  - login.component.tpl.ts 
+  - login.component.tpl.ts
   - login.component.ts
 
 
 ### Message
 
-Message Components hold small notification on the UI whenever there are updates. If the user-admin is successfully / unsuccessfully adding, editing, deleting 
+Message Components hold small notification on the UI whenever there are updates. If the user-admin is successfully / unsuccessfully adding, editing, deleting
 users in the database, this component is responsible of such notification.
 
   **Component & Template Files**
 
-  - message.component.tpl.ts 
+  - message.component.tpl.ts
   - message.component.ts
 
 ### Password
@@ -93,7 +95,7 @@ Password Component is responsible for changing the user's password.
 
   **Component & Template Files**
 
-  - password.component.tpl.ts 
+  - password.component.tpl.ts
   - password.component.ts
 
 ### User-Edit
@@ -105,18 +107,18 @@ User Edit Component's function is split into to two tabs:
 
   **Component & Template Files**
 
-  - user-edit.component.tpl.ts 
+  - user-edit.component.tpl.ts
   - user-edit.component.ts
 
 
 ### User-Event-Log
 
-User Event Log Component is nested within the User-Edit component and is displayed under the user-edit form. 
+User Event Log Component is nested within the User-Edit component and is displayed under the user-edit form.
 It retrieves recorded action the specified user has taken. The component also features sort and pagination for easy organization.
 
   **Component & Template Files**
 
-  - user-event-log.component.tpl.ts 
+  - user-event-log.component.tpl.ts
   - user-event-log.component.ts
 
 ### User-List
@@ -125,7 +127,7 @@ User-List Component retrieves all the users that are on the database. From here 
 
   **Component & Template Files**
 
-  - user-list.component.tpl.ts 
+  - user-list.component.tpl.ts
   - user-list.component.ts
 
 ### Users-Event-Log
@@ -135,7 +137,7 @@ The component also features sort and pagination for easy organization.
 
   **Component & Template Files**
 
-  - user-event-log.component.tpl.ts 
+  - user-event-log.component.tpl.ts
   - user-event-log.component.ts
 
 
@@ -161,7 +163,7 @@ Components/Services Using this service:
 
 ### User Resolve - user-resolve.service.ts
 
-This service returns a User model for a provided ID, if one is found. 
+This service returns a User model for a provided ID, if one is found.
 If not found, it returns false and navigate the user to the default route
 
 Components/Services Using this service:

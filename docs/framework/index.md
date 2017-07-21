@@ -1,3 +1,5 @@
+# Erdiko Framework Overview
+
 ## Config
 
 The config folder is stored in `/app/config/` directory and the default application config file is located at `/app/config/application/default.json`.
@@ -7,9 +9,11 @@ If you wish to store configurations for other applications, we recommend you to 
 
 For example, to read the configuration of Cache which is located at `/app/config/cache.json` directory, you can use the following code:
 
-		$config = \Erdiko::getConfig("local/cache");
-		$host = $config["memcached"]["host"];				
-		$port = $config["memcached"]["port"];
+```
+$config = \Erdiko::getConfig("local/cache");
+$host = $config["memcached"]["host"];				
+$port = $config["memcached"]["port"];
+```
 
 ## Routes
 

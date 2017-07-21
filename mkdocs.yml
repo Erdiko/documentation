@@ -13,8 +13,8 @@ pages:
         - 'Example App': framework/example.md
     - User Admin:
         - 'Overview': user-admin/index.md
+        - 'User Interface (GUI)': user-admin/gui.md
         - 'Angular UI': user-admin/angular.md
-        - 'Angular GUI': user-admin/angulargui.md
         - 'Extending Angular UI': user-admin/extending-angular.md
         - 'Contributing': user-admin/contributing.md
     - Users:
