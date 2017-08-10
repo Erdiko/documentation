@@ -972,12 +972,12 @@
         }, 
         {
             "location": "/help/style-guide/", 
-            "text": "Erdiko coding style guide\n\n\nAll of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript \n Sass).  All code is stored on \nGithub\n.\n\n\nBelow you will find details on how we write our code.  We do our best to stick to these guidelines.\n\n\nPHP\n\n\nWe adhere to the \nPSR\n coding style guide.  \n\n\nhttp://www.php-fig.org/psr/psr-2/\n\n\nMore useful PHP-FIG links:\n\n\nhttp://www.php-fig.org/bylaws/psr-naming-conventions/\n\n\nhttp://www.php-fig.org/psr/psr-1/\n\n\nJavaScript\n\n\nWe follow Google's JavaScript style guide.\n\n\nhttps://google.github.io/styleguide/jsguide.html\n\n\nHTML\n\n\nWe follow Google's HTML style guide as well\n\n\nhttps://google.github.io/styleguide/htmlcssguide.html\n\n\nCSS\n\n\nSass\n\n\nhttp://sass-lang.com/", 
+            "text": "Erdiko coding style guide\n\n\nAll of the Erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript \n Sass).  All code is stored on \nGithub\n.\n\n\nBelow you will find details on how we write our code.  We do our best to stick to these guidelines.\n\n\nPHP\n\n\nWe adhere to the \nPSR\n coding style guide.  \n\n\nhttp://www.php-fig.org/psr/psr-2/\n\n\nMore useful PHP-FIG links:\n\n\nhttp://www.php-fig.org/bylaws/psr-naming-conventions/\n\n\nhttp://www.php-fig.org/psr/psr-1/\n\n\nJavaScript\n\n\nWe follow Google's JavaScript style guide.\n\n\nhttps://google.github.io/styleguide/jsguide.html\n\n\nHTML / CSS\n\n\nWe follow Google's HTML / CSS style guide as well\n\n\nhttps://google.github.io/styleguide/htmlcssguide.html\n\n\nSass\n\n\nWe adhere to Sass best practices, but we admit there is plenty of room for improvement here as we continue to break apart front-end code into re-usable packages.\n\n\nhttp://sass-lang.com/", 
             "title": "Coding style guide"
         }, 
         {
             "location": "/help/style-guide/#erdiko-coding-style-guide", 
-            "text": "All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript   Sass).  All code is stored on  Github .  Below you will find details on how we write our code.  We do our best to stick to these guidelines.", 
+            "text": "All of the Erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript   Sass).  All code is stored on  Github .  Below you will find details on how we write our code.  We do our best to stick to these guidelines.", 
             "title": "Erdiko coding style guide"
         }, 
         {
@@ -991,18 +991,13 @@
             "title": "JavaScript"
         }, 
         {
-            "location": "/help/style-guide/#html", 
-            "text": "We follow Google's HTML style guide as well  https://google.github.io/styleguide/htmlcssguide.html", 
-            "title": "HTML"
-        }, 
-        {
-            "location": "/help/style-guide/#css", 
-            "text": "", 
-            "title": "CSS"
+            "location": "/help/style-guide/#html-css", 
+            "text": "We follow Google's HTML / CSS style guide as well  https://google.github.io/styleguide/htmlcssguide.html", 
+            "title": "HTML / CSS"
         }, 
         {
             "location": "/help/style-guide/#sass", 
-            "text": "http://sass-lang.com/", 
+            "text": "We adhere to Sass best practices, but we admit there is plenty of room for improvement here as we continue to break apart front-end code into re-usable packages.  http://sass-lang.com/", 
             "title": "Sass"
         }, 
         {

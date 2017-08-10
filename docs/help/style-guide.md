@@ -1,6 +1,6 @@
 # Erdiko coding style guide
 
-All of the erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript & Sass).  All code is stored on [Github](https://github.com/erdiko).
+All of the Erdiko code is broken up into convenient packages that are published on either Packagist (PHP) or NPM (JavaScript & Sass).  All code is stored on [Github](https://github.com/erdiko).
 
 Below you will find details on how we write our code.  We do our best to stick to these guidelines.
 
@@ -24,16 +24,14 @@ We follow Google's JavaScript style guide.
 [https://google.github.io/styleguide/jsguide.html](https://google.github.io/styleguide/jsguide.html)
 
 
-## HTML
+## HTML / CSS
 
-We follow Google's HTML style guide as well
+We follow Google's HTML / CSS style guide as well
 
 [https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)
 
-
-## CSS
-
-
 ## Sass
+
+We adhere to Sass best practices, but we admit there is plenty of room for improvement here as we continue to break apart front-end code into re-usable packages.
 
 [http://sass-lang.com/](http://sass-lang.com/)
