@@ -56,7 +56,7 @@ extra:
     - type: github
       link: https://github.com/erdiko
     - type: twitter
-      link: https://twitter.com/arroyolabs
+      link: https://twitter.com/erdikophp
     - type: instagram
       link: https://www.instagram.com/arroyolabs
   logo: images/logo.png
